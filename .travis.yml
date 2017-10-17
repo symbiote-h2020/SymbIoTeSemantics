@@ -1,0 +1,35 @@
+language: java
+env:
+  global:
+  - GITHUB_REPO=symbiote-h2020/SymbIoTeSemantics
+  - secure: cCLfmkAArMgiMkAcrAANu6EUGRBBLkAkLPvDjLGpiWTWWFTBDriugSG8LWuEC5sfEgzNj6+I44bWzAxkmCHJ/HB9aZEt3RQphAMD8S7fORrR2NxRMpnQPrx0ATiKs0ltrg2/jGQ8iDXGvUBj/pNai09x7P8pkCChq1QF1SZnCo/MMcqCXnpVZKDHklAjqO6SVpKKJLe1HKqUJZOPODEZSBH+erh14PhCf6BtBv8uhf7SHfgLpNDkV8kEimY3CC4AodjI/fLlslbalfgGHDEN1wxf8AmkBqR3J66qY0xLb9FKhX3eIzXDAYlEe5nejrGcLWfTKEnqg4b9UivfEFwKAsvBeFnIvbDXQ0KhgKGvp79Xo59vSS/G1U/61kKq9v7Jl0WaDvbmv2kKciLhNdSZV3wpwdWAF6tsbutHjE1ZBPCX3yKx6elnJXoVVuqscz/2XDZthudPmIL+KU/tD6E+kab++/c6afi5KjfdxzEmgY4WV5WX/+ymmaKOAwsB1dMPHKQByiApeEAhOdyysexDXN00Zypl+yjwsYWtoFognSf0DX460UwMwwrq1tYok2tkk9Va9pAvXYtK/2lzJAoei5ghRV+A2AzoWasa8CVxfpyZC9zyZr6OaUsv1wZ/cXsSJLurOhsO42PKDOfGaTNnzmqGh6rUcNMlgeqh/S26emA=
+jdk:
+- oraclejdk8
+services:
+- mongodb
+- rabbitmq
+sudo: required
+branches:
+  only:
+  - staging
+install: true
+before_cache:
+- rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+- rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
+before_script:
+- chmod a+x merge_script.sh
+- "./merge_script.sh"
+script:
+- gradle check --refresh-dependencies
+after_success:
+- chmod a+x pushing_script.sh
+- "./pushing_script.sh"
+- bash <(curl -s https://codecov.io/bash)
+notifications:
+  email:
+    on_success: never
+    on_failure: always
