@@ -1,0 +1,158 @@
+@prefix : <http://jena.hpl.hp.com/schemas/2003/03/ont-manager#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### GENERAL CONFIG ###
+
+[] a :DocumentManagerPolicy ;
+    :cacheModels true .
+
+### CIM ###
+[] a :OntologySpec ;	
+    :prefix "core"^^xsd:string;
+    :altURL <ontologies/CoreInformationModel.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/core> .
+# versionIRI	
+[] a :OntologySpec ;
+    :altURL <ontologies/CoreInformationModel.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/core/2.0.0> .	
+
+### MIM ###
+[] a :OntologySpec ;
+    :altURL <ontologies/MetaInformationModel.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/meta> .
+
+# versionIRI	
+[] a :OntologySpec ;
+    :altURL <ontologies/MetaInformationModel.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/meta/2.0.0> .	
+
+### BIM ###
+[] a :OntologySpec ;
+    :altURL <ontologies/BestPracticeInformationModel.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-parametervalues-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/parametervalues> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-property-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/property> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-qu-align-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/qu-align> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-smartmobility-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartmobility> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-smartresidence-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartresidence> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-smartstadium-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-smartyachting-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-unit-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/unit> .
+
+# versionIRI	
+[] a :OntologySpec ;
+    :altURL <ontologies/BestPracticeInformationModel.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/2.0.0> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-parametervalues-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/parametervalues/2.0.0> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-property-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/property/2.0.0> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-qu-align-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/qu-align/2.0.0> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-smartmobility-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartmobility/2.0.0> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-smartresidence-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartresidence/2.0.0> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-smartstadium-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.0.0> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-smartyachting-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.0.0> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/bim-unit-v2.0.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/unit/2.0.0> .
+
+### Third Party ###
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/align.owl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/ontologies/external/align> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/align.owl> ;
+    :publicURI <http://knowledgeweb.semanticweb.org/heterogeneity/alignment> .
+	
+[] a :OntologySpec ;
+    :altURL <ontologies/external/dcterms.rdf> ;
+    :publicURI <http://purl.org/dc/terms/> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/time.owl> ;
+    :publicURI <http://www.w3.org/2006/time> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/time.owl> ;
+    :publicURI <http://www.w3.org/2006/time#> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/wgs84_pos.rdf> ;
+    :publicURI <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/rdfs.ttl> ;
+    :publicURI <http://www.w3.org/2000/01/rdf-schema#> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/rdf.ttl> ;
+    :publicURI <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/qu_2011-06-20.ttl> ;
+    :publicURI <http://purl.oclc.org/NET/ssnx/qu/qu> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/qu-rec20.owl> ;
+    :publicURI <http://purl.oclc.org/NET/ssnx/qu/qu-rec20> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/content.owl> ;
+    :publicURI <http://www.w3.org/2011/content#> .	
+	
+[] a :OntologySpec ;
+    :altURL <ontologies/external/owl.ttl> ;
+    :publicURI <http://www.w3.org/2002/07/owl> .
+
+[] a :OntologySpec ;
+    :altURL <ontologies/external/skos.rdf> ;
+    :publicURI <http://www.w3.org/2004/02/skos/core> .

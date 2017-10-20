@@ -1,0 +1,180 @@
+@prefix : <http://www.symbiote-h2020.eu/ontology/bim/parametervalues#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix core: <http://www.symbiote-h2020.eu/ontology/core#> .
+
+
+<http://www.symbiote-h2020.eu/ontology/bim/parametervalues> rdf:type owl:Ontology ;
+                                            
+                                            rdfs:label "symbIoTe Best Practice Information Model ParameterValues extension"@en ;
+                                            
+                                            owl:versionInfo "v2.0.0 2017/10/13 12:00:00"^^xsd:string ;
+                                            
+                                            rdfs:comment "symbIoTe Best Practice Information Model extension for accessing latest parameter values of Service/Capability."@en ;
+                                            
+                                            owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.0.0> ;
+                                            
+                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/parametervalues/2.0.0> .
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#hasParameterValueLookupInfo
+
+:hasParameterValueLookupInfo rdf:type owl:ObjectProperty ;
+                        
+            rdfs:range :ParameterValueLookupInfo .
+			
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#hasParameterLookupInfo
+
+:hasParameterLookupInfo rdf:type owl:ObjectProperty ;
+                        
+            rdfs:domain :MultiSensorLookupInfo ;
+			rdfs:range :ParameterSensorLookupInfo .		
+
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#hasSensorLookupInfo
+
+:hasSensorLookupInfo rdf:type owl:ObjectProperty ;
+                    
+			rdfs:domain :ParameterSensorLookupInfo ;
+            rdfs:range :SingleSensorLookupInfo .			
+			
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#useSensor
+
+:useSensor rdf:type owl:ObjectProperty ;
+          
+			rdfs:domain :SingleSensorLookupInfo ;
+            rdfs:range core:Sensor .			
+			
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#withFeatureOfInterest
+
+:withFeatureOfInterest rdf:type owl:ObjectProperty ;
+          
+			rdfs:domain :SingleSensorLookupInfo ;
+            rdfs:range core:FeatureOfInterest .
+			
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#withProperty
+
+:withProperty rdf:type owl:ObjectProperty ;
+          
+			rdfs:domain :SingleSensorLookupInfo ;
+            rdfs:range core:Property .						
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################   
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#ParameterValueLookupInfo
+
+:ParameterValueLookupInfo rdf:type owl:Class .
+						  
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#MultiSensorLookupInfo
+
+:MultiSensorLookupInfo rdf:type owl:Class ;
+          
+          rdfs:subClassOf :ParameterValueLookupInfo,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasParameterLookupInfo ;
+                            owl:onClass :ParameterSensorLookupInfo ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                          ] .
+						  
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#ParameterSensorLookupInfo
+
+:ParameterSensorLookupInfo rdf:type owl:Class ;
+          
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasSensorLookupInfo ;
+                            owl:onClass :SingleSensorLookupInfo ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty core:name ;
+                            owl:onDataRange xsd:string ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+                          ] .
+
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#SingleSensorLookupInfo
+
+:SingleSensorLookupInfo rdf:type owl:Class ;
+          
+          rdfs:subClassOf :ParameterValueLookupInfo,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty :useSensor ;
+                            owl:onClass core:Sensor ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty :withFeatureOfInterest ;
+                            owl:onClass core:FeatureOfInterest ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                          ]	,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty :withProperty ;
+                            owl:onClass core:Property ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                          ] .
+						  
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#ServiceLookupInfo
+
+:ServiceLookupInfo rdf:type owl:Class ;
+          
+          rdfs:subClassOf :ParameterValueLookupInfo ,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasParameter ;
+                            owl:hasValue :serviceLookupInfoParameter
+                          ] .							  
+
+###  http://www.symbiote-h2020.eu/ontology/core#Capability
+
+core:Capability rdfs:subClassOf [ rdf:type owl:Restriction ;
+								  owl:onProperty :hasParameterValueLookupInfo ;
+								  owl:onClass :ParameterValueLookupInfo ;
+								  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+								] .
+								
+###  http://www.symbiote-h2020.eu/ontology/core#Service
+
+core:Capability rdfs:subClassOf [ rdf:type owl:Restriction ;
+								  owl:onProperty :hasParameterValueLookupInfo ;
+								  owl:onClass :ParameterValueLookupInfo ;
+								  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+								] .								
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+###  http://www.symbiote-h2020.eu/ontology/bim/parametervalues#serviceLookupInfoParameter
+
+:serviceLookupInfoParameter rdf:type owl:NamedIndividual,
+					core:Parameter ;
+                  core:name "parameters"^^xsd:string ;
+				  core:mandatory "false"^^xsd:boolean ;
+				  core:hasDatatype core:stringArray .
