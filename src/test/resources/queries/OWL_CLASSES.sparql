@@ -1,0 +1,4 @@
+SELECT ?s
+WHERE {
+    ?s rdf:type owl:Class .
+}

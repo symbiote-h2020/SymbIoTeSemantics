@@ -41,7 +41,7 @@ public class SPARQL {
             = "SELECT \n"
             + "DISTINCT ?s \n"
             + "WHERE {\n"
-            + "    ?s a " + TAG_TYPE + " .\n"
+            + "    ?s a <" + TAG_TYPE + "> .\n"
             + "    ?s core:name \"" + TAG_NAME + "\" .\n"
             + "}";
     
@@ -50,7 +50,7 @@ public class SPARQL {
     }
     
     public static String findResourceBy(Resource type, String name) {
-        return FIND_BY_NAME
+        return FIND_BY_TYPE_AND_NAME
                 .replace(TAG_TYPE, type.toString())
                 .replace(TAG_NAME, name);
     }

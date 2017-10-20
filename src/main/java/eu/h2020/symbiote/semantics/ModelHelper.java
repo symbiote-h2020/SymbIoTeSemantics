@@ -8,7 +8,6 @@ package eu.h2020.symbiote.semantics;
 import eu.h2020.symbiote.semantics.ontology.INTERNAL;
 import eu.h2020.symbiote.semantics.util.StreamHelper;
 import java.io.ByteArrayInputStream;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
@@ -19,7 +18,6 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.jena.ontology.OntDocumentManager;
@@ -29,10 +27,9 @@ import static org.apache.jena.ontology.OntDocumentManager.PUBLIC_URI;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.query.Dataset;
-import org.apache.jena.query.Query;
+import org.apache.jena.query.ParameterizedSparqlString;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
-import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;
@@ -66,17 +63,17 @@ public class ModelHelper {
         String configFile = Thread.currentThread().getContextClassLoader().getResource(ONT_DOC_MANAGER_CONFIG).toString();
         init(configFile);
     }
-    
+
     protected static void init(String configFilePath) {
-        File configFile = new File(configFilePath);
-        Model config = FileManager.get().loadModel(
-                configFile.getName(),
-                configFile.getParent(),                  
-                RDFFormat.fromFilenameExtension(configFilePath).toString());
-        loadPrefixes(config);
-        DOC_MANAGER = new OntDocumentManager(config);
-        MODEL_SPEC_OWL.setDocumentManager(DOC_MANAGER);
-        MODEL_SPEC_OWL_INF.setDocumentManager(DOC_MANAGER);
+        try {
+            Model config = readModel(configFilePath);
+            loadPrefixes(config);
+            DOC_MANAGER = new OntDocumentManager(config);
+            MODEL_SPEC_OWL.setDocumentManager(DOC_MANAGER);
+            MODEL_SPEC_OWL_INF.setDocumentManager(DOC_MANAGER);
+        } catch (IOException ex) {
+            log.error("error loading config file for ModelHelper " + configFilePath, ex);
+        }
     }
 
     private static void loadPrefixes(Model config) {
@@ -134,8 +131,27 @@ public class ModelHelper {
         return result;
     }
 
+    public static OntModel readModel(RDFInfo rdfInfo) throws IOException {
+        return readModel(rdfInfo, false, false);
+    }
+
     public static OntModel readModel(RDFInfo rdfInfo, boolean includeImport, boolean withInference) throws IOException {
         return readModel(rdfInfo.getRdf(), rdfInfo.getRdfFormat(), includeImport, withInference);
+    }
+
+    public static OntModel readModel(String filePath) throws IOException {
+        return readModel(filePath, false, false);
+    }
+
+    public static OntModel readModel(String filePath, boolean includeImport, boolean withInference) throws IOException {
+        return asOntModel(                
+                (DOC_MANAGER != null ? DOC_MANAGER.getFileManager() : FileManager.get()).loadModel(filePath),
+                includeImport,
+                withInference);
+    }
+
+    public static OntModel readModel(String rdf, RDFFormat format) throws IOException {
+        return readModel(rdf, format, false, false);
     }
 
     public static OntModel readModel(String rdf, RDFFormat format, boolean includeImport, boolean withInference) throws IOException {
@@ -203,12 +219,10 @@ public class ModelHelper {
                 .collect(Collectors.toSet());
     }
 
-    private static QueryExecution createQuery(String queryString, Model model) {
-        Query query = QueryFactory.create(queryString);
-        if (query.getPrefixMapping() == null || query.getPrefixMapping().hasNoMappings()) {
-            query.setPrefixMapping(PREFIXES);
-        }
-        return QueryExecutionFactory.create(query, model);
+    private static QueryExecution createQuery(String queryString, Model model) {        
+        return QueryExecutionFactory.create(
+                new ParameterizedSparqlString(queryString, PREFIXES).asQuery(), 
+                model);
     }
 
     private static <T> List<T> executeSelectAsList(Model model, String query, Function<? super QuerySolution, ? extends T> mapFunction) {

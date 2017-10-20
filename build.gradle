@@ -115,7 +115,9 @@ def ontology_config =
     [ input: "bim-unit-v2.0.0.ttl", classname: "BIM_UNIT", declarations: symbIoTe_declarations ] ,
     // external
     [ input: "external/qu-rec20.owl", classname: "QU" , header: null, declarations: null] ,
-    [ input: "external/wgs84_pos.rdf", classname: "WGS84" ] 
+    [ input: "external/wgs84_pos.rdf", classname: "WGS84" ] ,
+    // test
+    [ input: "../../../test/resources/ontologies/simpleModel.ttl", output: "src/test/java", classname: "SIMPLE_MODEL", declarations: symbIoTe_declarations ] 
 ]
 
 import static org.apache.tools.ant.taskdefs.condition.Os.*
@@ -156,7 +158,7 @@ task generateOntologies {
                 args = temp
             }
             // replace bad generated code
-            def generatedFileDir = config.output ?: default_config.output + "/" + (config.package ?: default_config.package).replaceAll("\\.", "/")
+            def generatedFileDir = (config.output ?: default_config.output) + "/" + (config.package ?: default_config.package).replaceAll("\\.", "/")
             ant.replaceregexp(match:'public static String getURI\\(\\) \\{return NS;\\}', replace:'public static String getURI() {return StringUtils.stripEnd(NS, "#");}', flags:'g', byline:true) {
                 fileset(dir: generatedFileDir, includes:  config.classname + ".java")
             }
