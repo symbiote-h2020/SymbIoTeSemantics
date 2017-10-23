@@ -63,8 +63,12 @@ public class ModelHelper {
     protected static final OntModelSpec MODEL_SPEC_OWL_INF = OntModelSpec.OWL_DL_MEM_RDFS_INF;
 
     static {
+        try {
         String configFile = Thread.currentThread().getContextClassLoader().getResource(ONT_DOC_MANAGER_CONFIG).toString();
         init(configFile);
+        } catch (Exception ex) {
+            log.error("error initializing " + ModelHelper.class.getName(), ex);
+        }
     }
 
     protected static void init(String configFilePath) {
