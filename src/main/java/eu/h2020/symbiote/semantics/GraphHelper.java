@@ -20,7 +20,7 @@ import org.apache.jena.rdf.model.Model;
 public class GraphHelper {
     private static final Log log = LogFactory.getLog(GraphHelper.class);
     
-     private static void insertGraph(Dataset dataset, String graphURI, String rdf, RDFFormat format) {
+     public static void insertGraph(Dataset dataset, String graphURI, String rdf, RDFFormat format) {
         try {
             OntModel model = ModelHelper.readModel(rdf, format, true, false);
             insertGraph(dataset, graphURI, model);
@@ -29,14 +29,14 @@ public class GraphHelper {
         }
     }
 
-    private static void insertGraph(Dataset dataset, String graphURI, Model model) {
+    public static void insertGraph(Dataset dataset, String graphURI, Model model) {
         dataset.begin(ReadWrite.WRITE);
         dataset.getNamedModel(graphURI).add(model);
         dataset.commit();
         dataset.end();
     }
 
-    private static void removeGraph(Dataset dataset, String graphURI) {
+    public static void removeGraph(Dataset dataset, String graphURI) {
         dataset.begin(ReadWrite.WRITE);
         dataset.removeNamedModel(graphURI);
         dataset.commit();
