@@ -8,6 +8,7 @@ package eu.h2020.symbiote.semantics;
 import eu.h2020.symbiote.core.model.RDFFormat;
 import eu.h2020.symbiote.core.model.RDFInfo;
 import eu.h2020.symbiote.semantics.ontology.INTERNAL;
+import eu.h2020.symbiote.semantics.sparql.SPARQL;
 import eu.h2020.symbiote.semantics.util.StreamHelper;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -98,19 +99,19 @@ public class ModelHelper {
 
     }
 
-    public static String getMappingGraphURI(String mappingId) {
+    public static String getMappingURI(String mappingId) {
         return INTERNAL.MAPPING_GRAPH + "/" + mappingId;
     }
 
-    public static String getPlatformGraphURI(String platformId) {
+    public static String getPlatformURI(String platformId) {
         return INTERNAL.PLATFORMS_GRAPH + "/" + platformId;
     }
 
-    public static String getModelGraphURI(String modelId) {
+    public static String getInformationModelURI(String modelId) {
         return INTERNAL.MODEL_GRAPH + "/" + modelId;
     }
 
-    public static String getResourceGraphURI(String resourceId) {
+    public static String getResourceURI(String resourceId) {
         return INTERNAL.RESOURCES_GRAPH + "/" + resourceId;
     }
 
@@ -146,7 +147,7 @@ public class ModelHelper {
     }
 
     public static OntModel readModel(String filePath, boolean includeImport, boolean withInference) throws IOException {
-        return asOntModel(                
+        return asOntModel(
                 (DOC_MANAGER != null ? DOC_MANAGER.getFileManager() : FileManager.get()).loadModel(filePath),
                 includeImport,
                 withInference);
@@ -221,9 +222,9 @@ public class ModelHelper {
                 .collect(Collectors.toSet());
     }
 
-    private static QueryExecution createQuery(String queryString, Model model) {        
+    private static QueryExecution createQuery(String queryString, Model model) {
         return QueryExecutionFactory.create(
-                new ParameterizedSparqlString(queryString, PREFIXES).asQuery(), 
+                new ParameterizedSparqlString(queryString, PREFIXES).asQuery(),
                 model);
     }
 
@@ -291,7 +292,7 @@ public class ModelHelper {
     }
 
     public static Optional<Resource> findResource(String name, String pimID, Dataset dataset) {
-        return findResource(name, dataset.getNamedModel(getModelGraphURI(pimID)));
+        return findResource(name, dataset.getNamedModel(getInformationModelURI(pimID)));
     }
 
     public static Optional<Resource> findResource(Resource type, String name, Model model) {
@@ -299,6 +300,6 @@ public class ModelHelper {
     }
 
     public static Optional<Resource> findResource(Resource type, String name, String pimID, Dataset dataset) {
-        return findResource(type, name, dataset.getNamedModel(getModelGraphURI(pimID)));
+        return findResource(type, name, dataset.getNamedModel(getInformationModelURI(pimID)));
     }
 }

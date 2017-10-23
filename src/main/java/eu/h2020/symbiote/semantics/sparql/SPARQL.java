@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package eu.h2020.symbiote.semantics;
+package eu.h2020.symbiote.semantics.sparql;
 
 import org.apache.jena.rdf.model.Resource;
 
