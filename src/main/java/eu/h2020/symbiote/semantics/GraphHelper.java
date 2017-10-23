@@ -5,6 +5,7 @@
  */
 package eu.h2020.symbiote.semantics;
 
+import eu.h2020.symbiote.core.model.RDFFormat;
 import java.io.IOException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

@@ -5,6 +5,8 @@
  */
 package eu.h2020.symbiote.semantics;
 
+import eu.h2020.symbiote.core.model.RDFFormat;
+import eu.h2020.symbiote.core.model.RDFInfo;
 import eu.h2020.symbiote.semantics.ontology.INTERNAL;
 import eu.h2020.symbiote.semantics.util.StreamHelper;
 import java.io.ByteArrayInputStream;
