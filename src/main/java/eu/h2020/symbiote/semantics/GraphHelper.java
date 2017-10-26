@@ -24,7 +24,10 @@ public class GraphHelper {
     
      public static void insertGraph(Dataset dataset, String graphURI, String rdf, RDFFormat format) {
         try {
-            OntModel model = ModelHelper.readModel(rdf, format, true, false);
+            OntModel model = ModelHelper.readModel(rdf, format, false, false);
+            if (ModelHelper.getOntologyDefinitions(model).size() == 1) {
+                ModelHelper.loadImports(model);
+            }
             insertGraph(dataset, graphURI, model);
         } catch (IOException ex) {
             log.error("error creating model from RDF", ex);
