@@ -9,6 +9,7 @@ import eu.h2020.symbiote.core.internal.RDFFormat;
 import eu.h2020.symbiote.core.internal.RDFInfo;
 import eu.h2020.symbiote.semantics.ontology.INTERNAL;
 import eu.h2020.symbiote.semantics.sparql.SPARQL;
+import eu.h2020.symbiote.semantics.util.JarLocator;
 import eu.h2020.symbiote.semantics.util.StreamHelper;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -64,8 +65,11 @@ public class ModelHelper {
 
     static {
         try {
-        String configFile = Thread.currentThread().getContextClassLoader().getResource(ONT_DOC_MANAGER_CONFIG).toString();
-        init(configFile);
+            FileManager fileManager = FileManager.makeGlobal();
+            fileManager.addLocator(new JarLocator());
+            FileManager.setGlobalFileManager(fileManager);
+            String configFile = Thread.currentThread().getContextClassLoader().getResource(ONT_DOC_MANAGER_CONFIG).toString();
+            init(configFile);
         } catch (Exception ex) {
             log.error("error initializing " + ModelHelper.class.getName(), ex);
         }
