@@ -14,7 +14,7 @@
                                             
                                             rdfs:label "symbIoTe Best Practice Information Model Units"@en ;
                                             
-                                            owl:versionInfo "v2.0.0 2017/09/04 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.0.0 2017/10/25 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Unit part of the Best Practice Information Model of symbIoTe."@en ;
                                             

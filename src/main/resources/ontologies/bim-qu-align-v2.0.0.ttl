@@ -12,7 +12,7 @@
                                             
                                             rdfs:label "Alignment between QU ontology and symbIoTe Best Practice Information Model Units"@en ;
                                             
-                                            owl:versionInfo "v2.0.0 2017/09/04 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.0.0 2017/10/25 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "This ontology defines the alignment betweens the QU ontology and the unit part of the Best Practice Information Model of symbIoTe."@en ;
                                             

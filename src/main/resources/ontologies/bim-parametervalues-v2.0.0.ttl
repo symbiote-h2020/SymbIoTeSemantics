@@ -10,7 +10,7 @@
                                             
                                             rdfs:label "symbIoTe Best Practice Information Model ParameterValues extension"@en ;
                                             
-                                            owl:versionInfo "v2.0.0 2017/10/13 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.0.0 2017/10/25 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "symbIoTe Best Practice Information Model extension for accessing latest parameter values of Service/Capability."@en ;
                                             

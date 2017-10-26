@@ -9,7 +9,7 @@
                                             
                                             rdfs:label "symbIoTe Smart Stadium Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.0.0 2017/09/13 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.0.0 2017/10/25 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Smart Stadium part of the Best Practice Information Model of symbIoTe."@en ;
                                             
