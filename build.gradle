@@ -95,24 +95,25 @@ def default_config =
     header: "%package%\n%imports%\nimport org.apache.commons.lang3.StringUtils;\n"
 ]
 
-def symbIoTe_declarations = '    public static String getVersionURI() { return getURI() + "/2.0.0"; }'
+def symbIoTe_declarations = '    public static String getVersionURI() { return getURI() + "/[version]"; }'
 
-
+def TAG_VERSION = "[version]";
+def MAJOR_VERSION = "2.0.0"
 
 def ontology_config = 
 [ 
     // symbIoTe internal
-    [ input: "core-v2.0.0.ttl", classname: "CIM", declarations: symbIoTe_declarations ] ,
-    [ input: "meta-v2.0.0.ttl", classname: "MIM", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-v2.1.0.ttl", classname: "BIM", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-parametervalues-v2.0.0.ttl", classname: "BIM_PARAMETER_VALUE", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-property-v2.0.0.ttl", classname: "BIM_PROPERTY", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-qu-align-v2.0.0.ttl", classname: "BIM_QU_ALIGN", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-smartmobility-v2.0.0.ttl", classname: "BIM_MOBILITY", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-smartresidence-v2.0.0.ttl", classname: "BIM_RESIDENCE", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-smartstadium-v2.0.0.ttl", classname: "BIM_STADIUM", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-smartyachting-v2.1.0.ttl", classname: "BIM_YACHTING", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-unit-v2.0.0.ttl", classname: "BIM_UNIT", declarations: symbIoTe_declarations ] ,
+    [ input: "core-v[version].ttl", version: MAJOR_VERSION, classname: "CIM", declarations: symbIoTe_declarations ] ,
+    [ input: "meta-v[version].ttl", version: MAJOR_VERSION, classname: "MIM", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-v[version].ttl", version: "2.1.0", classname: "BIM", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-parametervalues-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_PARAMETER_VALUE", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-property-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_PROPERTY", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-qu-align-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_QU_ALIGN", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-smartmobility-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_MOBILITY", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-smartresidence-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_RESIDENCE", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-smartstadium-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_STADIUM", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-smartyachting-v[version].ttl", version: "2.1.0", classname: "BIM_YACHTING", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-unit-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_UNIT", declarations: symbIoTe_declarations ] ,
     // external
     [ input: "external/qu-rec20.owl", classname: "QU" , header: null, declarations: null] ,
     [ input: "external/wgs84_pos.rdf", classname: "WGS84" ] ,
@@ -134,7 +135,7 @@ task generateOntologies {
         for (config in ontology_config) {
             def temp = []
             temp.add("-i")
-            temp.add(ontologyRootDir + config.input)
+            temp.add(ontologyRootDir + (config.input).replace(TAG_VERSION, config.version ?: MAJOR_VERSION))
             temp.add("-o")
             temp.add(config.output ?: default_config.output)
             if (config.classname) {
@@ -149,8 +150,8 @@ task generateOntologies {
                 temp.add(encodeForOS(config.header ?: default_config.header))
             }
             if (config.declarations || default_config.declarations) {   
-                temp.add("--declarations")
-                temp.add(encodeForOS(config.declarations ?: default_config.declarations))
+                temp.add("--declarations")                
+                temp.add(encodeForOS((config.declarations ?: default_config.declarations).replace(TAG_VERSION, config.version ?: MAJOR_VERSION)))
             }
             javaexec {
                 classpath sourceSets.main.runtimeClasspath
