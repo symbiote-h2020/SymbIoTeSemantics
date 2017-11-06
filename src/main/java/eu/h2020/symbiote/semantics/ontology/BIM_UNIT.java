@@ -20,7 +20,7 @@ public class BIM_UNIT {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v2.0.0 2017/09/04 12:00:00";
+    public static final String VERSION_INFO = "v2.0.0 2017/10/25 12:00:00";
     
     public static String getVersionURI() { return getURI() + "/2.0.0"; }
     public static final OntClass SurfaceDensityRateUnit = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/bim/unit#SurfaceDensityRateUnit" );

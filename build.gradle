@@ -104,14 +104,14 @@ def ontology_config =
     // symbIoTe internal
     [ input: "core-v2.0.0.ttl", classname: "CIM", declarations: symbIoTe_declarations ] ,
     [ input: "meta-v2.0.0.ttl", classname: "MIM", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-v2.0.0.ttl", classname: "BIM", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-v2.1.0.ttl", classname: "BIM", declarations: symbIoTe_declarations ] ,
     [ input: "bim-parametervalues-v2.0.0.ttl", classname: "BIM_PARAMETER_VALUE", declarations: symbIoTe_declarations ] ,
     [ input: "bim-property-v2.0.0.ttl", classname: "BIM_PROPERTY", declarations: symbIoTe_declarations ] ,
     [ input: "bim-qu-align-v2.0.0.ttl", classname: "BIM_QU_ALIGN", declarations: symbIoTe_declarations ] ,
     [ input: "bim-smartmobility-v2.0.0.ttl", classname: "BIM_MOBILITY", declarations: symbIoTe_declarations ] ,
     [ input: "bim-smartresidence-v2.0.0.ttl", classname: "BIM_RESIDENCE", declarations: symbIoTe_declarations ] ,
     [ input: "bim-smartstadium-v2.0.0.ttl", classname: "BIM_STADIUM", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-smartyachting-v2.0.0.ttl", classname: "BIM_YACHTING", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-smartyachting-v2.1.0.ttl", classname: "BIM_YACHTING", declarations: symbIoTe_declarations ] ,
     [ input: "bim-unit-v2.0.0.ttl", classname: "BIM_UNIT", declarations: symbIoTe_declarations ] ,
     // external
     [ input: "external/qu-rec20.owl", classname: "QU" , header: null, declarations: null] ,
