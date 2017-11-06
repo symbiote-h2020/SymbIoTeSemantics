@@ -42,7 +42,7 @@
 ### BIM ###
 [] a :OntologySpec ;
     :prefix "bim"^^xsd:string ;
-    :altURL <ontologies/bim-v2.0.0.ttl> ;
+    :altURL <ontologies/bim-v2.1.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim> .
 
 [] a :OntologySpec ;
@@ -77,7 +77,7 @@
 
 [] a :OntologySpec ;
     :prefix "bim-sy"^^xsd:string ;
-    :altURL <ontologies/bim-smartyachting-v2.0.0.ttl> ;
+    :altURL <ontologies/bim-smartyachting-v2.1.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting> .
 
 [] a :OntologySpec ;
@@ -87,8 +87,8 @@
 
 # versionIRI	
 [] a :OntologySpec ;
-    :altURL <ontologies/BestPracticeInformationModel.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/2.0.0> .
+    :altURL <ontologies/bim-v2.1.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/2.1.0> .
 
 [] a :OntologySpec ;
     :altURL <ontologies/bim-parametervalues-v2.0.0.ttl> ;
@@ -115,8 +115,8 @@
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.0.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-smartyachting-v2.0.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.0.0> .
+    :altURL <ontologies/bim-smartyachting-v2.1.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.1.0> .
 
 [] a :OntologySpec ;
     :altURL <ontologies/bim-unit-v2.0.0.ttl> ;
