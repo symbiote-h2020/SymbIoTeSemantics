@@ -1,6 +1,16 @@
 package eu.h2020.symbiote.semantics;
 
+import eu.h2020.symbiote.semantics.ontology.BIM;
+import eu.h2020.symbiote.semantics.ontology.BIM_MOBILITY;
+import eu.h2020.symbiote.semantics.ontology.BIM_PARAMETER_VALUE;
+import eu.h2020.symbiote.semantics.ontology.BIM_PROPERTY;
+import eu.h2020.symbiote.semantics.ontology.BIM_QU_ALIGN;
+import eu.h2020.symbiote.semantics.ontology.BIM_RESIDENCE;
+import eu.h2020.symbiote.semantics.ontology.BIM_STADIUM;
+import eu.h2020.symbiote.semantics.ontology.BIM_UNIT;
+import eu.h2020.symbiote.semantics.ontology.BIM_YACHTING;
 import eu.h2020.symbiote.semantics.ontology.CIM;
+import eu.h2020.symbiote.semantics.ontology.MIM;
 import eu.h2020.symbiote.semantics.ontology.SIMPLE_MODEL;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -94,6 +104,36 @@ public class ModelHelperTest {
         Set<Resource> ontologyDefinitions = ModelHelper.getOntologyDefinitions(simpleModel);
         assert (ontologyDefinitions.size() == 1);
         assert (ontologyDefinitions.iterator().next().getURI().equals(SIMPLE_MODEL.getURI()));
+    }
+
+    @Test
+    public void testLoadSymbIoTeOntologies() throws IOException {
+        // load original config file as used in deployment
+        ModelHelper.init();
+        // check that all symbIoTe models are loadable from cache
+        ModelHelper.readModel(CIM.getURI());
+        ModelHelper.readModel(MIM.getURI());
+        ModelHelper.readModel(BIM.getURI());
+        ModelHelper.readModel(BIM_MOBILITY.getURI());
+        ModelHelper.readModel(BIM_PARAMETER_VALUE.getURI());
+        ModelHelper.readModel(BIM_PROPERTY.getURI());
+        ModelHelper.readModel(BIM_QU_ALIGN.getURI());
+        ModelHelper.readModel(BIM_RESIDENCE.getURI());
+        ModelHelper.readModel(BIM_STADIUM.getURI());
+        ModelHelper.readModel(BIM_UNIT.getURI());
+        ModelHelper.readModel(BIM_YACHTING.getURI());
+        // also check loading by versionURI
+        ModelHelper.readModel(CIM.getVersionURI());
+        ModelHelper.readModel(MIM.getVersionURI());
+        ModelHelper.readModel(BIM.getVersionURI());
+        ModelHelper.readModel(BIM_MOBILITY.getVersionURI());
+        ModelHelper.readModel(BIM_PARAMETER_VALUE.getVersionURI());
+        ModelHelper.readModel(BIM_PROPERTY.getVersionURI());
+        ModelHelper.readModel(BIM_QU_ALIGN.getVersionURI());
+        ModelHelper.readModel(BIM_RESIDENCE.getVersionURI());
+        ModelHelper.readModel(BIM_STADIUM.getVersionURI());
+        ModelHelper.readModel(BIM_UNIT.getVersionURI());
+        ModelHelper.readModel(BIM_YACHTING.getVersionURI());
     }
 
 }

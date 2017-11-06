@@ -68,11 +68,15 @@ public class ModelHelper {
             FileManager fileManager = FileManager.makeGlobal();
             fileManager.addLocator(new JarLocator());
             FileManager.setGlobalFileManager(fileManager);
-            String configFile = Thread.currentThread().getContextClassLoader().getResource(ONT_DOC_MANAGER_CONFIG).toString();
-            init(configFile);
+            init();
         } catch (Exception ex) {
             log.error("error initializing " + ModelHelper.class.getName(), ex);
         }
+    }
+
+    protected static void init() {
+        String configFile = Thread.currentThread().getContextClassLoader().getResource(ONT_DOC_MANAGER_CONFIG).toString();
+        init(configFile);
     }
 
     protected static void init(String configFilePath) {
