@@ -29,7 +29,7 @@
 														<http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.1.0> ,
 														<http://www.symbiote-h2020.eu/ontology/bim/parametervalues/2.0.0> ;
                                             
-                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/2.0.0> .
+                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/2.1.0> .
 
 
 
