@@ -16,7 +16,7 @@
                                             
                                             rdfs:label "symbIoTe Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.1.0 2017/11/06 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.1.0 2017/11/13 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Best Practice Information Model of symbIoTe."@en ;
                                             
@@ -25,7 +25,7 @@
 														<http://www.symbiote-h2020.eu/ontology/bim/property/2.0.0> ,
 														<http://www.symbiote-h2020.eu/ontology/bim/smartmobility/2.0.0> , 
 														<http://www.symbiote-h2020.eu/ontology/bim/smartresidence/2.0.0> ,
-														<http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.0.0> ,
+														<http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.1.0> ,
 														<http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.1.0> ,
 														<http://www.symbiote-h2020.eu/ontology/bim/parametervalues/2.0.0> ;
                                             

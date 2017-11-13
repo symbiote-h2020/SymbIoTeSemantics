@@ -12,14 +12,14 @@
                                              
                                              rdfs:label "symbIoTe Meta Information Model"@en ;
                                              
-                                             owl:versionInfo "v 2.0.0 2017/10/25 12:00:00"^^xsd:string ;
+                                             owl:versionInfo "v 2.1.0 2017/11/13 12:00:00"^^xsd:string ;
                                              
                                              rdfs:comment "Meta Information Model of the symbIoTe project."@en ;
                                              
                                              owl:imports <http://www.symbiote-h2020.eu/ontology/cache/align> ,
 														 <http://www.symbiote-h2020.eu/ontology/core/2.0.0> ;
                                              
-                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/meta/2.0.0> .
+                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/meta/2.1.0> .
 
 
 #################################################################
@@ -362,7 +362,7 @@ core:Resource rdfs:subClassOf [ rdf:type owl:Restriction ;
 ###  http://www.symbiote-h2020.eu/ontology/meta#Federation
 
 :Federation rdf:type owl:Class ;
-            
+            owl:hasKey ( core:id ) ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty :public ;
                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -394,7 +394,7 @@ core:Resource rdfs:subClassOf [ rdf:type owl:Restriction ;
 ###  http://www.symbiote-h2020.eu/ontology/meta#InformationModel
 
 :InformationModel rdf:type owl:Class ;
-                  
+                  owl:hasKey ( core:id ) ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty core:id ;
                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -458,7 +458,7 @@ core:Resource rdfs:subClassOf [ rdf:type owl:Restriction ;
 ###  http://www.symbiote-h2020.eu/ontology/meta#Mapping
 
 :Mapping rdf:type owl:Class ;
-         
+         owl:hasKey ( core:id ) ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty :hasSourceModel ;
                            owl:onClass :InformationModel ;
@@ -528,7 +528,7 @@ core:Resource rdfs:subClassOf [ rdf:type owl:Restriction ;
 ###  http://www.symbiote-h2020.eu/ontology/meta#Platform
 
 :Platform rdf:type owl:Class ;
-          
+          owl:hasKey ( core:id ) ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty core:name ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -604,7 +604,7 @@ core:Resource rdfs:subClassOf [ rdf:type owl:Restriction ;
 ###  http://www.symbiote-h2020.eu/ontology/meta#User
 
 :User rdf:type owl:Class ;
-      
+      owl:hasKey ( core:id ) ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
                         owl:onProperty core:id ;
                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;

@@ -33,13 +33,13 @@
 
 ### MIM ###
 [] a :OntologySpec ;
-    :altURL <ontologies/meta-v2.0.0.ttl> ;
+    :altURL <ontologies/meta-v2.1.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/meta> .
 
 # versionIRI	
 [] a :OntologySpec ;
-    :altURL <ontologies/meta-v2.0.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/meta/2.0.0> .	
+    :altURL <ontologies/meta-v2.1.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/meta/2.1.0> .	
 
 # prefix
 [] a :OntologySpec ;
@@ -79,7 +79,7 @@
 
 [] a :OntologySpec ;
     :prefix "bim-ss"^^xsd:string ;
-    :altURL <ontologies/bim-smartstadium-v2.0.0.ttl> ;
+    :altURL <ontologies/bim-smartstadium-v2.1.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium> .
 
 [] a :OntologySpec ;
@@ -118,8 +118,8 @@
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartresidence/2.0.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-smartstadium-v2.0.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.0.0> .
+    :altURL <ontologies/bim-smartstadium-v2.1.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.1.0> .
 
 [] a :OntologySpec ;
     :altURL <ontologies/bim-smartyachting-v2.1.0.ttl> ;

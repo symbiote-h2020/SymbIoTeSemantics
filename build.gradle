@@ -104,14 +104,14 @@ def ontology_config =
 [ 
     // symbIoTe internal
     [ input: "core-v[version].ttl", version: MAJOR_VERSION, classname: "CIM", declarations: symbIoTe_declarations ] ,
-    [ input: "meta-v[version].ttl", version: MAJOR_VERSION, classname: "MIM", declarations: symbIoTe_declarations ] ,
+    [ input: "meta-v[version].ttl", version: "2.1.0", classname: "MIM", declarations: symbIoTe_declarations ] ,
     [ input: "bim-v[version].ttl", version: "2.1.0", classname: "BIM", declarations: symbIoTe_declarations ] ,
     [ input: "bim-parametervalues-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_PARAMETER_VALUE", declarations: symbIoTe_declarations ] ,
     [ input: "bim-property-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_PROPERTY", declarations: symbIoTe_declarations ] ,
     [ input: "bim-qu-align-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_QU_ALIGN", declarations: symbIoTe_declarations ] ,
     [ input: "bim-smartmobility-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_MOBILITY", declarations: symbIoTe_declarations ] ,
     [ input: "bim-smartresidence-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_RESIDENCE", declarations: symbIoTe_declarations ] ,
-    [ input: "bim-smartstadium-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_STADIUM", declarations: symbIoTe_declarations ] ,
+    [ input: "bim-smartstadium-v[version].ttl", version: "2.1.0", classname: "BIM_STADIUM", declarations: symbIoTe_declarations ] ,
     [ input: "bim-smartyachting-v[version].ttl", version: "2.1.0", classname: "BIM_YACHTING", declarations: symbIoTe_declarations ] ,
     [ input: "bim-unit-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_UNIT", declarations: symbIoTe_declarations ] ,
     // external

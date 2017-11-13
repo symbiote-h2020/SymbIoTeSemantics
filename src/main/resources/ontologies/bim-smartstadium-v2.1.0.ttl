@@ -9,13 +9,13 @@
                                             
                                             rdfs:label "symbIoTe Smart Stadium Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.0.0 2017/10/25 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.1.0 2017/11/13 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Smart Stadium part of the Best Practice Information Model of symbIoTe."@en ;
                                             
                                             owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.0.0> ;
                                             
-                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.0.0> .
+                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.1.0> .
 
 #################################################################
 #
@@ -575,7 +575,7 @@
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartstadium#Product
 
 :Product rdf:type owl:Class ;
-               
+               owl:hasKey ( core:id ) ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
                                  owl:onProperty core:id ;
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -602,7 +602,7 @@
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartstadium#Promotion
 
 :Promotion rdf:type owl:Class ;
-                 
+                 owl:hasKey ( core:id ) ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                    owl:onProperty :discount ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -821,7 +821,7 @@
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartstadium#Store
 
 :Store rdf:type owl:Class ;
-             
+             owl:hasKey ( core:id ) ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                owl:onProperty core:name ;
                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
