@@ -12,12 +12,12 @@
                                              
                                              rdfs:label "symbIoTe Meta Information Model"@en ;
                                              
-                                             owl:versionInfo "v 2.1.0 2017/11/13 12:00:00"^^xsd:string ;
+                                             owl:versionInfo "v 2.1.0 2017/12/12 12:00:00"^^xsd:string ;
                                              
                                              rdfs:comment "Meta Information Model of the symbIoTe project."@en ;
                                              
                                              owl:imports <http://www.symbiote-h2020.eu/ontology/cache/align> ,
-														 <http://www.symbiote-h2020.eu/ontology/core/2.0.0> ;
+														 <http://www.symbiote-h2020.eu/ontology/core/2.1.0> ;
                                              
                                              owl:versionIRI <http://www.symbiote-h2020.eu/ontology/meta/2.1.0> .
 

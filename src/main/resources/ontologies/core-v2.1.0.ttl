@@ -11,11 +11,11 @@
                                              
                                              rdfs:label "symbIoTe Core Information Model"@en ;
                                              
-                                             owl:versionInfo "v 2.0.0 2017/10/25 12:00:00"^^xsd:string ;
+                                             owl:versionInfo "v 2.1.0 2017/12/12 12:00:00"^^xsd:string ;
                                              
                                              rdfs:comment "Core Information Model of the symbIoTe project."@en ;
                                              
-                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/core/2.0.0> ;
+                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/core/2.1.0> ;
                                              
                                              owl:imports geo:,
 														 <http://www.w3.org/2006/time>.
@@ -415,6 +415,11 @@ geo:SpatialThing rdf:type owl:Class .
 :Capability rdf:type owl:Class ;
             
             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :name ;
+                              owl:onDataRange xsd:string ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+							],
+							[ rdf:type owl:Restriction ;
                               owl:onProperty :hasEffect ;
                               owl:onClass :Effect ;
                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger

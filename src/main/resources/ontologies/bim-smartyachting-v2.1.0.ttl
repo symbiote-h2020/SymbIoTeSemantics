@@ -11,11 +11,11 @@
                                             
                                             rdfs:label "symbIoTe Smart Yachting Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.1.0 2017/11/06 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.1.0 2017/12/12 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Smart Yachting part of the Best Practice Information Model of symbIoTe."@en ;
                                             
-                                            owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.0.0> ;
+                                            owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.1.0> ;
                                             
                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.1.0> .
 

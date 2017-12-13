@@ -9,11 +9,11 @@
                                             
                                             rdfs:label "symbIoTe Smart Stadium Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.1.0 2017/11/13 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.1.0 2017/12/12 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Smart Stadium part of the Best Practice Information Model of symbIoTe."@en ;
                                             
-                                            owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.0.0> ;
+                                            owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.1.0> ;
                                             
                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.1.0> .
 

@@ -14,14 +14,14 @@
                                             
                                             rdfs:label "symbIoTe Best Practice Information Model Units"@en ;
                                             
-                                            owl:versionInfo "v2.0.0 2017/10/25 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.1.0 2017/12/12 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Unit part of the Best Practice Information Model of symbIoTe."@en ;
                                             
                                             owl:imports <http://purl.oclc.org/NET/ssnx/qu/qu-rec20> ,
-                                                        <http://www.symbiote-h2020.eu/ontology/bim/qu-align/2.0.0> ;
+                                                        <http://www.symbiote-h2020.eu/ontology/bim/qu-align/2.1.0> ;
                                             
-                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/unit/2.0.0> .
+                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/unit/2.1.0> .
 
 
 #################################################################
