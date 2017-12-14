@@ -7,7 +7,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix qu-dim: <http://purl.oclc.org/NET/ssnx/qu/dim#> .
 @prefix qu-quantity: <http://purl.oclc.org/NET/ssnx/qu/quantity#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <http://www.symbiote-h2020.eu/ontology/bim/property> rdf:type owl:Ontology ;
                                             
