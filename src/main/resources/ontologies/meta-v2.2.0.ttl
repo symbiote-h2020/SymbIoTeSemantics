@@ -525,7 +525,7 @@ core:Resource rdfs:subClassOf [ rdf:type owl:Restriction ;
              rdfs:subClassOf :System ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :isConnectedTo ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onClass :SmartSpace
                              ] .
 
