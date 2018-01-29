@@ -33,13 +33,13 @@
 
 ### MIM ###
 [] a :OntologySpec ;
-    :altURL <ontologies/meta-v2.1.0.ttl> ;
+    :altURL <ontologies/meta-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/meta> .
 
 # versionIRI	
 [] a :OntologySpec ;
-    :altURL <ontologies/meta-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/meta/2.1.0> .	
+    :altURL <ontologies/meta-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/meta/2.2.0> .	
 
 # prefix
 [] a :OntologySpec ;

@@ -20,12 +20,14 @@ public class MIM {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v 2.1.0 2017/12/12 12:00:00";
+    public static final String VERSION_INFO = "v 2.2.0 2018/01/29 12:00:00";
     
-    public static String getVersionURI() { return getURI() + "/2.1.0"; }
+    public static String getVersionURI() { return getURI() + "/2.2.0"; }
     public static final ObjectProperty definesAttribute = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#definesAttribute" );
     
     public static final ObjectProperty hasAttribute = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasAttribute" );
+    
+    public static final ObjectProperty hasComparator = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasComparator" );
     
     public static final ObjectProperty hasDefinition = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasDefinition" );
     
@@ -35,15 +37,23 @@ public class MIM {
     
     public static final ObjectProperty hasMetaAttribute = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasMetaAttribute" );
     
+    public static final ObjectProperty hasMetric = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasMetric" );
+    
     public static final ObjectProperty hasPopularity = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasPopularity" );
     
     public static final ObjectProperty hasResource = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasResource" );
+    
+    public static final ObjectProperty hasResourceType = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasResourceType" );
+    
+    public static final ObjectProperty hasSLAConstraint = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasSLAConstraint" );
     
     public static final ObjectProperty hasService = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasService" );
     
     public static final ObjectProperty hasSourceModel = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasSourceModel" );
     
     public static final ObjectProperty hasStatus = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasStatus" );
+    
+    public static final ObjectProperty isConnectedTo = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#isConnectedTo" );
     
     public static final ObjectProperty isOwnerOf = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#isOwnerOf" );
     
@@ -59,17 +69,23 @@ public class MIM {
     
     public static final ObjectProperty usesInformationModel = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#usesInformationModel" );
     
+    public static final DatatypeProperty available = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#available" );
+    
+    public static final DatatypeProperty duration = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#duration" );
+    
     public static final DatatypeProperty isAvailable = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#isAvailable" );
     
     public static final DatatypeProperty load = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#load" );
+    
+    public static final DatatypeProperty mac = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#mac" );
     
     public static final DatatypeProperty password = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#password" );
     
     public static final DatatypeProperty public_ = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#public" );
     
-    public static final DatatypeProperty slaDefinition = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#slaDefinition" );
-    
     public static final DatatypeProperty systemAssigned = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#systemAssigned" );
+    
+    public static final DatatypeProperty threshold = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#threshold" );
     
     public static final DatatypeProperty trust = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#trust" );
     
@@ -80,6 +96,10 @@ public class MIM {
     public static final DatatypeProperty views = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/meta#views" );
     
     public static final OntClass AccessAttribute = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#AccessAttribute" );
+    
+    public static final OntClass Comparator = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#Comparator" );
+    
+    public static final OntClass Enabler = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#Enabler" );
     
     public static final OntClass Federation = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#Federation" );
     
@@ -95,18 +115,40 @@ public class MIM {
     
     public static final OntClass Platform = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#Platform" );
     
+    public static final OntClass QoSConstraint = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#QoSConstraint" );
+    
+    public static final OntClass QoSMetric = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#QoSMetric" );
+    
     public static final OntClass ResourcePopularity = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#ResourcePopularity" );
     
     public static final OntClass ResourceStatus = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#ResourceStatus" );
     
+    public static final OntClass SmartDevice = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#SmartDevice" );
+    
+    public static final OntClass SmartSpace = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#SmartSpace" );
+    
+    public static final OntClass System = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#System" );
+    
     public static final OntClass User = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/meta#User" );
     
-    public static final Individual exclusiveAccessFeature = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#exclusiveAccessFeature", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
+    public static final Individual availability = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#availability", QoSMetric );
     
-    public static final Individual prioritizedAccessFeature = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#prioritizedAccessFeature", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
+    public static final Individual equals = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#equals", Comparator );
     
-    public static final Individual reservationFeature = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#reservationFeature", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
+    public static final Individual exclusiveAccessFeature = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#exclusiveAccessFeature", OptionalFeature );
     
-    public static final Individual subscriptionFeature = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#subscriptionFeature", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
+    public static final Individual greaterThan = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#greaterThan", Comparator );
+    
+    public static final Individual greaterThanOrEqual = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#greaterThanOrEqual", Comparator );
+    
+    public static final Individual lessThan = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#lessThan", Comparator );
+    
+    public static final Individual lessThanOrEqual = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#lessThanOrEqual", Comparator );
+    
+    public static final Individual prioritizedAccessFeature = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#prioritizedAccessFeature", OptionalFeature );
+    
+    public static final Individual reservationFeature = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#reservationFeature", OptionalFeature );
+    
+    public static final Individual subscriptionFeature = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/meta#subscriptionFeature", OptionalFeature );
     
 }
