@@ -20,9 +20,9 @@ public class SIMPLE_MODEL {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v 2.1.0 2017/12/12 12:00:00";
+    public static final String VERSION_INFO = "v 2.2.0 2017/12/12 12:00:00";
     
-    public static String getVersionURI() { return getURI() + "/2.1.0"; }
+    public static String getVersionURI() { return getURI() + "/2.2.0"; }
     public static final OntClass A = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/simpleModel#A" );
     
     public static final OntClass B = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/simpleModel#B" );

@@ -18,13 +18,13 @@
 
 ### CIM ###
 [] a :OntologySpec ;	    
-    :altURL <ontologies/core-v2.1.0.ttl> ;
+    :altURL <ontologies/core-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/core> .
 
 # versionIRI	
 [] a :OntologySpec ;
-    :altURL <ontologies/core-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/core/2.1.0> .	
+    :altURL <ontologies/core-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/core/2.2.0> .	
 
 # prefix
 [] a :OntologySpec ;
@@ -49,85 +49,85 @@
 ### BIM ###
 [] a :OntologySpec ;
     :prefix "bim"^^xsd:string ;
-    :altURL <ontologies/bim-v2.1.0.ttl> ;
+    :altURL <ontologies/bim-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim> .
 
 [] a :OntologySpec ;
     :prefix "bim-pv"^^xsd:string ;
-    :altURL <ontologies/bim-parametervalues-v2.1.0.ttl> ;
+    :altURL <ontologies/bim-parametervalues-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/parametervalues> .
 
 [] a :OntologySpec ;
     :prefix "bim-property"^^xsd:string ;
-    :altURL <ontologies/bim-property-v2.1.0.ttl> ;
+    :altURL <ontologies/bim-property-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/property> .
 
 [] a :OntologySpec ;
     :prefix "bim-qu"^^xsd:string ;
-    :altURL <ontologies/bim-qu-align-v2.1.0.ttl> ;
+    :altURL <ontologies/bim-qu-align-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/qu-align> .
 
 [] a :OntologySpec ;
     :prefix "bim-sm"^^xsd:string ;
-    :altURL <ontologies/bim-smartmobility-v2.1.0.ttl> ;
+    :altURL <ontologies/bim-smartmobility-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartmobility> .
 
 [] a :OntologySpec ;
     :prefix "bim-sr"^^xsd:string ;
-    :altURL <ontologies/bim-smartresidence-v2.1.0.ttl> ;
+    :altURL <ontologies/bim-smartresidence-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartresidence> .
 
 [] a :OntologySpec ;
     :prefix "bim-ss"^^xsd:string ;
-    :altURL <ontologies/bim-smartstadium-v2.1.0.ttl> ;
+    :altURL <ontologies/bim-smartstadium-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium> .
 
 [] a :OntologySpec ;
     :prefix "bim-sy"^^xsd:string ;
-    :altURL <ontologies/bim-smartyachting-v2.1.0.ttl> ;
+    :altURL <ontologies/bim-smartyachting-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting> .
 
 [] a :OntologySpec ;
     :prefix "bim-unit"^^xsd:string ;
-    :altURL <ontologies/bim-unit-v2.1.0.ttl> ;
+    :altURL <ontologies/bim-unit-v2.2.0.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/bim/unit> .
 
 # versionIRI	
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/2.1.0> .
+    :altURL <ontologies/bim-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/2.2.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-parametervalues-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/parametervalues/2.1.0> .
+    :altURL <ontologies/bim-parametervalues-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/parametervalues/2.2.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-property-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/property/2.1.0> .
+    :altURL <ontologies/bim-property-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/property/2.2.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-qu-align-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/qu-align/2.1.0> .
+    :altURL <ontologies/bim-qu-align-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/qu-align/2.2.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-smartmobility-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartmobility/2.1.0> .
+    :altURL <ontologies/bim-smartmobility-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartmobility/2.2.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-smartresidence-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartresidence/2.1.0> .
+    :altURL <ontologies/bim-smartresidence-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartresidence/2.2.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-smartstadium-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.1.0> .
+    :altURL <ontologies/bim-smartstadium-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.2.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-smartyachting-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.1.0> .
+    :altURL <ontologies/bim-smartyachting-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.2.0> .
 
 [] a :OntologySpec ;
-    :altURL <ontologies/bim-unit-v2.1.0.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/unit/2.1.0> .
+    :altURL <ontologies/bim-unit-v2.2.0.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/bim/unit/2.2.0> .
 
 # PREFIX
 [] a :OntologySpec ;

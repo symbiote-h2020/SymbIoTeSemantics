@@ -11,11 +11,11 @@
                                              
                                              rdfs:label "symbIoTe Core Information Model"@en ;
                                              
-                                             owl:versionInfo "v 2.1.0 2017/12/12 12:00:00"^^xsd:string ;
+                                             owl:versionInfo "v 2.2.0 2018/02/20 12:00:00"^^xsd:string ;
                                              
                                              rdfs:comment "Core Information Model of the symbIoTe project."@en ;
                                              
-                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/core/2.1.0> ;
+                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/core/2.2.0> ;
                                              
                                              owl:imports geo:,
 														 <http://www.w3.org/2006/time>.

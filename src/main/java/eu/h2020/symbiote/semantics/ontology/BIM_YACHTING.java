@@ -20,16 +20,12 @@ public class BIM_YACHTING {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v2.1.0 2017/12/12 12:00:00";
+    public static final String VERSION_INFO = "v2.2.0 2018/02/20 12:00:00";
     
-    public static String getVersionURI() { return getURI() + "/2.1.0"; }
+    public static String getVersionURI() { return getURI() + "/2.2.0"; }
     public static final ObjectProperty causedByFault = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#causedByFault" );
     
-    public static final ObjectProperty connectedInPort = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#connectedInPort" );
-    
     public static final ObjectProperty hasComponent = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#hasComponent" );
-    
-    public static final ObjectProperty hasConnectionStatus = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#hasConnectionStatus" );
     
     public static final ObjectProperty hasPoint = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#hasPoint" );
     
@@ -48,8 +44,6 @@ public class BIM_YACHTING {
     public static final DatatypeProperty timestamp = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#timestamp" );
     
     public static final OntClass BlackWaterTank = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#BlackWaterTank" );
-    
-    public static final OntClass ConnectionStatus = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#ConnectionStatus" );
     
     public static final OntClass ConsumableNeed = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#ConsumableNeed" );
     
@@ -117,11 +111,11 @@ public class BIM_YACHTING {
     
     public static final Individual HVACFault = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#HVACFault", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
     
+    public static final Individual ascService = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#ascService", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
+    
     public static final Individual automatedSupplyChain = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#automatedSupplyChain", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
     
     public static final Individual averageFuelConsumptionPerNauticalMile = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#averageFuelConsumptionPerNauticalMile", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
-    
-    public static final Individual disconnected = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#disconnected", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
     
     public static final Individual electricFault = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#electricFault", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
     
@@ -139,14 +133,12 @@ public class BIM_YACHTING {
     
     public static final Individual hydraulicFault = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#hydraulicFault", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
     
-    public static final Individual loRaWAN = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#loRaWAN", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
-    
     public static final Individual smartMooring = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#smartMooring", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
+    
+    public static final Individual smartMooringService = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#smartMooringService", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
     
     public static final Individual tankLevel = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#tankLevel", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
     
     public static final Individual weelhouseFault = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#weelhouseFault", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
-    
-    public static final Individual wiFi = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/smartyachting#wiFi", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );
     
 }

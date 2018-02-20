@@ -98,14 +98,14 @@ def default_config =
 def symbIoTe_declarations = '    public static String getVersionURI() { return getURI() + "/[version]"; }'
 
 def TAG_VERSION = "[version]";
-def MAJOR_VERSION = "2.1.0"
+def MAJOR_VERSION = "2.2.0"
 def MINOR_VERSION = "2.2.0"
 
 def ontology_config = 
 [ 
     // symbIoTe internal
     [ input: "core-v[version].ttl", version: MAJOR_VERSION, classname: "CIM", declarations: symbIoTe_declarations ] ,
-    [ input: "meta-v[version].ttl", version: MINOR_VERSION, classname: "MIM", declarations: symbIoTe_declarations ] ,
+    [ input: "meta-v[version].ttl", version: MAJOR_VERSION, classname: "MIM", declarations: symbIoTe_declarations ] ,
     [ input: "bim-v[version].ttl", version: MAJOR_VERSION, classname: "BIM", declarations: symbIoTe_declarations ] ,
     [ input: "bim-parametervalues-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_PARAMETER_VALUE", declarations: symbIoTe_declarations ] ,
     [ input: "bim-property-v[version].ttl", version: MAJOR_VERSION, classname: "BIM_PROPERTY", declarations: symbIoTe_declarations ] ,

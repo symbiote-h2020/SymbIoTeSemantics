@@ -9,11 +9,11 @@
                                              
                                              rdfs:label "symbIoTe Simple Model for testing"@en ;
                                              
-                                             owl:versionInfo "v 2.1.0 2017/12/12 12:00:00"^^xsd:string ;
+                                             owl:versionInfo "v 2.2.0 2017/12/12 12:00:00"^^xsd:string ;
                                                                                          
-                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/simpleModel/2.1.0> ;
+                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/simpleModel/2.2.0> ;
                                              
-                                              owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.1.0>.
+                                              owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.2.0>.
 
 
 #################################################################

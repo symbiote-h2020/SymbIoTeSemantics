@@ -11,14 +11,14 @@
                                             
                                             rdfs:label "symbIoTe Smart Residence Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.1.0 2017/12/12 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.2.0 2018/02/20 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Smart Residence part of the Best Practice Information Model of symbIoTe."@en ;
                                             
                                             owl:imports <http://purl.oclc.org/NET/ssnx/qu/qu-rec20> ,
-                                                        <http://www.symbiote-h2020.eu/ontology/core/2.1.0> ;
+                                                        <http://www.symbiote-h2020.eu/ontology/core/2.2.0> ;
                                             
-                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/smartresidence/2.1.0> .
+                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/smartresidence/2.2.0> .
 
 
 

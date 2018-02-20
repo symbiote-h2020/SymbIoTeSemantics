@@ -20,9 +20,9 @@ public class BIM_MOBILITY {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v2.1.0 2017/12/12 12:00:00";
+    public static final String VERSION_INFO = "v2.2.0 2018/02/20 12:00:00";
     
-    public static String getVersionURI() { return getURI() + "/2.1.0"; }
+    public static String getVersionURI() { return getURI() + "/2.2.0"; }
     public static final ObjectProperty hasObservationType = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/bim/smartmobility#hasObservationType" );
     
     public static final ObjectProperty hasPoIType = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/bim/smartmobility#hasPoIType" );

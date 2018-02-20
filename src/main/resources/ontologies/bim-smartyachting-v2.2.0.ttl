@@ -11,13 +11,13 @@
                                             
                                             rdfs:label "symbIoTe Smart Yachting Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.1.0 2017/12/12 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.2.0 2018/02/20 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Smart Yachting part of the Best Practice Information Model of symbIoTe."@en ;
                                             
-                                            owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.1.0> ;
+                                            owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.2.0> ;
                                             
-                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.1.0> .
+                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/smartyachting/2.2.0> .
 
 
 #################################################################
@@ -26,22 +26,6 @@
 #
 #################################################################
 
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#hasConnectionStatus
-
-:hasConnectionStatus rdf:type owl:ObjectProperty ;
-                    
-                    rdfs:domain :Yacht ;
-                    
-                    rdfs:range :ConnectionStatus .
-					
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#connectedInPort
-
-:connectedInPort rdf:type owl:ObjectProperty ;
-                    
-                    rdfs:domain :Yacht ;
-                    
-                    rdfs:range :Port .
 
 
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#causedByFault
@@ -142,10 +126,6 @@
 #    Classes
 #
 #################################################################
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#ConnectionStatus
-
-:ConnectionStatus rdf:type owl:Class .
 
 
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#BlackWaterTank
@@ -380,19 +360,6 @@
 #
 #################################################################
 
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#disconnected
-
-:disconnected rdf:type :ConnectionStatus, owl:NamedIndividual .
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#loRaWAN
-
-:loRaWAN rdf:type :ConnectionStatus, owl:NamedIndividual .
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#wiFi
-
-:wiFi rdf:type :ConnectionStatus, owl:NamedIndividual .
-
-
 ###  http://schema.org/AutoRepair
 
 schema:AutoRepair rdf:type :PotentialSupplierOrganization ,
@@ -505,42 +472,10 @@ schema:Winery rdf:type :PotentialSupplierOrganization ,
 :ConsumableNeed rdf:type owl:NamedIndividual .
 
 
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#Fault
-
-:Fault rdf:type owl:NamedIndividual .
-
-
-
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#HVACFault
 
 :HVACFault rdf:type :Fault ,
                           owl:NamedIndividual .
-
-
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#MaintenanceNeed
-
-:MaintenanceNeed rdf:type owl:NamedIndividual .
-
-
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#PotentialSupplierOrganization
-
-:PotentialSupplierOrganization rdf:type owl:NamedIndividual .
-
-
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#Route
-
-:Route rdf:type owl:NamedIndividual .
-
-
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#RoutePoint
-
-:RoutePoint rdf:type owl:NamedIndividual .
-
 
 
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#automatedSupplyChain
@@ -762,31 +697,211 @@ schema:Winery rdf:type :PotentialSupplierOrganization ,
                                                                         ]
                                                      ] .
 
+###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#smartMooringService
 
+:smartMooringService rdf:type :SmartYachtingService ,
+                                      owl:NamedIndividual ;
+                             
+                             :hasServiceType :smartMooring ;
+                             
+                             core:hasResultType [ rdf:type core:ComplexDatatype ;
+                                                  core:isArray "false"^^xsd:boolean ;
+                                                  core:hasProperty [ rdf:type core:ComplexProperty ;
+																	 core:name "route"^^xsd:string;
+                                                                     core:hasDatatype [ rdf:type core:ComplexDatatype ;
+																		  core:isArray "true"^^xsd:boolean ;
+																		  core:basedOnClass :Route ;
+																		  core:hasProperty [ rdf:type core:ComplexProperty ;
+																							 core:basedOnProperty :hasPoint ;
+																							 core:hasDatatype [ rdf:type core:ComplexDatatype ;
+																												core:basedOnClass :RoutePoint ;
+																												core:hasProperty [ rdf:type core:PrimitiveProperty ;
+																																   core:basedOnProperty :hint ;
+																																   core:hasDatatype core:string
+																																 ] ,
+																																 [ rdf:type core:PrimitiveProperty ;
+																																   core:hasDatatype core:decimal ;
+																																   core:basedOnProperty geo:lat
+																																 ] ,
+																																 [ rdf:type core:PrimitiveProperty ;
+																																   core:basedOnProperty :timestamp ;
+																																   core:hasDatatype core:dateTime
+																																 ] ,
+																																 [ rdf:type core:PrimitiveProperty ;
+																																   core:hasDatatype core:decimal ;
+																																   core:basedOnProperty geo:long
+																																 ]
+																											  ]
+																						   ]
+																		] 
+                                                 ] ;
+												 core:hasProperty [
+													rdf:type core:ComplexProperty ;
+													core:name "observations"^^xsd:string;
+                                                    core:hasDatatype [ rdf:type core:ComplexDatatype ;
+                                                       core:isArray "true"^^xsd:boolean ;
+                                                       core:basedOnClass core:Observation ;
+                                                       core:hasProperty [ rdf:type core:PrimitiveProperty ;
+                                                                          core:basedOnProperty core:resultTime ;
+                                                                          core:hasDatatype core:dateTime
+                                                                        ] ,
+																		[ rdf:type core:ComplexProperty ;
+                                                                          core:basedOnProperty core:hasObservationValue ;
+                                                                          core:hasDatatype [ rdf:type core:ComplexDatatype ;
+                                                                                             core:isArray "true"^^xsd:boolean ;
+                                                                                             core:basedOnClass core:ObservationValue ;
+                                                                                             core:hasProperty [ rdf:type core:PrimitiveProperty ;
+                                                                                                                core:basedOnProperty core:value ;
+                                                                                                                core:hasDatatype core:string
+                                                                                                              ] ,
+																											  [ rdf:type core:ComplexProperty ;
+																												core:basedOnProperty core:hasFeatureOfInterest ;
+																												core:hasDatatype [ rdf:type core:ComplexDatatype ;
+																																   core:basedOnClass core:FeatureOfInterest ;
+																																   core:hasProperty [ rdf:type core:PrimitiveProperty ;
+																																					  core:basedOnProperty core:name ;
+																																					  core:hasDatatype core:string
+																																					]
+																																  ]
+																											   ],
+																											   [ rdf:type core:ComplexProperty ;
+																												core:basedOnProperty core:hasObservedProperty ;
+																												core:hasDatatype [ rdf:type core:ComplexDatatype ;
+																																   core:basedOnClass core:Property ;
+																																   core:hasProperty [ rdf:type core:PrimitiveProperty ;
+																																					  core:basedOnProperty core:name ;
+																																					  core:hasDatatype core:string
+																																					]
+																																  ]
+																											   ],
+																											   [ rdf:type core:ComplexProperty ;
+																												core:basedOnProperty core:hasUnitOfMeasurement ;
+																												core:hasDatatype [ rdf:type core:ComplexDatatype ;
+																																   core:basedOnClass core:UnitOfMeasurement ;
+																																   core:hasProperty [ rdf:type core:PrimitiveProperty ;
+																																					  core:basedOnProperty core:name ;
+																																					  core:hasDatatype core:string
+																																					],
+																																					[ rdf:type core:PrimitiveProperty ;
+																																					  core:basedOnProperty core:symbol ;
+																																					  core:hasDatatype core:string
+																																					]
+																																  ]
+																											   ]
+                                                                                           ]
+                                                                        ]
+                                                     ]
+												 ]
+                                                ] ;
+                             
+                             core:hasParameter [ rdf:type core:Parameter ;
+                                                 core:mandatory "true"^^xsd:boolean ;
+                                                 core:name "yachtID"^^xsd:string ;
+                                                 core:hasDatatype core:string
+                                               ] ;
+							core:hasParameter [ rdf:type core:Parameter ;
+                                                 core:mandatory "true"^^xsd:boolean ;
+                                                 core:name "portID"^^xsd:string ;
+                                                 core:hasDatatype core:string
+                                               ] ;
+							core:hasParameter [ rdf:type core:Parameter ;
+                                                 core:mandatory "false"^^xsd:boolean ;
+                                                 core:name "since"^^xsd:string ;
+                                                 core:hasDatatype core:datetime
+                                               ] .
+											   
+											   
+###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#ascService
 
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#hasPoint
-
-:hasPoint rdf:type owl:NamedIndividual .
-
-
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#hasPotentialSupplier
-
-:hasPotentialSupplier rdf:type owl:NamedIndividual .
-
-
+:ascService rdf:type :SmartYachtingService ,
+                                      owl:NamedIndividual ;
+                             
+                             :hasServiceType :automatedSupplyChain ;
+                             
+                             core:hasResultType [
+								rdf:type core:ComplexDatatype ;
+								core:isArray "false"^^xsd:boolean ;
+								core:hasProperty [ 
+									rdf:type core:ComplexProperty ;
+									core:name "maintenanceNeeds"^^xsd:string;
+									core:hasDatatype [
+										rdf:type core:ComplexDatatype ;
+										core:isArray "true"^^xsd:boolean ;
+										core:basedOnClass :MaintenanceNeed ;
+										core:hasProperty [ rdf:type core:ComplexProperty ;
+														  core:basedOnProperty :hasPotentialSupplier ;
+														  core:hasDatatype [ rdf:type core:ComplexDatatype ;
+																			 core:isArray "true"^^xsd:boolean ;
+																			 core:basedOnClass :PotentialSupplierOrganization ;
+																			 core:hasProperty [ rdf:type core:PrimitiveProperty ;
+																								core:basedOnProperty core:name ;
+																								core:hasDatatype core:string
+																							  ]
+																		   ]
+														] ,
+														[ rdf:type core:ComplexProperty ;
+														  core:basedOnProperty :causedByFault ;
+														  core:hasDatatype [ rdf:type core:ComplexDatatype ;
+																			 core:basedOnClass :Fault ;
+																			 core:hasProperty [ rdf:type core:PrimitiveProperty ;
+																								core:basedOnProperty core:name ;
+																								core:hasDatatype core:string
+																							  ]
+																		   ]
+														] ,
+														[ rdf:type core:PrimitiveProperty ;
+														  core:basedOnProperty :occurance ;
+														  core:hasDatatype core:dateTime
+														] ,
+														[ rdf:type core:PrimitiveProperty ;
+														 core:isArray "true"^^xsd:boolean ;
+														 core:basedOnProperty core:description ;
+														 core:hasDatatype core:langString
+													   ]
+									]
+								] ;
+								core:hasProperty [ 
+									rdf:type core:ComplexProperty ;
+									core:name "consumableNeeds"^^xsd:string;
+									core:hasDatatype [
+										 rdf:type core:ComplexDatatype ;
+                                                      core:isArray "true"^^xsd:boolean ;
+                                                      core:basedOnClass :ConsumableNeed ;
+                                                      core:hasProperty [ rdf:type core:PrimitiveProperty ;
+																		 core:isArray "true"^^xsd:boolean ;
+                                                                         core:basedOnProperty core:description ;
+                                                                         core:hasDatatype core:langString
+                                                                       ] ,
+                                                                       [ rdf:type core:ComplexProperty ;
+                                                                         core:basedOnProperty :hasPotentialSupplier ;
+                                                                         core:hasDatatype [ rdf:type core:ComplexDatatype ;
+                                                                                            core:isArray "true"^^xsd:boolean ;
+                                                                                            core:basedOnClass :PotentialSupplierOrganization ;
+                                                                                            core:hasProperty [ rdf:type core:PrimitiveProperty ;
+                                                                                                               core:basedOnProperty core:name ;
+                                                                                                               core:hasDatatype core:string
+                                                                                                             ]
+                                                                                          ]
+                                                                       ]
+									]
+								] ;
+							] ;
+                             
+                             core:hasParameter [ rdf:type core:Parameter ;
+                                                 core:mandatory "true"^^xsd:boolean ;
+                                                 core:name "yachtID"^^xsd:string ;
+                                                 core:hasDatatype core:string
+                                               ] ;
+							 core:hasParameter [ rdf:type core:Parameter ;
+                                                 core:mandatory "true"^^xsd:boolean ;
+                                                 core:name "portID"^^xsd:string ;
+                                                 core:hasDatatype core:string
+                                               ].											   
 
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#hydraulicFault
 
 :hydraulicFault rdf:type :Fault ,
                                owl:NamedIndividual .
-
-
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#occurance
-
-:occurance rdf:type owl:NamedIndividual .
-
 
 
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#smartMooring
@@ -800,13 +915,6 @@ schema:Winery rdf:type :PotentialSupplierOrganization ,
 
 :tankLevel rdf:type core:Property ,
                           owl:NamedIndividual .
-
-
-
-###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#timestamp
-
-:timestamp rdf:type owl:NamedIndividual .
-
 
 
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#weelhouseFault

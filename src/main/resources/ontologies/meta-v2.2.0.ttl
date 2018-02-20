@@ -11,9 +11,9 @@
 
 <http://www.symbiote-h2020.eu/ontology/meta> rdf:type owl:Ontology ;
                                               owl:versionIRI <http://www.symbiote-h2020.eu/ontology/meta/2.2.0> ;
-                                              owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.1.0> ,
+                                              owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.2.0> ,
                                                           <http://www.symbiote-h2020.eu/ontology/cache/align> ;
-                                              owl:versionInfo "v 2.2.0 2018/01/29 12:00:00"^^xsd:string ;
+                                              owl:versionInfo "v 2.2.0 2018/02/20 12:00:00"^^xsd:string ;
                                               rdfs:comment "Meta Information Model of the symbIoTe project."@en ;
                                               rdfs:label "symbIoTe Meta Information Model"@en .
 
