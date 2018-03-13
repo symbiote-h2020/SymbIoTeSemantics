@@ -466,7 +466,7 @@
 :partsPerMillion rdf:type qu-dim:DimensionlessUnit ,
                               owl:NamedIndividual ;
 										 							   
-                     core:name "partsPerBillion" ;
+                     core:name "partsPerMillion" ;
                      
                      core:description "parts per million" ;
                      
