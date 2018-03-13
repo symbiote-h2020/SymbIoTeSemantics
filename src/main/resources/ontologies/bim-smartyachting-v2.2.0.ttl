@@ -11,7 +11,7 @@
                                             
                                             rdfs:label "symbIoTe Smart Yachting Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.2.0 2018/02/20 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.2.0 2018/03/13 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Smart Yachting part of the Best Practice Information Model of symbIoTe."@en ;
                                             
@@ -488,7 +488,8 @@ schema:Winery rdf:type :PotentialSupplierOrganization ,
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#averageFuelConsumptionPerNauticalMile
 
 :averageFuelConsumptionPerNauticalMile rdf:type core:Property ,
-                                                      owl:NamedIndividual .
+                                                      owl:NamedIndividual  ;
+					core:name "averageFuelConsumptionPerNauticalMile"^^xsd:string .
 
 
 
@@ -515,7 +516,8 @@ schema:Winery rdf:type :PotentialSupplierOrganization ,
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#exhaustTemperature
 
 :exhaustTemperature rdf:type core:Property ,
-                                   owl:NamedIndividual .
+                                   owl:NamedIndividual  ;
+					core:name "exhaustTemperature"^^xsd:string .
 
 
 
@@ -914,7 +916,8 @@ schema:Winery rdf:type :PotentialSupplierOrganization ,
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#tankLevel
 
 :tankLevel rdf:type core:Property ,
-                          owl:NamedIndividual .
+                          owl:NamedIndividual ;
+					core:name "tankLevel"^^xsd:string .
 
 
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartyachting#weelhouseFault

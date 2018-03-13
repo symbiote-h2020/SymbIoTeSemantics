@@ -11,7 +11,7 @@
                                             
                                             rdfs:label "symbIoTe Smart Residence Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.2.0 2018/02/20 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.2.0 2018/03/13 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Smart Residence part of the Best Practice Information Model of symbIoTe."@en ;
                                             
@@ -446,7 +446,8 @@
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartresidence#activityState
 
 :activityState rdf:type core:Property ,
-                              owl:NamedIndividual .
+                              owl:NamedIndividual  ;
+					core:name "activityState"^^xsd:string .
 
 
 
@@ -462,7 +463,8 @@
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartresidence#color
 
 :color rdf:type core:Property ,
-                      owl:NamedIndividual .
+                      owl:NamedIndividual  ;
+					core:name "color"^^xsd:string .
 
 
 
@@ -487,21 +489,24 @@
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartresidence#onOffState
 
 :onOffState rdf:type core:Property ,
-                           owl:NamedIndividual .
+                           owl:NamedIndividual  ;
+					core:name "onOffState"^^xsd:string .
 
 
 
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartresidence#openCloseState
 
 :openCloseState rdf:type core:Property ,
-                               owl:NamedIndividual .
+                               owl:NamedIndividual  ;
+					core:name "openCloseState"^^xsd:string .
 
 
 
 ###  http://www.symbiote-h2020.eu/ontology/bim/smartresidence#position
 
 :position rdf:type core:Property ,
-                         owl:NamedIndividual .
+                         owl:NamedIndividual  ;
+					core:name "position"^^xsd:string .
 
 
 

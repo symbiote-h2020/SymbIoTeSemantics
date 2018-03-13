@@ -196,7 +196,7 @@
                                 
                                 qu:quantityKind property:surfaceDensityRate ;
                                 
-                                qu:referenceUnit :kilogramPerSquareMetreSecond .
+                                qu:referenceUnit qu-unit:kilogramPerSquareMetreSecond .
 
 
 
@@ -280,7 +280,7 @@
                                   
                                   qu:quantityKind property:surfaceDensityRate ;
                                   
-                                  qu:referenceUnit :kilogramPerSquareMetreSecond .
+                                  qu:referenceUnit qu-unit:kilogramPerSquareMetreSecond .
 
 
 
@@ -385,7 +385,7 @@
                                
                                qu:quantityKind property:surfaceDensityRate ;
                                
-                               qu:referenceUnit :kilogramPerSquareMetreSecond .
+                               qu:referenceUnit qu-unit:kilogramPerSquareMetreSecond .
 
 
 
