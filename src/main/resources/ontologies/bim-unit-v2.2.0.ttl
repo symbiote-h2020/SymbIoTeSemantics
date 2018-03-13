@@ -122,21 +122,6 @@
 
 
 
-###  http://www.symbiote-h2020.eu/ontology/bim/unit#kilogramPerSquareMetreSecond
-
-:kilogramPerSquareMetreSecond rdf:type :SurfaceDensityRateUnit ,
-                                           owl:NamedIndividual ;
-							   
-								  core:name "kilogramPerSquareMetreSecond" ;
-                                  
-                                  core:description "kilogram per square metre second" ;
-                                  
-                                  qu:symbol "kg/m2s"^^xsd:string ;
-                                  
-                                  qu:quantityKind property:surfaceDensityRate .
-
-
-
 ###  http://www.symbiote-h2020.eu/ontology/bim/unit#kilogramSecondPerCubicMetre
 
 :kilogramSecondPerCubicMetre rdf:type qu-dim:ExposureUnit ,
