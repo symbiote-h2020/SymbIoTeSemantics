@@ -16,13 +16,14 @@
                                             
                                             rdfs:label "symbIoTe Best Practice Information Model"@en ;
                                             
-                                            owl:versionInfo "v2.2.0 2018/02/20 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.2.0 2018/03/13 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Best Practice Information Model of symbIoTe."@en ;
                                             
                                             owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.2.0> ,
 														<http://www.symbiote-h2020.eu/ontology/bim/unit/2.2.0> ,
 														<http://www.symbiote-h2020.eu/ontology/bim/property/2.2.0> ,
+														<http://www.symbiote-h2020.eu/ontology/bim/qu-align/2.2.0> ,
 														<http://www.symbiote-h2020.eu/ontology/bim/smartmobility/2.2.0> , 
 														<http://www.symbiote-h2020.eu/ontology/bim/smartresidence/2.2.0> ,
 														<http://www.symbiote-h2020.eu/ontology/bim/smartstadium/2.2.0> ,
