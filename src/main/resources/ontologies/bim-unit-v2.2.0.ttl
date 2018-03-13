@@ -14,7 +14,7 @@
                                             
                                             rdfs:label "symbIoTe Best Practice Information Model Units"@en ;
                                             
-                                            owl:versionInfo "v2.2.0 2018/02/20 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.2.0 2018/03/13 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Unit part of the Best Practice Information Model of symbIoTe."@en ;
                                             
@@ -63,6 +63,8 @@
 :beatsPerMinute rdf:type qu-dim:FrequencyUnit ,
                              owl:NamedIndividual ;
                     
+					core:name "beatsPerMinute" ;
+					
                     core:description "beats per minute" ;
                     
                     qu:conversionOffset "0.0"^^xsd:double ;
@@ -81,7 +83,9 @@
 
 :breathsPerMinute rdf:type qu-dim:FrequencyUnit ,
                                owl:NamedIndividual ;
-                      
+							   
+                      core:name "breathsPerMinute" ;
+					  
                       core:description "breaths per minute" ;
                       
                       qu:conversionOffset "0.0"^^xsd:double ;
@@ -100,6 +104,8 @@
 
 :degreeFahrenheit rdf:type qu-dim:TemperatureUnit ,
                                owl:NamedIndividual ;
+							   
+                      core:name "degreeFahrenheit" ;					                        
                       
                       core:description "degree Fahrenheit" ;
                       
@@ -120,6 +126,8 @@
 
 :kilogramPerSquareMetreSecond rdf:type :SurfaceDensityRateUnit ,
                                            owl:NamedIndividual ;
+							   
+								  core:name "kilogramPerSquareMetreSecond" ;
                                   
                                   core:description "kilogram per square metre second" ;
                                   
@@ -133,6 +141,8 @@
 
 :kilogramSecondPerCubicMetre rdf:type qu-dim:ExposureUnit ,
                                           owl:NamedIndividual ;
+							   
+                                 core:name "kilogramSecondPerCubicMetre" ;
                                  
                                  core:description "kilogram second per cubic metre" ;
                                  
@@ -146,6 +156,8 @@
 
 :microgramDayPerCubicMetre rdf:type qu-dim:ExposureUnit ,
                                         owl:NamedIndividual ;
+							   
+                               core:name "microgramDayPerCubicMetre" ;
                                
                                core:description "microgram day per cubic metre" ;
                                
@@ -165,6 +177,8 @@
 
 :microgramHourPerCubicMetre rdf:type qu-dim:ExposureUnit ,
                                          owl:NamedIndividual ;
+										 							   
+                                core:name "microgramHourPerCubicMetre" ;
                                 
                                 core:description "microgram hour per cubic metre" ;
                                 
@@ -184,6 +198,8 @@
 
 :microgramPerSquareMetreDay rdf:type :SurfaceDensityRateUnit ,
                                          owl:NamedIndividual ;
+										 							   
+                                core:name "microgramPerSquareMetreDay" ;
                                 
                                 core:description "microgram per square metre day" ;
                                 
@@ -203,6 +219,8 @@
 
 :milligramDayPerCubicMetre rdf:type qu-dim:ExposureUnit ,
                                         owl:NamedIndividual ;
+										 							   
+                               core:name "milligramDayPerCubicMetre" ;
                                
                                core:description "milligram day per cubic metre" ;
                                
@@ -222,6 +240,8 @@
 
 :milligramHourPerCubicMetre rdf:type qu-dim:ExposureUnit ,
                                          owl:NamedIndividual ;
+										 							   
+                                core:name "milligramHourPerCubicMetre" ;
                                 
                                 core:description "milligram hour per cubic metre" ;
                                 
@@ -241,6 +261,8 @@
 
 :milligramPerDecilitre rdf:type qu-dim:DensityUnit ,
                                     owl:NamedIndividual ;
+										 							   
+                           core:name "milligramPerDecilitre" ;
                            
                            core:description "milligram per decilitre" ;
                            
@@ -260,6 +282,8 @@
 
 :milligramPerSquareMetreMonth rdf:type :SurfaceDensityRateUnit ,
                                            owl:NamedIndividual ;
+										 							   
+                                  core:name "milligramPerSquareMetreMonth" ;
                                   
                                   core:description "milligram per square metre month" ;
                                   
@@ -279,6 +303,8 @@
 
 :nanogram rdf:type qu-dim:MassUnit ,
                        owl:NamedIndividual ;
+										 							   
+              core:name "nanogram" ;
               
               core:description "ng" ;
               
@@ -298,6 +324,8 @@
 
 :nanogramPerCubicMetre rdf:type qu-dim:DensityUnit ,
                                     owl:NamedIndividual ;
+										 							   
+                           core:name "nanogramPerCubicMetre" ;
                            
                            core:description "nanogram per cubic metre" ;
                            
@@ -317,6 +345,8 @@
 
 :nanogramPerLitre rdf:type qu-dim:DensityUnit ,
                                owl:NamedIndividual ;
+							   
+                      core:name "nanogramPerLitre" ;
                       
                       core:description "nanogram per litre" ;
                       
@@ -336,6 +366,8 @@
 
 :nanogramPerSquareMetre rdf:type qu-dim:SurfaceDensityUnit ,
                                      owl:NamedIndividual ;
+										 							   
+                            core:name "nanogramPerSquareMetre" ;
                             
                             core:description "nanogram per square metre" ;
                             
@@ -355,6 +387,8 @@
 
 :nanogramPerSquareMetreDay rdf:type :SurfaceDensityRateUnit ,
                                         owl:NamedIndividual ;
+										 							   
+                               core:name "nanogramPerSquareMetreDay" ;
                                
                                core:description "nanogram per square metre day" ;
                                
@@ -374,6 +408,8 @@
 
 :onePerMeter rdf:type qu-dim:LinearDensityUnit ,
                           owl:NamedIndividual ;
+										 							   
+                 core:name "onePerMeter" ;
                  
                  core:description "one per meter" ;
                  
@@ -387,6 +423,8 @@
 
 :onePerMinute rdf:type qu-dim:FrequencyUnit ,
                            owl:NamedIndividual ;
+										 							   
+                  core:name "onePerMinute" ;
                   
                   core:description "1 per minute" ;
                   
@@ -406,6 +444,8 @@
 
 :partsPerBillion rdf:type qu-dim:DimensionlessUnit ,
                               owl:NamedIndividual ;
+										 							   
+                     core:name "partsPerBillion" ;
                      
                      core:description "parts per billion" ;
                      
@@ -425,6 +465,8 @@
 
 :partsPerMillion rdf:type qu-dim:DimensionlessUnit ,
                               owl:NamedIndividual ;
+										 							   
+                     core:name "partsPerBillion" ;
                      
                      core:description "parts per million" ;
                      
@@ -438,6 +480,8 @@
 
 :partsPerTrillion rdf:type qu-dim:DimensionlessUnit ,
                                owl:NamedIndividual ;
+										 							   
+                      core:name "partsPerTrillion" ;
                       
                       core:description "parts per trillion" ;
                       
@@ -457,6 +501,8 @@
 
 :picogram rdf:type qu-dim:MassUnit ,
                        owl:NamedIndividual ;
+										 							   
+              core:name "picogram" ;
               
               core:description "pg" ;
               
@@ -476,6 +522,8 @@
 
 :picogramPerCubicMetre rdf:type qu-dim:DensityUnit ,
                                     owl:NamedIndividual ;
+										 							   
+                           core:name "picogramPerCubicMetre" ;
                            
                            core:description "picogram per cubic metre" ;
                            
@@ -495,6 +543,8 @@
 
 :revolutionsPerMinute rdf:type qu-dim:RotationalSpeedUnit ,
                                    owl:NamedIndividual ;
+										 							   
+                          core:name "revolutionsPerMinute" ;
                           
                           core:description "rounds per minute" ;
                           

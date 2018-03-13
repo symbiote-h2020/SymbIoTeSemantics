@@ -12,7 +12,7 @@
                                             
                                             rdfs:label "Alignment between QU ontology and symbIoTe Best Practice Information Model Units"@en ;
                                             
-                                            owl:versionInfo "v2.2.0 2018/02/20 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.2.0 2018/03/13 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "This ontology defines the alignment betweens the QU ontology and the unit part of the Best Practice Information Model of symbIoTe."@en ;
                                             
@@ -37,809 +37,1611 @@ qu:symbol owl:equivalentProperty core:symbol .
 #
 #    Units
 #     - mapping qu:unit -> rdfs:label to core:description
+#  						   last part of URI to core:name
 #
 #################################################################											
 											
+qu-unit:millimolePerGram	core:name	"millimolePerGram"^^xsd:string . 
 qu-unit:millimolePerGram	core:description	"millimole per gram"^^xsd:string .
+qu-unit:millimolePerKilogram	core:name	"millimolePerKilogram"^^xsd:string . 
 qu-unit:millimolePerKilogram	core:description	"millimole per kilogram"^^xsd:string .
+qu-unit:molePerKilogram	core:name	"molePerKilogram"^^xsd:string . 
 qu-unit:molePerKilogram	core:description	"mole per kilogram"^^xsd:string .
+qu-unit:gon	core:name	"gon"^^xsd:string . 
 qu-unit:gon	core:description	"gon"^^xsd:string .
+qu-unit:milliradian	core:name	"milliradian"^^xsd:string . 
 qu-unit:milliradian	core:description	"milliradian"^^xsd:string .
+qu-unit:secondUnitOfAngle	core:name	"secondUnitOfAngle"^^xsd:string . 
 qu-unit:secondUnitOfAngle	core:description	"second [unit of angle]"^^xsd:string .
+qu-unit:microradian	core:name	"microradian"^^xsd:string . 
 qu-unit:microradian	core:description	"microradian"^^xsd:string .
+qu-unit:degreeUnitOfAngle	core:name	"degreeUnitOfAngle"^^xsd:string . 
 qu-unit:degreeUnitOfAngle	core:description	"degree [unit of angle]"^^xsd:string .
+qu-unit:minuteUnitOfAngle	core:name	"minuteUnitOfAngle"^^xsd:string . 
 qu-unit:minuteUnitOfAngle	core:description	"minute [unit of angle]"^^xsd:string .
+qu-unit:radian	core:name	"radian"^^xsd:string . 
 qu-unit:radian	core:description	"radian"^^xsd:string .
+qu-unit:grayPerSecond	core:name	"grayPerSecond"^^xsd:string . 
 qu-unit:grayPerSecond	core:description	"gray per second"^^xsd:string .
+qu-unit:kilobecquerel	core:name	"kilobecquerel"^^xsd:string . 
 qu-unit:kilobecquerel	core:description	"kilobecquerel"^^xsd:string .
+qu-unit:kilocurie	core:name	"kilocurie"^^xsd:string . 
 qu-unit:kilocurie	core:description	"kilocurie"^^xsd:string .
+qu-unit:becquerel	core:name	"becquerel"^^xsd:string . 
 qu-unit:becquerel	core:description	"becquerel"^^xsd:string .
+qu-unit:gigabecquerel	core:name	"gigabecquerel"^^xsd:string . 
 qu-unit:gigabecquerel	core:description	"gigabecquerel"^^xsd:string .
+qu-unit:megabecquerel	core:name	"megabecquerel"^^xsd:string . 
 qu-unit:megabecquerel	core:description	"megabecquerel"^^xsd:string .
+qu-unit:microbecquerel	core:name	"microbecquerel"^^xsd:string . 
 qu-unit:microbecquerel	core:description	"microbecquerel"^^xsd:string .
+qu-unit:curie	core:name	"curie"^^xsd:string . 
 qu-unit:curie	core:description	"curie"^^xsd:string .
+qu-unit:microcurie	core:name	"microcurie"^^xsd:string . 
 qu-unit:microcurie	core:description	"microcurie"^^xsd:string .
+qu-unit:millicurie	core:name	"millicurie"^^xsd:string . 
 qu-unit:millicurie	core:description	"millicurie"^^xsd:string .
+qu-unit:poundForcePerSquareInchDegreeFahrenheit	core:name	"poundForcePerSquareInchDegreeFahrenheit"^^xsd:string . 
 qu-unit:poundForcePerSquareInchDegreeFahrenheit	core:description	"pound-force per square inch degree Fahrenheit"^^xsd:string .
+qu-unit:pascalPerKelvin	core:name	"pascalPerKelvin"^^xsd:string . 
 qu-unit:pascalPerKelvin	core:description	"pascal per kelvin"^^xsd:string .
+qu-unit:gray	core:name	"gray"^^xsd:string . 
 qu-unit:gray	core:description	"gray"^^xsd:string .
+qu-unit:radAbsorbedDose	core:name	"radAbsorbedDose"^^xsd:string . 
 qu-unit:radAbsorbedDose	core:description	"rad (Absorbed dose)"^^xsd:string .
+qu-unit:milligray	core:name	"milligray"^^xsd:string . 
 qu-unit:milligray	core:description	"milligray"^^xsd:string .
+qu-unit:ergPerCubicCentimetre	core:name	"ergPerCubicCentimetre"^^xsd:string . 
 qu-unit:ergPerCubicCentimetre	core:description	"erg per cubic centimetre"^^xsd:string .
+qu-unit:joulePerCubicMetre	core:name	"joulePerCubicMetre"^^xsd:string . 
 qu-unit:joulePerCubicMetre	core:description	"joule per cubic metre"^^xsd:string .
+qu-unit:megajoulePerCubicMetre	core:name	"megajoulePerCubicMetre"^^xsd:string . 
 qu-unit:megajoulePerCubicMetre	core:description	"megajoule per cubic metre"^^xsd:string .
+qu-unit:clo	core:name	"clo"^^xsd:string . 
 qu-unit:clo	core:description	"clo"^^xsd:string .
+qu-unit:degreeFahrenheitHourSquareFootPerBritishThermalUnitInternationalTable	core:name	"degreeFahrenheitHourSquareFootPerBritishThermalUnitInternationalTable"^^xsd:string . 
 qu-unit:degreeFahrenheitHourSquareFootPerBritishThermalUnitInternationalTable	core:description	"degree Fahrenheit hour square foot per British thermal unit (international table)"^^xsd:string .
+qu-unit:squareMetreKelvinPerWatt	core:name	"squareMetreKelvinPerWatt"^^xsd:string . 
 qu-unit:squareMetreKelvinPerWatt	core:description	"square metre kelvin per watt"^^xsd:string .
+qu-unit:degreeFahrenheitHourSquareFootPerBritishThermalUnitThermochemical	core:name	"degreeFahrenheitHourSquareFootPerBritishThermalUnitThermochemical"^^xsd:string . 
 qu-unit:degreeFahrenheitHourSquareFootPerBritishThermalUnitThermochemical	core:description	"degree Fahrenheit hour square foot per British thermal unit (thermochemical)"^^xsd:string .
+qu-unit:millicoulombPerSquareMetre	core:name	"millicoulombPerSquareMetre"^^xsd:string . 
 qu-unit:millicoulombPerSquareMetre	core:description	"millicoulomb per square metre"^^xsd:string .
+qu-unit:megacoulombPerSquareMetre	core:name	"megacoulombPerSquareMetre"^^xsd:string . 
 qu-unit:megacoulombPerSquareMetre	core:description	"megacoulomb per square metre"^^xsd:string .
+qu-unit:coulombPerSquareCentimetre	core:name	"coulombPerSquareCentimetre"^^xsd:string . 
 qu-unit:coulombPerSquareCentimetre	core:description	"coulomb per square centimetre"^^xsd:string .
+qu-unit:coulombPerSquareMillimetre	core:name	"coulombPerSquareMillimetre"^^xsd:string . 
 qu-unit:coulombPerSquareMillimetre	core:description	"coulomb per square millimetre"^^xsd:string .
+qu-unit:coulombPerSquareMetre	core:name	"coulombPerSquareMetre"^^xsd:string . 
 qu-unit:coulombPerSquareMetre	core:description	"coulomb per square metre"^^xsd:string .
+qu-unit:microcoulombPerSquareMetre	core:name	"microcoulombPerSquareMetre"^^xsd:string . 
 qu-unit:microcoulombPerSquareMetre	core:description	"microcoulomb per square metre"^^xsd:string .
+qu-unit:kilocoulombPerSquareMetre	core:name	"kilocoulombPerSquareMetre"^^xsd:string . 
 qu-unit:kilocoulombPerSquareMetre	core:description	"kilocoulomb per square metre"^^xsd:string .
+qu-unit:squareMetrePerKilogram	core:name	"squareMetrePerKilogram"^^xsd:string . 
 qu-unit:squareMetrePerKilogram	core:description	"square metre per kilogram"^^xsd:string .
+qu-unit:squareCentimetrePerGram	core:name	"squareCentimetrePerGram"^^xsd:string . 
 qu-unit:squareCentimetrePerGram	core:description	"square centimetre per gram"^^xsd:string .
+qu-unit:reciprocalJoulePerCubicMetre	core:name	"reciprocalJoulePerCubicMetre"^^xsd:string . 
 qu-unit:reciprocalJoulePerCubicMetre	core:description	"reciprocal joule per cubic metre"^^xsd:string .
+qu-unit:reciprocalElectronVoltPerCubicMetre	core:name	"reciprocalElectronVoltPerCubicMetre"^^xsd:string . 
 qu-unit:reciprocalElectronVoltPerCubicMetre	core:description	"reciprocal electron volt per cubic metre"^^xsd:string .
+qu-unit:kilojoulePerMole	core:name	"kilojoulePerMole"^^xsd:string . 
 qu-unit:kilojoulePerMole	core:description	"kilojoule per mole"^^xsd:string .
+qu-unit:joulePerMole	core:name	"joulePerMole"^^xsd:string . 
 qu-unit:joulePerMole	core:description	"joule per mole"^^xsd:string .
+qu-unit:jouleSecond	core:name	"jouleSecond"^^xsd:string . 
 qu-unit:jouleSecond	core:description	"joule second"^^xsd:string .
+qu-unit:gramPerMole	core:name	"gramPerMole"^^xsd:string . 
 qu-unit:gramPerMole	core:description	"gram per mole"^^xsd:string .
+qu-unit:kilogramPerKilomol	core:name	"kilogramPerKilomol"^^xsd:string . 
 qu-unit:kilogramPerKilomol	core:description	"kilogram per kilomol"^^xsd:string .
+qu-unit:kilogramPerMole	core:name	"kilogramPerMole"^^xsd:string . 
 qu-unit:kilogramPerMole	core:description	"kilogram per mole"^^xsd:string .
+qu-unit:luxSecond	core:name	"luxSecond"^^xsd:string . 
 qu-unit:luxSecond	core:description	"lux second"^^xsd:string .
+qu-unit:reciprocalMole	core:name	"reciprocalMole"^^xsd:string . 
 qu-unit:reciprocalMole	core:description	"reciprocal mole"^^xsd:string .
+qu-unit:terahertz	core:name	"terahertz"^^xsd:string . 
 qu-unit:terahertz	core:description	"terahertz"^^xsd:string .
+qu-unit:kilohertz	core:name	"kilohertz"^^xsd:string . 
 qu-unit:kilohertz	core:description	"kilohertz"^^xsd:string .
+qu-unit:hertz	core:name	"hertz"^^xsd:string . 
 qu-unit:hertz	core:description	"hertz"^^xsd:string .
+qu-unit:megahertz	core:name	"megahertz"^^xsd:string . 
 qu-unit:megahertz	core:description	"megahertz"^^xsd:string .
+qu-unit:gigahertz	core:name	"gigahertz"^^xsd:string . 
 qu-unit:gigahertz	core:description	"gigahertz"^^xsd:string .
+qu-unit:litrePerKilogram	core:name	"litrePerKilogram"^^xsd:string . 
 qu-unit:litrePerKilogram	core:description	"litre per kilogram"^^xsd:string .
+qu-unit:millilitrePerKilogram	core:name	"millilitrePerKilogram"^^xsd:string . 
 qu-unit:millilitrePerKilogram	core:description	"millilitre per kilogram"^^xsd:string .
+qu-unit:decilitrePerGram	core:name	"decilitrePerGram"^^xsd:string . 
 qu-unit:decilitrePerGram	core:description	"decilitre per gram"^^xsd:string .
+qu-unit:cubicMetrePerKilogram	core:name	"cubicMetrePerKilogram"^^xsd:string . 
 qu-unit:cubicMetrePerKilogram	core:description	"cubic metre per kilogram"^^xsd:string .
+qu-unit:wattPerSteradianSquareMetre	core:name	"wattPerSteradianSquareMetre"^^xsd:string . 
 qu-unit:wattPerSteradianSquareMetre	core:description	"watt per steradian square metre"^^xsd:string .
+qu-unit:kilogramPerSquareMetreSecond	core:name	"kilogramPerSquareMetreSecond"^^xsd:string . 
 qu-unit:kilogramPerSquareMetreSecond	core:description	"kilogram per square metre second"^^xsd:string .
+qu-unit:joulePerSquareMetre	core:name	"joulePerSquareMetre"^^xsd:string . 
 qu-unit:joulePerSquareMetre	core:description	"joule per square metre"^^xsd:string .
+qu-unit:millivoltPerKelvin	core:name	"millivoltPerKelvin"^^xsd:string . 
 qu-unit:millivoltPerKelvin	core:description	"millivolt per kelvin"^^xsd:string .
+qu-unit:voltPerKelvin	core:name	"voltPerKelvin"^^xsd:string . 
 qu-unit:voltPerKelvin	core:description	"volt per kelvin"^^xsd:string .
+qu-unit:becquerelPerCubicMetre	core:name	"becquerelPerCubicMetre"^^xsd:string . 
 qu-unit:becquerelPerCubicMetre	core:description	"becquerel per cubic metre"^^xsd:string .
+qu-unit:centimetreOfMercury	core:name	"centimetreOfMercury"^^xsd:string . 
 qu-unit:centimetreOfMercury	core:description	"centimetre of mercury"^^xsd:string .
+qu-unit:kilopascal	core:name	"kilopascal"^^xsd:string . 
 qu-unit:kilopascal	core:description	"kilopascal"^^xsd:string .
+qu-unit:millibar	core:name	"millibar"^^xsd:string . 
 qu-unit:millibar	core:description	"millibar"^^xsd:string .
+qu-unit:kilogramForcePerSquareCentimetre	core:name	"kilogramForcePerSquareCentimetre"^^xsd:string . 
 qu-unit:kilogramForcePerSquareCentimetre	core:description	"kilogram-force per square centimetre"^^xsd:string .
+qu-unit:newtonPerSquareMetre	core:name	"newtonPerSquareMetre"^^xsd:string . 
 qu-unit:newtonPerSquareMetre	core:description	"newton per square metre"^^xsd:string .
+qu-unit:conventionalMillimetreOfMercury	core:name	"conventionalMillimetreOfMercury"^^xsd:string . 
 qu-unit:conventionalMillimetreOfMercury	core:description	"conventional millimetre of mercury"^^xsd:string .
+qu-unit:dynePerSquareCentimetre	core:name	"dynePerSquareCentimetre"^^xsd:string . 
 qu-unit:dynePerSquareCentimetre	core:description	"dyne per square centimetre"^^xsd:string .
+qu-unit:micropascal	core:name	"micropascal"^^xsd:string . 
 qu-unit:micropascal	core:description	"micropascal"^^xsd:string .
+qu-unit:hectobar	core:name	"hectobar"^^xsd:string . 
 qu-unit:hectobar	core:description	"hectobar"^^xsd:string .
+qu-unit:standardAtmosphere	core:name	"standardAtmosphere"^^xsd:string . 
 qu-unit:standardAtmosphere	core:description	"standard atmosphere"^^xsd:string .
+qu-unit:conventionalMillimetreOfWater	core:name	"conventionalMillimetreOfWater"^^xsd:string . 
 qu-unit:conventionalMillimetreOfWater	core:description	"conventional millimetre of water"^^xsd:string .
+qu-unit:torr	core:name	"torr"^^xsd:string . 
 qu-unit:torr	core:description	"torr"^^xsd:string .
+qu-unit:kilobar	core:name	"kilobar"^^xsd:string . 
 qu-unit:kilobar	core:description	"kilobar"^^xsd:string .
+qu-unit:kilogramForcePerSquareMillimetre	core:name	"kilogramForcePerSquareMillimetre"^^xsd:string . 
 qu-unit:kilogramForcePerSquareMillimetre	core:description	"kilogram-force per square millimetre"^^xsd:string .
+qu-unit:conventionalCentimetreOfWater	core:name	"conventionalCentimetreOfWater"^^xsd:string . 
 qu-unit:conventionalCentimetreOfWater	core:description	"conventional centimetre of water"^^xsd:string .
+qu-unit:microbar	core:name	"microbar"^^xsd:string . 
 qu-unit:microbar	core:description	"microbar"^^xsd:string .
+qu-unit:gramForcePerSquareCentimetre	core:name	"gramForcePerSquareCentimetre"^^xsd:string . 
 qu-unit:gramForcePerSquareCentimetre	core:description	"gram-force per square centimetre"^^xsd:string .
+qu-unit:kilogramForcePerSquareMetre	core:name	"kilogramForcePerSquareMetre"^^xsd:string . 
 qu-unit:kilogramForcePerSquareMetre	core:description	"kilogram-force per square metre"^^xsd:string .
+qu-unit:pascal	core:name	"pascal"^^xsd:string . 
 qu-unit:pascal	core:description	"pascal"^^xsd:string .
+qu-unit:megapascal	core:name	"megapascal"^^xsd:string . 
 qu-unit:megapascal	core:description	"megapascal"^^xsd:string .
+qu-unit:gigapascal	core:name	"gigapascal"^^xsd:string . 
 qu-unit:gigapascal	core:description	"gigapascal"^^xsd:string .
+qu-unit:technicalAtmosphere	core:name	"technicalAtmosphere"^^xsd:string . 
 qu-unit:technicalAtmosphere	core:description	"technical atmosphere"^^xsd:string .
+qu-unit:poundForcePerSquareFoot	core:name	"poundForcePerSquareFoot"^^xsd:string . 
 qu-unit:poundForcePerSquareFoot	core:description	"pound-force per square foot"^^xsd:string .
+qu-unit:decapascal	core:name	"decapascal"^^xsd:string . 
 qu-unit:decapascal	core:description	"decapascal"^^xsd:string .
+qu-unit:footOfMercury	core:name	"footOfMercury"^^xsd:string . 
 qu-unit:footOfMercury	core:description	"foot of mercury"^^xsd:string .
+qu-unit:footOfWater	core:name	"footOfWater"^^xsd:string . 
 qu-unit:footOfWater	core:description	"foot of water"^^xsd:string .
+qu-unit:newtonPerSquareMillimetre	core:name	"newtonPerSquareMillimetre"^^xsd:string . 
 qu-unit:newtonPerSquareMillimetre	core:description	"newton per square millimetre"^^xsd:string .
+qu-unit:barUnitOfPressure	core:name	"barUnitOfPressure"^^xsd:string . 
 qu-unit:barUnitOfPressure	core:description	"bar [unit of pressure]"^^xsd:string .
+qu-unit:poundForcePerSquareInch	core:name	"poundForcePerSquareInch"^^xsd:string . 
 qu-unit:poundForcePerSquareInch	core:description	"pound-force per square inch"^^xsd:string .
+qu-unit:hectopascal	core:name	"hectopascal"^^xsd:string . 
 qu-unit:hectopascal	core:description	"hectopascal"^^xsd:string .
+qu-unit:pascalSecondPerCubicMetre	core:name	"pascalSecondPerCubicMetre"^^xsd:string . 
 qu-unit:pascalSecondPerCubicMetre	core:description	"pascal second per cubic metre"^^xsd:string .
+qu-unit:pascalSecondPerLitre	core:name	"pascalSecondPerLitre"^^xsd:string . 
 qu-unit:pascalSecondPerLitre	core:description	"pascal second per litre"^^xsd:string .
+qu-unit:dyneSecondPerCentimetreToTheFifthPower	core:name	"dyneSecondPerCentimetreToTheFifthPower"^^xsd:string . 
 qu-unit:dyneSecondPerCentimetreToTheFifthPower	core:description	"dyne second per centimetre to the fifth power"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTablePerSecondFootDegreeRankine	core:name	"britishThermalUnitInternationalTablePerSecondFootDegreeRankine"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTablePerSecondFootDegreeRankine	core:description	"British thermal unit (international table) per second foot degree Rankine"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTableInchPerHourSquareFootDegreeFahrenheit	core:name	"britishThermalUnitInternationalTableInchPerHourSquareFootDegreeFahrenheit"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTableInchPerHourSquareFootDegreeFahrenheit	core:description	"British thermal unit (international table) inch per hour square foot degree Fahrenheit"^^xsd:string .
-qu-unit:calorieThermochemicalPerCentimetreSecondDegreeCelsius	core:description	"calorie (thermochemical) per centimetre second degree Celsius"^^xsd:string  .
+qu-unit:calorieThermochemicalPerCentimetreSecondDegreeCelsius	core:name	"calorieThermochemicalPerCentimetreSecondDegreeCelsius"^^xsd:string . 
+qu-unit:calorieThermochemicalPerCentimetreSecondDegreeCelsius	core:description	"calorie (thermochemical) per centimetre second degree Celsius"^^xsd:string .
+qu-unit:britishThermalUnitThermochemicalInchPerSecondSquareFootDegreeFahrenheit	core:name	"britishThermalUnitThermochemicalInchPerSecondSquareFootDegreeFahrenheit"^^xsd:string . 
 qu-unit:britishThermalUnitThermochemicalInchPerSecondSquareFootDegreeFahrenheit	core:description	"British thermal unit (thermochemical) inch per second square foot degree Fahrenheit"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTableFootPerHourSquareFootDegreeFahrenheit	core:name	"britishThermalUnitInternationalTableFootPerHourSquareFootDegreeFahrenheit"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTableFootPerHourSquareFootDegreeFahrenheit	core:description	"British thermal unit (international table) foot per hour square foot degree Fahrenheit"^^xsd:string .
+qu-unit:britishThermalUnitThermochemicalInchPerHourSquareFootDegreeFahrenheit	core:name	"britishThermalUnitThermochemicalInchPerHourSquareFootDegreeFahrenheit"^^xsd:string . 
 qu-unit:britishThermalUnitThermochemicalInchPerHourSquareFootDegreeFahrenheit	core:description	"British thermal unit (thermochemical) inch per hour square foot degree Fahrenheit"^^xsd:string .
+qu-unit:internationalTableItCaloriePerSecondCentimetreKelvin	core:name	"internationalTableItCaloriePerSecondCentimetreKelvin"^^xsd:string . 
 qu-unit:internationalTableItCaloriePerSecondCentimetreKelvin	core:description	"International Table (IT) calorie per second centimetre kelvin"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTableInchPerSecondSquareFootDegreeFahrenheit	core:name	"britishThermalUnitInternationalTableInchPerSecondSquareFootDegreeFahrenheit"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTableInchPerSecondSquareFootDegreeFahrenheit	core:description	"British thermal unit (international table) inch per second square foot degree Fahrenheit"^^xsd:string .
-qu-unit:britishThermalUnitThermochemicalFootPerHourSquareFootDegreeFahrenheit	core:description	"British thermal unit (thermochemical) foot per hour square foot degree Fahrenheit"^^xsd:string	.
+qu-unit:britishThermalUnitThermochemicalFootPerHourSquareFootDegreeFahrenheit	core:name	"britishThermalUnitThermochemicalFootPerHourSquareFootDegreeFahrenheit"^^xsd:string . 
+qu-unit:britishThermalUnitThermochemicalFootPerHourSquareFootDegreeFahrenheit	core:description	"British thermal unit (thermochemical) foot per hour square foot degree Fahrenheit"^^xsd:string .
+qu-unit:calorieThermochemicalPerSecondCentimetreKelvin	core:name	"calorieThermochemicalPerSecondCentimetreKelvin"^^xsd:string . 
 qu-unit:calorieThermochemicalPerSecondCentimetreKelvin	core:description	"calorie (thermochemical) per second centimetre kelvin"^^xsd:string .
+qu-unit:wattPerMetreKelvin	core:name	"wattPerMetreKelvin"^^xsd:string . 
 qu-unit:wattPerMetreKelvin	core:description	"watt per metre kelvin"^^xsd:string .
+qu-unit:reciprocalSecondPerSteradianMetreSquared	core:name	"reciprocalSecondPerSteradianMetreSquared"^^xsd:string . 
 qu-unit:reciprocalSecondPerSteradianMetreSquared	core:description	"reciprocal second per steradian metre squared"^^xsd:string .
+qu-unit:micromolePerSquareMetrePerSecond	core:name	"micromolePerSquareMetrePerSecond"^^xsd:string . 
 qu-unit:micromolePerSquareMetrePerSecond	core:description	"micromole per square metre per second"^^xsd:string .
+qu-unit:molePerSquareMetrePerSecond	core:name	"molePerSquareMetrePerSecond"^^xsd:string . 
 qu-unit:molePerSquareMetrePerSecond	core:description	"mole per square metre per second"^^xsd:string .
+qu-unit:kilomole	core:name	"kilomole"^^xsd:string . 
 qu-unit:kilomole	core:description	"kilomole"^^xsd:string .
+qu-unit:mole	core:name	"mole"^^xsd:string . 
 qu-unit:mole	core:description	"mole"^^xsd:string .
+qu-unit:micromole	core:name	"micromole"^^xsd:string . 
 qu-unit:micromole	core:description	"micromole"^^xsd:string .
+qu-unit:millimole	core:name	"millimole"^^xsd:string . 
 qu-unit:millimole	core:description	"millimole"^^xsd:string .
+qu-unit:newtonSecondPerMetre	core:name	"newtonSecondPerMetre"^^xsd:string . 
 qu-unit:newtonSecondPerMetre	core:description	"newton second per metre"^^xsd:string .
+qu-unit:dyneSecondPerCentimetre	core:name	"dyneSecondPerCentimetre"^^xsd:string . 
 qu-unit:dyneSecondPerCentimetre	core:description	"dyne second per centimetre"^^xsd:string .
+qu-unit:calorieInternationalTablePerGramDegreeCelsius	core:name	"calorieInternationalTablePerGramDegreeCelsius"^^xsd:string . 
 qu-unit:calorieInternationalTablePerGramDegreeCelsius	core:description	"calorie (international table) per gram degree Celsius"^^xsd:string .
+qu-unit:joulePerKilogramKelvin	core:name	"joulePerKilogramKelvin"^^xsd:string . 
 qu-unit:joulePerKilogramKelvin	core:description	"joule per kilogram kelvin"^^xsd:string .
+qu-unit:britishThermalUnitThermochemicalPerPoundDegreeFahrenheit	core:name	"britishThermalUnitThermochemicalPerPoundDegreeFahrenheit"^^xsd:string . 
 qu-unit:britishThermalUnitThermochemicalPerPoundDegreeFahrenheit	core:description	"British thermal unit (thermochemical) per pound degree Fahrenheit"^^xsd:string .
+qu-unit:calorieThermochemicalPerGramKelvin	core:name	"calorieThermochemicalPerGramKelvin"^^xsd:string . 
 qu-unit:calorieThermochemicalPerGramKelvin	core:description	"calorie (thermochemical) per gram kelvin"^^xsd:string .
+qu-unit:calorieThermochemicalPerGramDegreeCelsius	core:name	"calorieThermochemicalPerGramDegreeCelsius"^^xsd:string . 
 qu-unit:calorieThermochemicalPerGramDegreeCelsius	core:description	"calorie (thermochemical) per gram degree Celsius"^^xsd:string .
+qu-unit:kilojoulePerKilogramKelvin	core:name	"kilojoulePerKilogramKelvin"^^xsd:string . 
 qu-unit:kilojoulePerKilogramKelvin	core:description	"kilojoule per kilogram kelvin"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTablePerPoundDegreeFahrenheit	core:name	"britishThermalUnitInternationalTablePerPoundDegreeFahrenheit"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTablePerPoundDegreeFahrenheit	core:description	"British thermal unit (international table) per pound degree Fahrenheit"^^xsd:string .
+qu-unit:calorieInternationalTablePerGramKelvin	core:name	"calorieInternationalTablePerGramKelvin"^^xsd:string . 
 qu-unit:calorieInternationalTablePerGramKelvin	core:description	"calorie (international table) per gram kelvin"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTablePerPoundDegreeRankine	core:name	"britishThermalUnitInternationalTablePerPoundDegreeRankine"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTablePerPoundDegreeRankine	core:description	"British thermal unit (international table) per pound degree Rankine"^^xsd:string .
+qu-unit:lux	core:name	"lux"^^xsd:string . 
 qu-unit:lux	core:description	"lux"^^xsd:string .
+qu-unit:weberPerMetre	core:name	"weberPerMetre"^^xsd:string . 
 qu-unit:weberPerMetre	core:description	"weber per metre"^^xsd:string .
+qu-unit:kiloweberPerMetre	core:name	"kiloweberPerMetre"^^xsd:string . 
 qu-unit:kiloweberPerMetre	core:description	"kiloweber per metre"^^xsd:string .
+qu-unit:weberPerMillimetre	core:name	"weberPerMillimetre"^^xsd:string . 
 qu-unit:weberPerMillimetre	core:description	"weber per millimetre"^^xsd:string .
+qu-unit:tonShortPerDay	core:name	"tonShortPerDay"^^xsd:string . 
 qu-unit:tonShortPerDay	core:description	"ton short per day"^^xsd:string .
+qu-unit:gramPerSecond	core:name	"gramPerSecond"^^xsd:string . 
 qu-unit:gramPerSecond	core:description	"gram per second"^^xsd:string .
+qu-unit:milligramPerMinute	core:name	"milligramPerMinute"^^xsd:string . 
 qu-unit:milligramPerMinute	core:description	"milligram per minute"^^xsd:string .
+qu-unit:slugPerSecond	core:name	"slugPerSecond"^^xsd:string . 
 qu-unit:slugPerSecond	core:description	"slug per second"^^xsd:string .
+qu-unit:slugPerDay	core:name	"slugPerDay"^^xsd:string . 
 qu-unit:slugPerDay	core:description	"slug per day"^^xsd:string .
+qu-unit:milligramPerSecond	core:name	"milligramPerSecond"^^xsd:string . 
 qu-unit:milligramPerSecond	core:description	"milligram per second"^^xsd:string .
+qu-unit:kilogramPerHour	core:name	"kilogramPerHour"^^xsd:string . 
 qu-unit:kilogramPerHour	core:description	"kilogram per hour"^^xsd:string .
+qu-unit:kilogramPerDay	core:name	"kilogramPerDay"^^xsd:string . 
 qu-unit:kilogramPerDay	core:description	"kilogram per day"^^xsd:string .
+qu-unit:tonnePerSecond	core:name	"tonnePerSecond"^^xsd:string . 
 qu-unit:tonnePerSecond	core:description	"tonne per second"^^xsd:string .
+qu-unit:ounceAvoirdupoisPerHour	core:name	"ounceAvoirdupoisPerHour"^^xsd:string . 
 qu-unit:ounceAvoirdupoisPerHour	core:description	"ounce (avoirdupois) per hour"^^xsd:string .
+qu-unit:kilogramPerSecond	core:name	"kilogramPerSecond"^^xsd:string . 
 qu-unit:kilogramPerSecond	core:description	"kilogram per second"^^xsd:string .
+qu-unit:poundPerHour	core:name	"poundPerHour"^^xsd:string . 
 qu-unit:poundPerHour	core:description	"pound per hour"^^xsd:string .
+qu-unit:slugPerMinute	core:name	"slugPerMinute"^^xsd:string . 
 qu-unit:slugPerMinute	core:description	"slug per minute"^^xsd:string .
+qu-unit:gramPerDay	core:name	"gramPerDay"^^xsd:string . 
 qu-unit:gramPerDay	core:description	"gram per day"^^xsd:string .
+qu-unit:gramPerMinute	core:name	"gramPerMinute"^^xsd:string . 
 qu-unit:gramPerMinute	core:description	"gram per minute"^^xsd:string .
+qu-unit:milligramPerDay	core:name	"milligramPerDay"^^xsd:string . 
 qu-unit:milligramPerDay	core:description	"milligram per day"^^xsd:string .
+qu-unit:tonnePerMinute	core:name	"tonnePerMinute"^^xsd:string . 
 qu-unit:tonnePerMinute	core:description	"tonne per minute"^^xsd:string .
+qu-unit:tonLongPerDay	core:name	"tonLongPerDay"^^xsd:string . 
 qu-unit:tonLongPerDay	core:description	"ton long per day"^^xsd:string .
+qu-unit:ounceAvoirdupoisPerSecond	core:name	"ounceAvoirdupoisPerSecond"^^xsd:string . 
 qu-unit:ounceAvoirdupoisPerSecond	core:description	"ounce (avoirdupois) per second"^^xsd:string .
+qu-unit:ounceAvoirdupoisPerDay	core:name	"ounceAvoirdupoisPerDay"^^xsd:string . 
 qu-unit:ounceAvoirdupoisPerDay	core:description	"ounce (avoirdupois) per day"^^xsd:string .
+qu-unit:poundAvoirdupoisPerMinute	core:name	"poundAvoirdupoisPerMinute"^^xsd:string . 
 qu-unit:poundAvoirdupoisPerMinute	core:description	"pound (avoirdupois) per minute"^^xsd:string .
+qu-unit:poundAvoirdupoisPerDay	core:name	"poundAvoirdupoisPerDay"^^xsd:string . 
 qu-unit:poundAvoirdupoisPerDay	core:description	"pound (avoirdupois) per day"^^xsd:string .
+qu-unit:gramPerHour	core:name	"gramPerHour"^^xsd:string . 
 qu-unit:gramPerHour	core:description	"gram per hour"^^xsd:string .
+qu-unit:ounceAvoirdupoisPerMinute	core:name	"ounceAvoirdupoisPerMinute"^^xsd:string . 
 qu-unit:ounceAvoirdupoisPerMinute	core:description	"ounce (avoirdupois) per minute"^^xsd:string .
+qu-unit:kilogramPerMinute	core:name	"kilogramPerMinute"^^xsd:string . 
 qu-unit:kilogramPerMinute	core:description	"kilogram per minute"^^xsd:string .
+qu-unit:slugPerHour	core:name	"slugPerHour"^^xsd:string . 
 qu-unit:slugPerHour	core:description	"slug per hour"^^xsd:string .
+qu-unit:poundAvoirdupoisPerSecond	core:name	"poundAvoirdupoisPerSecond"^^xsd:string . 
 qu-unit:poundAvoirdupoisPerSecond	core:description	"pound (avoirdupois) per second"^^xsd:string .
+qu-unit:tonUsPerHour	core:name	"tonUsPerHour"^^xsd:string . 
 qu-unit:tonUsPerHour	core:description	"ton (US) per hour"^^xsd:string .
+qu-unit:milligramPerHour	core:name	"milligramPerHour"^^xsd:string . 
 qu-unit:milligramPerHour	core:description	"milligram per hour"^^xsd:string .
+qu-unit:tonnePerDay	core:name	"tonnePerDay"^^xsd:string . 
 qu-unit:tonnePerDay	core:description	"tonne per day"^^xsd:string .
+qu-unit:kilovoltAmpere	core:name	"kilovoltAmpere"^^xsd:string . 
 qu-unit:kilovoltAmpere	core:description	"kilovolt - ampere"^^xsd:string .
+qu-unit:voltAmpere	core:name	"voltAmpere"^^xsd:string . 
 qu-unit:voltAmpere	core:description	"volt - ampere"^^xsd:string .
+qu-unit:megavoltAmpere	core:name	"megavoltAmpere"^^xsd:string . 
 qu-unit:megavoltAmpere	core:description	"megavolt - ampere"^^xsd:string .
+qu-unit:millivoltAmpere	core:name	"millivoltAmpere"^^xsd:string . 
 qu-unit:millivoltAmpere	core:description	"millivolt - ampere"^^xsd:string .
+qu-unit:pascalSecondPerMetre	core:name	"pascalSecondPerMetre"^^xsd:string . 
 qu-unit:pascalSecondPerMetre	core:description	"pascal second per metre"^^xsd:string .
+qu-unit:dyneSecondPerCubicCentimetre	core:name	"dyneSecondPerCubicCentimetre"^^xsd:string . 
 qu-unit:dyneSecondPerCubicCentimetre	core:description	"dyne second per cubic centimetre"^^xsd:string .
+qu-unit:millinewtonPerMetre	core:name	"millinewtonPerMetre"^^xsd:string . 
 qu-unit:millinewtonPerMetre	core:description	"millinewton per metre"^^xsd:string .
+qu-unit:dynePerCentimetre	core:name	"dynePerCentimetre"^^xsd:string . 
 qu-unit:dynePerCentimetre	core:description	"dyne per centimetre"^^xsd:string .
+qu-unit:newtonPerMetre	core:name	"newtonPerMetre"^^xsd:string . 
 qu-unit:newtonPerMetre	core:description	"newton per metre"^^xsd:string .
+qu-unit:newtonPerCentimetre	core:name	"newtonPerCentimetre"^^xsd:string . 
 qu-unit:newtonPerCentimetre	core:description	"newton per centimetre"^^xsd:string .
+qu-unit:reciprocalSecondPerSteradian	core:name	"reciprocalSecondPerSteradian"^^xsd:string . 
 qu-unit:reciprocalSecondPerSteradian	core:description	"reciprocal second per steradian"^^xsd:string .
+qu-unit:nanotesla	core:name	"nanotesla"^^xsd:string . 
 qu-unit:nanotesla	core:description	"nanotesla"^^xsd:string .
+qu-unit:microtesla	core:name	"microtesla"^^xsd:string . 
 qu-unit:microtesla	core:description	"microtesla"^^xsd:string .
+qu-unit:tesla	core:name	"tesla"^^xsd:string . 
 qu-unit:tesla	core:description	"tesla"^^xsd:string .
+qu-unit:millitesla	core:name	"millitesla"^^xsd:string . 
 qu-unit:millitesla	core:description	"millitesla"^^xsd:string .
+qu-unit:milliroentgen	core:name	"milliroentgen"^^xsd:string . 
 qu-unit:milliroentgen	core:description	"milliroentgen"^^xsd:string .
+qu-unit:millicoulombPerKilogram	core:name	"millicoulombPerKilogram"^^xsd:string . 
 qu-unit:millicoulombPerKilogram	core:description	"millicoulomb per kilogram"^^xsd:string .
+qu-unit:kiloroentgen	core:name	"kiloroentgen"^^xsd:string . 
 qu-unit:kiloroentgen	core:description	"kiloroentgen"^^xsd:string .
+qu-unit:roentgen	core:name	"roentgen"^^xsd:string . 
 qu-unit:roentgen	core:description	"roentgen"^^xsd:string .
+qu-unit:coulombPerKilogram	core:name	"coulombPerKilogram"^^xsd:string . 
 qu-unit:coulombPerKilogram	core:description	"coulomb per kilogram"^^xsd:string .
+qu-unit:wattPerSquareMetreKelvinToTheFourthPower	core:name	"wattPerSquareMetreKelvinToTheFourthPower"^^xsd:string . 
 qu-unit:wattPerSquareMetreKelvinToTheFourthPower	core:description	"watt per square metre kelvin to the fourth power"^^xsd:string .
+qu-unit:millisiemens	core:name	"millisiemens"^^xsd:string . 
 qu-unit:millisiemens	core:description	"millisiemens"^^xsd:string .
+qu-unit:kilosiemens	core:name	"kilosiemens"^^xsd:string . 
 qu-unit:kilosiemens	core:description	"kilosiemens"^^xsd:string .
+qu-unit:microsiemens	core:name	"microsiemens"^^xsd:string . 
 qu-unit:microsiemens	core:description	"microsiemens"^^xsd:string .
+qu-unit:siemens	core:name	"siemens"^^xsd:string . 
 qu-unit:siemens	core:description	"siemens"^^xsd:string .
+qu-unit:reciprocalAngstrom	core:name	"reciprocalAngstrom"^^xsd:string . 
 qu-unit:reciprocalAngstrom	core:description	"reciprocal angstrom"^^xsd:string .
+qu-unit:reciprocalMetre	core:name	"reciprocalMetre"^^xsd:string . 
 qu-unit:reciprocalMetre	core:description	"reciprocal metre"^^xsd:string .
+qu-unit:ergPerCentimetre	core:name	"ergPerCentimetre"^^xsd:string . 
 qu-unit:ergPerCentimetre	core:description	"erg per centimetre"^^xsd:string .
+qu-unit:joulePerMetre	core:name	"joulePerMetre"^^xsd:string . 
 qu-unit:joulePerMetre	core:description	"joule per metre"^^xsd:string .
+qu-unit:electronvoltPerMetre	core:name	"electronvoltPerMetre"^^xsd:string . 
 qu-unit:electronvoltPerMetre	core:description	"electronvolt per metre"^^xsd:string .
+qu-unit:squareCentimetrePerSteradianErg	core:name	"squareCentimetrePerSteradianErg"^^xsd:string . 
 qu-unit:squareCentimetrePerSteradianErg	core:description	"square centimetre per steradian erg"^^xsd:string .
+qu-unit:squareMetrePerSteradianJoule	core:name	"squareMetrePerSteradianJoule"^^xsd:string . 
 qu-unit:squareMetrePerSteradianJoule	core:description	"square metre per steradian joule"^^xsd:string .
+qu-unit:hundredWeightUk	core:name	"hundredWeightUk"^^xsd:string . 
 qu-unit:hundredWeightUk	core:description	"hundred weight (UK)"^^xsd:string .
+qu-unit:stoneUk	core:name	"stoneUk"^^xsd:string . 
 qu-unit:stoneUk	core:description	"stone (UK)"^^xsd:string .
+qu-unit:hectogram	core:name	"hectogram"^^xsd:string . 
 qu-unit:hectogram	core:description	"hectogram"^^xsd:string .
+qu-unit:decagram	core:name	"decagram"^^xsd:string . 
 qu-unit:decagram	core:description	"decagram"^^xsd:string .
+qu-unit:hundredPoundCwtPerHundredWeightUs	core:name	"hundredPoundCwtPerHundredWeightUs"^^xsd:string . 
 qu-unit:hundredPoundCwtPerHundredWeightUs	core:description	"hundred pound (cwt) / hundred weight (US)"^^xsd:string .
+qu-unit:grain	core:name	"grain"^^xsd:string . 
 qu-unit:grain	core:description	"grain"^^xsd:string .
+qu-unit:troyOunceOrApothecaryOunce	core:name	"troyOunceOrApothecaryOunce"^^xsd:string . 
 qu-unit:troyOunceOrApothecaryOunce	core:description	"troy ounce or apothecary ounce"^^xsd:string .
+qu-unit:kilogram	core:name	"kilogram"^^xsd:string . 
 qu-unit:kilogram	core:description	"kilogram"^^xsd:string .
+qu-unit:tonUkOrLongTonUs	core:name	"tonUkOrLongTonUs"^^xsd:string . 
 qu-unit:tonUkOrLongTonUs	core:description	"ton (UK) or long ton (US)"^^xsd:string .
+qu-unit:decitonne	core:name	"decitonne"^^xsd:string . 
 qu-unit:decitonne	core:description	"decitonne"^^xsd:string .
+qu-unit:megagram	core:name	"megagram"^^xsd:string . 
 qu-unit:megagram	core:description	"megagram"^^xsd:string .
+qu-unit:pound	core:name	"pound"^^xsd:string . 
 qu-unit:pound	core:description	"pound"^^xsd:string .
+qu-unit:decigram	core:name	"decigram"^^xsd:string . 
 qu-unit:decigram	core:description	"decigram"^^xsd:string .
+qu-unit:tonUsOrShortTonUkPerUs	core:name	"tonUsOrShortTonUkPerUs"^^xsd:string . 
 qu-unit:tonUsOrShortTonUkPerUs	core:description	"ton (US) or short ton (UK/US)"^^xsd:string .
+qu-unit:slug	core:name	"slug"^^xsd:string . 
 qu-unit:slug	core:description	"slug"^^xsd:string .
+qu-unit:milligram	core:name	"milligram"^^xsd:string . 
 qu-unit:milligram	core:description	"milligram"^^xsd:string .
+qu-unit:kilotonne	core:name	"kilotonne"^^xsd:string . 
 qu-unit:kilotonne	core:description	"kilotonne"^^xsd:string .
+qu-unit:centigram	core:name	"centigram"^^xsd:string . 
 qu-unit:centigram	core:description	"centigram"^^xsd:string .
+qu-unit:ounce	core:name	"ounce"^^xsd:string . 
 qu-unit:ounce	core:description	"ounce"^^xsd:string .
+qu-unit:tonneMetricTon	core:name	"tonneMetricTon"^^xsd:string . 
 qu-unit:tonneMetricTon	core:description	"tonne (metric ton)"^^xsd:string .
+qu-unit:microgram	core:name	"microgram"^^xsd:string . 
 qu-unit:microgram	core:description	"microgram"^^xsd:string .
+qu-unit:gram	core:name	"gram"^^xsd:string . 
 qu-unit:gram	core:description	"gram"^^xsd:string .
+qu-unit:newtonMetreSquaredKilogramSquared	core:name	"newtonMetreSquaredKilogramSquared"^^xsd:string . 
 qu-unit:newtonMetreSquaredKilogramSquared	core:description	"newton metre squared kilogram squared"^^xsd:string .
+qu-unit:lumen	core:name	"lumen"^^xsd:string . 
 qu-unit:lumen	core:description	"lumen"^^xsd:string .
+qu-unit:pintUsLiquidPerSecond	core:name	"pintUsLiquidPerSecond"^^xsd:string . 
 qu-unit:pintUsLiquidPerSecond	core:description	"pint (US liquid) per second"^^xsd:string .
+qu-unit:cubicFootPerMinute	core:name	"cubicFootPerMinute"^^xsd:string . 
 qu-unit:cubicFootPerMinute	core:description	"cubic foot per minute"^^xsd:string .
+qu-unit:peckUkPerDay	core:name	"peckUkPerDay"^^xsd:string . 
 qu-unit:peckUkPerDay	core:description	"peck (UK) per day"^^xsd:string .
+qu-unit:cubicCentimetrePerSecond	core:name	"cubicCentimetrePerSecond"^^xsd:string . 
 qu-unit:cubicCentimetrePerSecond	core:description	"cubic centimetre per second"^^xsd:string .
+qu-unit:peckUkPerSecond	core:name	"peckUkPerSecond"^^xsd:string . 
 qu-unit:peckUkPerSecond	core:description	"peck (UK) per second"^^xsd:string .
+qu-unit:pintUsLiquidPerHour	core:name	"pintUsLiquidPerHour"^^xsd:string . 
 qu-unit:pintUsLiquidPerHour	core:description	"pint (US liquid) per hour"^^xsd:string .
+qu-unit:cubicCentimetrePerMinute	core:name	"cubicCentimetrePerMinute"^^xsd:string . 
 qu-unit:cubicCentimetrePerMinute	core:description	"cubic centimetre per minute"^^xsd:string .
+qu-unit:gallonUkPerDay	core:name	"gallonUkPerDay"^^xsd:string . 
 qu-unit:gallonUkPerDay	core:description	"gallon (UK) per day"^^xsd:string .
+qu-unit:gallonUkPerHour	core:name	"gallonUkPerHour"^^xsd:string . 
 qu-unit:gallonUkPerHour	core:description	"gallon (UK) per hour"^^xsd:string .
+qu-unit:gallonUkPerSecond	core:name	"gallonUkPerSecond"^^xsd:string . 
 qu-unit:gallonUkPerSecond	core:description	"gallon (UK) per second"^^xsd:string .
+qu-unit:millilitrePerDay	core:name	"millilitrePerDay"^^xsd:string . 
 qu-unit:millilitrePerDay	core:description	"millilitre per day"^^xsd:string .
+qu-unit:cubicYardPerMinute	core:name	"cubicYardPerMinute"^^xsd:string . 
 qu-unit:cubicYardPerMinute	core:description	"cubic yard per minute"^^xsd:string .
+qu-unit:quartUkLiquidPerSecond	core:name	"quartUkLiquidPerSecond"^^xsd:string . 
 qu-unit:quartUkLiquidPerSecond	core:description	"quart (UK liquid) per second"^^xsd:string .
+qu-unit:peckUkPerMinute	core:name	"peckUkPerMinute"^^xsd:string . 
 qu-unit:peckUkPerMinute	core:description	"peck (UK) per minute"^^xsd:string .
+qu-unit:cubicCentimetrePerDay	core:name	"cubicCentimetrePerDay"^^xsd:string . 
 qu-unit:cubicCentimetrePerDay	core:description	"cubic centimetre per day"^^xsd:string .
+qu-unit:cubicDecimetrePerDay	core:name	"cubicDecimetrePerDay"^^xsd:string . 
 qu-unit:cubicDecimetrePerDay	core:description	"cubic decimetre per day"^^xsd:string .
+qu-unit:barrelUsPetroleumPerHour	core:name	"barrelUsPetroleumPerHour"^^xsd:string . 
 qu-unit:barrelUsPetroleumPerHour	core:description	"barrel (US petroleum) per hour"^^xsd:string .
+qu-unit:cubicMetrePerMinute	core:name	"cubicMetrePerMinute"^^xsd:string . 
 qu-unit:cubicMetrePerMinute	core:description	"cubic metre per minute"^^xsd:string .
+qu-unit:cubicInchPerSecond	core:name	"cubicInchPerSecond"^^xsd:string . 
 qu-unit:cubicInchPerSecond	core:description	"cubic inch per second"^^xsd:string .
+qu-unit:cubicFootPerDay	core:name	"cubicFootPerDay"^^xsd:string . 
 qu-unit:cubicFootPerDay	core:description	"cubic foot per day"^^xsd:string .
+qu-unit:pintUsLiquidPerMinute	core:name	"pintUsLiquidPerMinute"^^xsd:string . 
 qu-unit:pintUsLiquidPerMinute	core:description	"pint (US liquid) per minute"^^xsd:string .
+qu-unit:quartUkLiquidPerDay	core:name	"quartUkLiquidPerDay"^^xsd:string . 
 qu-unit:quartUkLiquidPerDay	core:description	"quart (UK liquid) per day"^^xsd:string .
+qu-unit:cubicFootPerHour	core:name	"cubicFootPerHour"^^xsd:string . 
 qu-unit:cubicFootPerHour	core:description	"cubic foot per hour"^^xsd:string .
+qu-unit:gillUkPerSecond	core:name	"gillUkPerSecond"^^xsd:string . 
 qu-unit:gillUkPerSecond	core:description	"gill (UK) per second"^^xsd:string .
+qu-unit:quartUsLiquidPerDay	core:name	"quartUsLiquidPerDay"^^xsd:string . 
 qu-unit:quartUsLiquidPerDay	core:description	"quart (US liquid) per day"^^xsd:string .
+qu-unit:ounceUsFluidPerHour	core:name	"ounceUsFluidPerHour"^^xsd:string . 
 qu-unit:ounceUsFluidPerHour	core:description	"ounce (US fluid) per hour"^^xsd:string .
+qu-unit:pintUkPerSecond	core:name	"pintUkPerSecond"^^xsd:string . 
 qu-unit:pintUkPerSecond	core:description	"pint (UK) per second"^^xsd:string .
+qu-unit:cubicYardPerDay	core:name	"cubicYardPerDay"^^xsd:string . 
 qu-unit:cubicYardPerDay	core:description	"cubic yard per day"^^xsd:string .
+qu-unit:bushelUsDryPerSecond	core:name	"bushelUsDryPerSecond"^^xsd:string . 
 qu-unit:bushelUsDryPerSecond	core:description	"bushel (US dry) per second"^^xsd:string .
+qu-unit:peckUkPerHour	core:name	"peckUkPerHour"^^xsd:string . 
 qu-unit:peckUkPerHour	core:description	"peck (UK) per hour"^^xsd:string .
+qu-unit:usGallonPerMinute	core:name	"usGallonPerMinute"^^xsd:string . 
 qu-unit:usGallonPerMinute	core:description	"US gallon per minute"^^xsd:string .
+qu-unit:barrelUsPerMinute	core:name	"barrelUsPerMinute"^^xsd:string . 
 qu-unit:barrelUsPerMinute	core:description	"barrel (US) per minute"^^xsd:string .
+qu-unit:bushelUkPerDay	core:name	"bushelUkPerDay"^^xsd:string . 
 qu-unit:bushelUkPerDay	core:description	"bushel (UK) per day"^^xsd:string .
+qu-unit:bushelUkPerHour	core:name	"bushelUkPerHour"^^xsd:string . 
 qu-unit:bushelUkPerHour	core:description	"bushel (UK) per hour"^^xsd:string .
+qu-unit:ounceUsFluidPerSecond	core:name	"ounceUsFluidPerSecond"^^xsd:string . 
 qu-unit:ounceUsFluidPerSecond	core:description	"ounce (US fluid) per second"^^xsd:string .
+qu-unit:litrePerDay	core:name	"litrePerDay"^^xsd:string . 
 qu-unit:litrePerDay	core:description	"litre per day"^^xsd:string .
+qu-unit:quartUkLiquidPerHour	core:name	"quartUkLiquidPerHour"^^xsd:string . 
 qu-unit:quartUkLiquidPerHour	core:description	"quart (UK liquid) per hour"^^xsd:string .
+qu-unit:imperialGallonPerMinute	core:name	"imperialGallonPerMinute"^^xsd:string . 
 qu-unit:imperialGallonPerMinute	core:description	"Imperial gallon per minute"^^xsd:string .
+qu-unit:peckUsDryPerMinute	core:name	"peckUsDryPerMinute"^^xsd:string . 
 qu-unit:peckUsDryPerMinute	core:description	"peck (US dry) per minute"^^xsd:string .
+qu-unit:gillUsPerHour	core:name	"gillUsPerHour"^^xsd:string . 
 qu-unit:gillUsPerHour	core:description	"gill (US) per hour"^^xsd:string .
+qu-unit:barrelUkPetroleumPerDay	core:name	"barrelUkPetroleumPerDay"^^xsd:string . 
 qu-unit:barrelUkPetroleumPerDay	core:description	"barrel (UK petroleum) per day"^^xsd:string .
+qu-unit:barrelUsPetroleumPerSecond	core:name	"barrelUsPetroleumPerSecond"^^xsd:string . 
 qu-unit:barrelUsPetroleumPerSecond	core:description	"barrel (US petroleum) per second"^^xsd:string .
+qu-unit:cubicMetrePerDay	core:name	"cubicMetrePerDay"^^xsd:string . 
 qu-unit:cubicMetrePerDay	core:description	"cubic metre per day"^^xsd:string .
+qu-unit:ounceUkFluidPerSecond	core:name	"ounceUkFluidPerSecond"^^xsd:string . 
 qu-unit:ounceUkFluidPerSecond	core:description	"ounce (UK fluid) per second"^^xsd:string .
+qu-unit:bushelUkPerMinute	core:name	"bushelUkPerMinute"^^xsd:string . 
 qu-unit:bushelUkPerMinute	core:description	"bushel (UK) per minute"^^xsd:string .
+qu-unit:ounceUkFluidPerMinute	core:name	"ounceUkFluidPerMinute"^^xsd:string . 
 qu-unit:ounceUkFluidPerMinute	core:description	"ounce (UK fluid) per minute"^^xsd:string .
+qu-unit:millilitrePerSecond	core:name	"millilitrePerSecond"^^xsd:string . 
 qu-unit:millilitrePerSecond	core:description	"millilitre per second"^^xsd:string .
+qu-unit:cubicInchPerHour	core:name	"cubicInchPerHour"^^xsd:string . 
 qu-unit:cubicInchPerHour	core:description	"cubic inch per hour"^^xsd:string .
+qu-unit:gallonUsPerHour	core:name	"gallonUsPerHour"^^xsd:string . 
 qu-unit:gallonUsPerHour	core:description	"gallon (US) per hour"^^xsd:string .
+qu-unit:bushelUkPerSecond	core:name	"bushelUkPerSecond"^^xsd:string . 
 qu-unit:bushelUkPerSecond	core:description	"bushel (UK) per second"^^xsd:string .
+qu-unit:litrePerMinute	core:name	"litrePerMinute"^^xsd:string . 
 qu-unit:litrePerMinute	core:description	"litre per minute"^^xsd:string .
+qu-unit:barrelUkPetroleumPerMinute	core:name	"barrelUkPetroleumPerMinute"^^xsd:string . 
 qu-unit:barrelUkPetroleumPerMinute	core:description	"barrel (UK petroleum) per minute"^^xsd:string .
+qu-unit:gillUkPerDay	core:name	"gillUkPerDay"^^xsd:string . 
 qu-unit:gillUkPerDay	core:description	"gill (UK) per day"^^xsd:string .
+qu-unit:cubicCentimetrePerHour	core:name	"cubicCentimetrePerHour"^^xsd:string . 
 qu-unit:cubicCentimetrePerHour	core:description	"cubic centimetre per hour"^^xsd:string .
+qu-unit:millilitrePerMinute	core:name	"millilitrePerMinute"^^xsd:string . 
 qu-unit:millilitrePerMinute	core:description	"millilitre per minute"^^xsd:string .
+qu-unit:litrePerSecond	core:name	"litrePerSecond"^^xsd:string . 
 qu-unit:litrePerSecond	core:description	"litre per second"^^xsd:string .
+qu-unit:barrelUkPetroleumPerHour	core:name	"barrelUkPetroleumPerHour"^^xsd:string . 
 qu-unit:barrelUkPetroleumPerHour	core:description	"barrel (UK petroleum) per hour"^^xsd:string .
+qu-unit:gillUsPerSecond	core:name	"gillUsPerSecond"^^xsd:string . 
 qu-unit:gillUsPerSecond	core:description	"gill (US) per second"^^xsd:string .
+qu-unit:barrelUkPetroleumPerSecond	core:name	"barrelUkPetroleumPerSecond"^^xsd:string . 
 qu-unit:barrelUkPetroleumPerSecond	core:description	"barrel (UK petroleum) per second"^^xsd:string .
+qu-unit:cubicDecimetrePerHour	core:name	"cubicDecimetrePerHour"^^xsd:string . 
 qu-unit:cubicDecimetrePerHour	core:description	"cubic decimetre per hour"^^xsd:string .
+qu-unit:gillUsPerMinute	core:name	"gillUsPerMinute"^^xsd:string . 
 qu-unit:gillUsPerMinute	core:description	"gill (US) per minute"^^xsd:string .
+qu-unit:ounceUsFluidPerDay	core:name	"ounceUsFluidPerDay"^^xsd:string . 
 qu-unit:ounceUsFluidPerDay	core:description	"ounce (US fluid) per day"^^xsd:string .
+qu-unit:cubicDecimetrePerMinute	core:name	"cubicDecimetrePerMinute"^^xsd:string . 
 qu-unit:cubicDecimetrePerMinute	core:description	"cubic decimetre per minute"^^xsd:string .
+qu-unit:ounceUkFluidPerDay	core:name	"ounceUkFluidPerDay"^^xsd:string . 
 qu-unit:ounceUkFluidPerDay	core:description	"ounce (UK fluid) per day"^^xsd:string .
+qu-unit:millilitrePerHour	core:name	"millilitrePerHour"^^xsd:string . 
 qu-unit:millilitrePerHour	core:description	"millilitre per hour"^^xsd:string .
+qu-unit:peckUsDryPerSecond	core:name	"peckUsDryPerSecond"^^xsd:string . 
 qu-unit:peckUsDryPerSecond	core:description	"peck (US dry) per second"^^xsd:string .
+qu-unit:quartUsLiquidPerHour	core:name	"quartUsLiquidPerHour"^^xsd:string . 
 qu-unit:quartUsLiquidPerHour	core:description	"quart (US liquid) per hour"^^xsd:string .
+qu-unit:peckUsDryPerHour	core:name	"peckUsDryPerHour"^^xsd:string . 
 qu-unit:peckUsDryPerHour	core:description	"peck (US dry) per hour"^^xsd:string .
+qu-unit:peckUsDryPerDay	core:name	"peckUsDryPerDay"^^xsd:string . 
 qu-unit:peckUsDryPerDay	core:description	"peck (US dry) per day"^^xsd:string .
+qu-unit:pintUsLiquidPerDay	core:name	"pintUsLiquidPerDay"^^xsd:string . 
 qu-unit:pintUsLiquidPerDay	core:description	"pint (US liquid) per day"^^xsd:string .
+qu-unit:quartUsLiquidPerMinute	core:name	"quartUsLiquidPerMinute"^^xsd:string . 
 qu-unit:quartUsLiquidPerMinute	core:description	"quart (US liquid) per minute"^^xsd:string .
+qu-unit:pintUkPerHour	core:name	"pintUkPerHour"^^xsd:string . 
 qu-unit:pintUkPerHour	core:description	"pint (UK) per hour"^^xsd:string .
+qu-unit:gallonUsLiquidPerSecond	core:name	"gallonUsLiquidPerSecond"^^xsd:string . 
 qu-unit:gallonUsLiquidPerSecond	core:description	"gallon (US liquid) per second"^^xsd:string .
+qu-unit:bushelUsDryPerMinute	core:name	"bushelUsDryPerMinute"^^xsd:string . 
 qu-unit:bushelUsDryPerMinute	core:description	"bushel (US dry) per minute"^^xsd:string .
+qu-unit:ounceUkFluidPerHour	core:name	"ounceUkFluidPerHour"^^xsd:string . 
 qu-unit:ounceUkFluidPerHour	core:description	"ounce (UK fluid) per hour"^^xsd:string .
+qu-unit:kilolitrePerHour	core:name	"kilolitrePerHour"^^xsd:string . 
 qu-unit:kilolitrePerHour	core:description	"kilolitre per hour"^^xsd:string .
+qu-unit:pintUkPerMinute	core:name	"pintUkPerMinute"^^xsd:string . 
 qu-unit:pintUkPerMinute	core:description	"pint (UK) per minute"^^xsd:string .
+qu-unit:cubicDecimetrePerSecond	core:name	"cubicDecimetrePerSecond"^^xsd:string . 
 qu-unit:cubicDecimetrePerSecond	core:description	"cubic decimetre per second"^^xsd:string .
+qu-unit:ounceUsFluidPerMinute	core:name	"ounceUsFluidPerMinute"^^xsd:string . 
 qu-unit:ounceUsFluidPerMinute	core:description	"ounce (US fluid) per minute"^^xsd:string .
+qu-unit:gillUkPerHour	core:name	"gillUkPerHour"^^xsd:string . 
 qu-unit:gillUkPerHour	core:description	"gill (UK) per hour"^^xsd:string .
+qu-unit:cubicYardPerHour	core:name	"cubicYardPerHour"^^xsd:string . 
 qu-unit:cubicYardPerHour	core:description	"cubic yard per hour"^^xsd:string .
+qu-unit:quartUkLiquidPerMinute	core:name	"quartUkLiquidPerMinute"^^xsd:string . 
 qu-unit:quartUkLiquidPerMinute	core:description	"quart (UK liquid) per minute"^^xsd:string .
+qu-unit:cubicInchPerMinute	core:name	"cubicInchPerMinute"^^xsd:string . 
 qu-unit:cubicInchPerMinute	core:description	"cubic inch per minute"^^xsd:string .
+qu-unit:cubicMetrePerSecond	core:name	"cubicMetrePerSecond"^^xsd:string . 
 qu-unit:cubicMetrePerSecond	core:description	"cubic metre per second"^^xsd:string .
+qu-unit:pintUkPerDay	core:name	"pintUkPerDay"^^xsd:string . 
 qu-unit:pintUkPerDay	core:description	"pint (UK) per day"^^xsd:string .
+qu-unit:bushelUsDryPerDay	core:name	"bushelUsDryPerDay"^^xsd:string . 
 qu-unit:bushelUsDryPerDay	core:description	"bushel (US dry) per day"^^xsd:string .
+qu-unit:bushelUsDryPerHour	core:name	"bushelUsDryPerHour"^^xsd:string . 
 qu-unit:bushelUsDryPerHour	core:description	"bushel (US dry) per hour"^^xsd:string .
+qu-unit:cubicMetrePerHour	core:name	"cubicMetrePerHour"^^xsd:string . 
 qu-unit:cubicMetrePerHour	core:description	"cubic metre per hour"^^xsd:string .
+qu-unit:gillUsPerDay	core:name	"gillUsPerDay"^^xsd:string . 
 qu-unit:gillUsPerDay	core:description	"gill (US) per day"^^xsd:string .
+qu-unit:quartUsLiquidPerSecond	core:name	"quartUsLiquidPerSecond"^^xsd:string . 
 qu-unit:quartUsLiquidPerSecond	core:description	"quart (US liquid) per second"^^xsd:string .
+qu-unit:gillUkPerMinute	core:name	"gillUkPerMinute"^^xsd:string . 
 qu-unit:gillUkPerMinute	core:description	"gill (UK) per minute"^^xsd:string .
+qu-unit:cubicYardPerSecond	core:name	"cubicYardPerSecond"^^xsd:string . 
 qu-unit:cubicYardPerSecond	core:description	"cubic yard per second"^^xsd:string .
+qu-unit:joulePerMoleKelvin	core:name	"joulePerMoleKelvin"^^xsd:string . 
 qu-unit:joulePerMoleKelvin	core:description	"joule per mole kelvin"^^xsd:string .
+qu-unit:poundPerFoot	core:name	"poundPerFoot"^^xsd:string . 
 qu-unit:poundPerFoot	core:description	"pound per foot"^^xsd:string .
+qu-unit:kilogramPerMetre	core:name	"kilogramPerMetre"^^xsd:string . 
 qu-unit:kilogramPerMetre	core:description	"kilogram per metre"^^xsd:string .
+qu-unit:kilogramPerMillimetre	core:name	"kilogramPerMillimetre"^^xsd:string . 
 qu-unit:kilogramPerMillimetre	core:description	"kilogram per millimetre"^^xsd:string .
+qu-unit:gramPerMillimetre	core:name	"gramPerMillimetre"^^xsd:string . 
 qu-unit:gramPerMillimetre	core:description	"gram per millimetre"^^xsd:string .
+qu-unit:gramPerMetreGramPer100Centimetres	core:name	"gramPerMetreGramPer100Centimetres"^^xsd:string . 
 qu-unit:gramPerMetreGramPer100Centimetres	core:description	"gram per metre (gram per 100 centimetres)"^^xsd:string .
+qu-unit:kilogramPerKilometre	core:name	"kilogramPerKilometre"^^xsd:string . 
 qu-unit:kilogramPerKilometre	core:description	"kilogram per kilometre"^^xsd:string .
+qu-unit:milligramPerMetre	core:name	"milligramPerMetre"^^xsd:string . 
 qu-unit:milligramPerMetre	core:description	"milligram per metre"^^xsd:string .
+qu-unit:poundPerInchOfLength	core:name	"poundPerInchOfLength"^^xsd:string . 
 qu-unit:poundPerInchOfLength	core:description	"pound per inch of length"^^xsd:string .
+qu-unit:kilovolt	core:name	"kilovolt"^^xsd:string . 
 qu-unit:kilovolt	core:description	"kilovolt"^^xsd:string .
+qu-unit:volt	core:name	"volt"^^xsd:string . 
 qu-unit:volt	core:description	"volt"^^xsd:string .
+qu-unit:microvolt	core:name	"microvolt"^^xsd:string . 
 qu-unit:microvolt	core:description	"microvolt"^^xsd:string .
+qu-unit:millivolt	core:name	"millivolt"^^xsd:string . 
 qu-unit:millivolt	core:description	"millivolt"^^xsd:string .
+qu-unit:megavolt	core:name	"megavolt"^^xsd:string . 
 qu-unit:megavolt	core:description	"megavolt"^^xsd:string .
+qu-unit:centipoise	core:name	"centipoise"^^xsd:string . 
 qu-unit:centipoise	core:description	"centipoise"^^xsd:string .
+qu-unit:poundPerFootHour	core:name	"poundPerFootHour"^^xsd:string . 
 qu-unit:poundPerFootHour	core:description	"pound per foot hour"^^xsd:string .
+qu-unit:poundForceSecondPerSquareFoot	core:name	"poundForceSecondPerSquareFoot"^^xsd:string . 
 qu-unit:poundForceSecondPerSquareFoot	core:description	"pound-force second per square foot"^^xsd:string .
+qu-unit:slugPerFootSecond	core:name	"slugPerFootSecond"^^xsd:string . 
 qu-unit:slugPerFootSecond	core:description	"slug per foot second"^^xsd:string .
+qu-unit:poise	core:name	"poise"^^xsd:string . 
 qu-unit:poise	core:description	"poise"^^xsd:string .
+qu-unit:pascalSecond	core:name	"pascalSecond"^^xsd:string . 
 qu-unit:pascalSecond	core:description	"pascal second"^^xsd:string .
+qu-unit:micropoise	core:name	"micropoise"^^xsd:string . 
 qu-unit:micropoise	core:description	"micropoise"^^xsd:string .
+qu-unit:poundForceSecondPerSquareInch	core:name	"poundForceSecondPerSquareInch"^^xsd:string . 
 qu-unit:poundForceSecondPerSquareInch	core:description	"pound-force second per square inch"^^xsd:string .
+qu-unit:millipascalSecond	core:name	"millipascalSecond"^^xsd:string . 
 qu-unit:millipascalSecond	core:description	"millipascal second"^^xsd:string .
+qu-unit:poundPerFootSecond	core:name	"poundPerFootSecond"^^xsd:string . 
 qu-unit:poundPerFootSecond	core:description	"pound per foot second"^^xsd:string .
+qu-unit:milliampere	core:name	"milliampere"^^xsd:string . 
 qu-unit:milliampere	core:description	"milliampere"^^xsd:string .
+qu-unit:microampere	core:name	"microampere"^^xsd:string . 
 qu-unit:microampere	core:description	"microampere"^^xsd:string .
+qu-unit:kiloampere	core:name	"kiloampere"^^xsd:string . 
 qu-unit:kiloampere	core:description	"kiloampere"^^xsd:string .
+qu-unit:ampere	core:name	"ampere"^^xsd:string . 
 qu-unit:ampere	core:description	"ampere"^^xsd:string .
+qu-unit:nanoampere	core:name	"nanoampere"^^xsd:string . 
 qu-unit:nanoampere	core:description	"nanoampere"^^xsd:string .
+qu-unit:megaampere	core:name	"megaampere"^^xsd:string . 
 qu-unit:megaampere	core:description	"megaampere"^^xsd:string .
+qu-unit:picoampere	core:name	"picoampere"^^xsd:string . 
 qu-unit:picoampere	core:description	"picoampere"^^xsd:string .
+qu-unit:kelvin	core:name	"kelvin"^^xsd:string . 
 qu-unit:kelvin	core:description	"kelvin"^^xsd:string .
+qu-unit:degreeCelsius	core:name	"degreeCelsius"^^xsd:string . 
 qu-unit:degreeCelsius	core:description	"degree Celsius"^^xsd:string .
+qu-unit:cubicCentimetrePerMole	core:name	"cubicCentimetrePerMole"^^xsd:string . 
 qu-unit:cubicCentimetrePerMole	core:description	"cubic centimetre per mole"^^xsd:string .
+qu-unit:cubicDecimetrePerMole	core:name	"cubicDecimetrePerMole"^^xsd:string . 
 qu-unit:cubicDecimetrePerMole	core:description	"cubic decimetre per mole"^^xsd:string .
+qu-unit:litrePerMole	core:name	"litrePerMole"^^xsd:string . 
 qu-unit:litrePerMole	core:description	"litre per mole"^^xsd:string .
+qu-unit:cubicMetrePerMole	core:name	"cubicMetrePerMole"^^xsd:string . 
 qu-unit:cubicMetrePerMole	core:description	"cubic metre per mole"^^xsd:string .
+qu-unit:lumenSecond	core:name	"lumenSecond"^^xsd:string . 
 qu-unit:lumenSecond	core:description	"lumen second"^^xsd:string .
+qu-unit:henryPerMetre	core:name	"henryPerMetre"^^xsd:string . 
 qu-unit:henryPerMetre	core:description	"henry per metre"^^xsd:string .
+qu-unit:microhenryPerMetre	core:name	"microhenryPerMetre"^^xsd:string . 
 qu-unit:microhenryPerMetre	core:description	"microhenry per metre"^^xsd:string .
+qu-unit:nanohenryPerMetre	core:name	"nanohenryPerMetre"^^xsd:string . 
 qu-unit:nanohenryPerMetre	core:description	"nanohenry per metre"^^xsd:string .
+qu-unit:coulombMetre	core:name	"coulombMetre"^^xsd:string . 
 qu-unit:coulombMetre	core:description	"coulomb metre"^^xsd:string .
+qu-unit:faradPerMetre	core:name	"faradPerMetre"^^xsd:string . 
 qu-unit:faradPerMetre	core:description	"farad per metre"^^xsd:string .
+qu-unit:nanofaradPerMetre	core:name	"nanofaradPerMetre"^^xsd:string . 
 qu-unit:nanofaradPerMetre	core:description	"nanofarad per metre"^^xsd:string .
+qu-unit:picofaradPerMetre	core:name	"picofaradPerMetre"^^xsd:string . 
 qu-unit:picofaradPerMetre	core:description	"picofarad per metre"^^xsd:string .
+qu-unit:microfaradPerMetre	core:name	"microfaradPerMetre"^^xsd:string . 
 qu-unit:microfaradPerMetre	core:description	"microfarad per metre"^^xsd:string .
+qu-unit:faradPerKilometre	core:name	"faradPerKilometre"^^xsd:string . 
 qu-unit:faradPerKilometre	core:description	"farad per kilometre"^^xsd:string .
+qu-unit:reciprocalSquareMetre	core:name	"reciprocalSquareMetre"^^xsd:string . 
 qu-unit:reciprocalSquareMetre	core:description	"reciprocal square metre"^^xsd:string .
+qu-unit:calorieThermochemicalPerGram	core:name	"calorieThermochemicalPerGram"^^xsd:string . 
 qu-unit:calorieThermochemicalPerGram	core:description	"calorie (thermochemical) per gram"^^xsd:string .
+qu-unit:megajoulePerKilogram	core:name	"megajoulePerKilogram"^^xsd:string . 
 qu-unit:megajoulePerKilogram	core:description	"megajoule per kilogram"^^xsd:string .
+qu-unit:joulePerKilogram	core:name	"joulePerKilogram"^^xsd:string . 
 qu-unit:joulePerKilogram	core:description	"joule per kilogram"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTablePerPound	core:name	"britishThermalUnitInternationalTablePerPound"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTablePerPound	core:description	"British thermal unit (international table) per pound"^^xsd:string .
+qu-unit:calorieInternationalTablePerGram	core:name	"calorieInternationalTablePerGram"^^xsd:string . 
 qu-unit:calorieInternationalTablePerGram	core:description	"calorie (international table) per gram"^^xsd:string .
+qu-unit:kilojoulePerKilogram	core:name	"kilojoulePerKilogram"^^xsd:string . 
 qu-unit:kilojoulePerKilogram	core:description	"kilojoule per kilogram"^^xsd:string .
+qu-unit:reciprocalPascalOrPascalToThePowerMinusOne	core:name	"reciprocalPascalOrPascalToThePowerMinusOne"^^xsd:string . 
 qu-unit:reciprocalPascalOrPascalToThePowerMinusOne	core:description	"reciprocal pascal or pascal to the power minus one"^^xsd:string .
+qu-unit:reciprocalPsi	core:name	"reciprocalPsi"^^xsd:string . 
 qu-unit:reciprocalPsi	core:description	"reciprocal psi"^^xsd:string .
+qu-unit:wattPerKelvin	core:name	"wattPerKelvin"^^xsd:string . 
 qu-unit:wattPerKelvin	core:description	"watt per kelvin"^^xsd:string .
+qu-unit:microvoltPerMetre	core:name	"microvoltPerMetre"^^xsd:string . 
 qu-unit:microvoltPerMetre	core:description	"microvolt per metre"^^xsd:string .
+qu-unit:voltPerCentimetre	core:name	"voltPerCentimetre"^^xsd:string . 
 qu-unit:voltPerCentimetre	core:description	"volt per centimetre"^^xsd:string .
+qu-unit:voltPerMetre	core:name	"voltPerMetre"^^xsd:string . 
 qu-unit:voltPerMetre	core:description	"volt per metre"^^xsd:string .
+qu-unit:millivoltPerMetre	core:name	"millivoltPerMetre"^^xsd:string . 
 qu-unit:millivoltPerMetre	core:description	"millivolt per metre"^^xsd:string .
+qu-unit:megavoltPerMetre	core:name	"megavoltPerMetre"^^xsd:string . 
 qu-unit:megavoltPerMetre	core:description	"megavolt per metre"^^xsd:string .
+qu-unit:kilovoltPerMetre	core:name	"kilovoltPerMetre"^^xsd:string . 
 qu-unit:kilovoltPerMetre	core:description	"kilovolt per metre"^^xsd:string .
+qu-unit:tonUkLongPerCubicYard	core:name	"tonUkLongPerCubicYard"^^xsd:string . 
 qu-unit:tonUkLongPerCubicYard	core:description	"ton (UK long) per cubic yard"^^xsd:string .
+qu-unit:gramPerCubicCentimetre	core:name	"gramPerCubicCentimetre"^^xsd:string . 
 qu-unit:gramPerCubicCentimetre	core:description	"gram per cubic centimetre"^^xsd:string .
+qu-unit:poundPerCubicFoot	core:name	"poundPerCubicFoot"^^xsd:string . 
 qu-unit:poundPerCubicFoot	core:description	"pound per cubic foot"^^xsd:string .
+qu-unit:megagramPerCubicMetre	core:name	"megagramPerCubicMetre"^^xsd:string . 
 qu-unit:megagramPerCubicMetre	core:description	"megagram per cubic metre"^^xsd:string .
+qu-unit:gramPerCubicDecimetre	core:name	"gramPerCubicDecimetre"^^xsd:string . 
 qu-unit:gramPerCubicDecimetre	core:description	"gram per cubic decimetre"^^xsd:string .
+qu-unit:milligramPerLitre	core:name	"milligramPerLitre"^^xsd:string . 
 qu-unit:milligramPerLitre	core:description	"milligram per litre"^^xsd:string .
+qu-unit:tonnePerCubicMetre	core:name	"tonnePerCubicMetre"^^xsd:string . 
 qu-unit:tonnePerCubicMetre	core:description	"tonne per cubic metre"^^xsd:string .
+qu-unit:ounceAvoirdupoisPerGallonUk	core:name	"ounceAvoirdupoisPerGallonUk"^^xsd:string . 
 qu-unit:ounceAvoirdupoisPerGallonUk	core:description	"ounce (avoirdupois) per gallon (UK)"^^xsd:string .
+qu-unit:slugPerCubicFoot	core:name	"slugPerCubicFoot"^^xsd:string . 
 qu-unit:slugPerCubicFoot	core:description	"slug per cubic foot"^^xsd:string .
+qu-unit:milligramPerCubicMetre	core:name	"milligramPerCubicMetre"^^xsd:string . 
 qu-unit:milligramPerCubicMetre	core:description	"milligram per cubic metre"^^xsd:string .
+qu-unit:kilogramPerCubicDecimetre	core:name	"kilogramPerCubicDecimetre"^^xsd:string . 
 qu-unit:kilogramPerCubicDecimetre	core:description	"kilogram per cubic decimetre"^^xsd:string .
+qu-unit:poundAvoirdupoisPerGallonUk	core:name	"poundAvoirdupoisPerGallonUk"^^xsd:string . 
 qu-unit:poundAvoirdupoisPerGallonUk	core:description	"pound (avoirdupois) per gallon (UK)"^^xsd:string .
+qu-unit:poundPerCubicInch	core:name	"poundPerCubicInch"^^xsd:string . 
 qu-unit:poundPerCubicInch	core:description	"pound per cubic inch"^^xsd:string .
+qu-unit:ounceAvoirdupoisPerCubicInch	core:name	"ounceAvoirdupoisPerCubicInch"^^xsd:string . 
 qu-unit:ounceAvoirdupoisPerCubicInch	core:description	"ounce (avoirdupois) per cubic inch"^^xsd:string .
+qu-unit:kilogramPerCubicMetre	core:name	"kilogramPerCubicMetre"^^xsd:string . 
 qu-unit:kilogramPerCubicMetre	core:description	"kilogram per cubic metre"^^xsd:string .
+qu-unit:poundPerCubicYard	core:name	"poundPerCubicYard"^^xsd:string . 
 qu-unit:poundPerCubicYard	core:description	"pound per cubic yard"^^xsd:string .
+qu-unit:gramPerCubicMetre	core:name	"gramPerCubicMetre"^^xsd:string . 
 qu-unit:gramPerCubicMetre	core:description	"gram per cubic metre"^^xsd:string .
+qu-unit:microgramPerLitre	core:name	"microgramPerLitre"^^xsd:string . 
 qu-unit:microgramPerLitre	core:description	"microgram per litre"^^xsd:string .
+qu-unit:tonUsShortPerCubicYard	core:name	"tonUsShortPerCubicYard"^^xsd:string . 
 qu-unit:tonUsShortPerCubicYard	core:description	"ton (US short) per cubic yard"^^xsd:string .
+qu-unit:ounceAvoirdupoisPerGallonUs	core:name	"ounceAvoirdupoisPerGallonUs"^^xsd:string . 
 qu-unit:ounceAvoirdupoisPerGallonUs	core:description	"ounce (avoirdupois) per gallon (US)"^^xsd:string .
+qu-unit:kilogramPerLitre	core:name	"kilogramPerLitre"^^xsd:string . 
 qu-unit:kilogramPerLitre	core:description	"kilogram per litre"^^xsd:string .
+qu-unit:ounceAvoirdupoisPerCubicYard	core:name	"ounceAvoirdupoisPerCubicYard"^^xsd:string . 
 qu-unit:ounceAvoirdupoisPerCubicYard	core:description	"ounce (avoirdupois) per cubic yard"^^xsd:string .
+qu-unit:poundPerGallonUs	core:name	"poundPerGallonUs"^^xsd:string . 
 qu-unit:poundPerGallonUs	core:description	"pound per gallon (US)"^^xsd:string .
+qu-unit:kilogramPerCubicCentimetre	core:name	"kilogramPerCubicCentimetre"^^xsd:string . 
 qu-unit:kilogramPerCubicCentimetre	core:description	"kilogram per cubic centimetre"^^xsd:string .
+qu-unit:gramPerLitre	core:name	"gramPerLitre"^^xsd:string . 
 qu-unit:gramPerLitre	core:description	"gram per litre"^^xsd:string .
+qu-unit:gramPerMillilitre	core:name	"gramPerMillilitre"^^xsd:string . 
 qu-unit:gramPerMillilitre	core:description	"gram per millilitre"^^xsd:string .
+qu-unit:microgramPerCubicMetre	core:name	"microgramPerCubicMetre"^^xsd:string . 
 qu-unit:microgramPerCubicMetre	core:description	"microgram per cubic metre"^^xsd:string .
+qu-unit:grainPerGallonUs	core:name	"grainPerGallonUs"^^xsd:string . 
 qu-unit:grainPerGallonUs	core:description	"grain per gallon (US)"^^xsd:string .
+qu-unit:degreeRankinePerHour	core:name	"degreeRankinePerHour"^^xsd:string . 
 qu-unit:degreeRankinePerHour	core:description	"degree Rankine per hour"^^xsd:string .
+qu-unit:kelvinPerHour	core:name	"kelvinPerHour"^^xsd:string . 
 qu-unit:kelvinPerHour	core:description	"kelvin per hour"^^xsd:string .
+qu-unit:degreeRankinePerSecond	core:name	"degreeRankinePerSecond"^^xsd:string . 
 qu-unit:degreeRankinePerSecond	core:description	"degree Rankine per second"^^xsd:string .
+qu-unit:degreeRankinePerMinute	core:name	"degreeRankinePerMinute"^^xsd:string . 
 qu-unit:degreeRankinePerMinute	core:description	"degree Rankine per minute"^^xsd:string .
+qu-unit:kelvinPerSecond	core:name	"kelvinPerSecond"^^xsd:string . 
 qu-unit:kelvinPerSecond	core:description	"kelvin per second"^^xsd:string .
+qu-unit:degreeFahrenheitPerHour	core:name	"degreeFahrenheitPerHour"^^xsd:string . 
 qu-unit:degreeFahrenheitPerHour	core:description	"degree Fahrenheit per hour"^^xsd:string .
+qu-unit:degreeFahrenheitPerSecond	core:name	"degreeFahrenheitPerSecond"^^xsd:string . 
 qu-unit:degreeFahrenheitPerSecond	core:description	"degree Fahrenheit per second"^^xsd:string .
+qu-unit:degreeFahrenheitPerMinute	core:name	"degreeFahrenheitPerMinute"^^xsd:string . 
 qu-unit:degreeFahrenheitPerMinute	core:description	"degree Fahrenheit per minute"^^xsd:string .
+qu-unit:kelvinPerMinute	core:name	"kelvinPerMinute"^^xsd:string . 
 qu-unit:kelvinPerMinute	core:description	"kelvin per minute"^^xsd:string .
+qu-unit:milliweber	core:name	"milliweber"^^xsd:string . 
 qu-unit:milliweber	core:description	"milliweber"^^xsd:string .
+qu-unit:weber	core:name	"weber"^^xsd:string . 
 qu-unit:weber	core:description	"weber"^^xsd:string .
+qu-unit:squareMillimetre	core:name	"squareMillimetre"^^xsd:string . 
 qu-unit:squareMillimetre	core:description	"square millimetre"^^xsd:string .
+qu-unit:squareHectometre	core:name	"squareHectometre"^^xsd:string . 
 qu-unit:squareHectometre	core:description	"square hectometre"^^xsd:string .
+qu-unit:are	core:name	"are"^^xsd:string . 
 qu-unit:are	core:description	"are"^^xsd:string .
+qu-unit:squareDecimetre	core:name	"squareDecimetre"^^xsd:string . 
 qu-unit:squareDecimetre	core:description	"square decimetre"^^xsd:string .
+qu-unit:acre	core:name	"acre"^^xsd:string . 
 qu-unit:acre	core:description	"acre"^^xsd:string .
+qu-unit:squareMetre	core:name	"squareMetre"^^xsd:string . 
 qu-unit:squareMetre	core:description	"square metre"^^xsd:string .
+qu-unit:squareYard	core:name	"squareYard"^^xsd:string . 
 qu-unit:squareYard	core:description	"square yard"^^xsd:string .
+qu-unit:barn	core:name	"barn"^^xsd:string . 
 qu-unit:barn	core:description	"barn"^^xsd:string .
+qu-unit:squareInch	core:name	"squareInch"^^xsd:string . 
 qu-unit:squareInch	core:description	"square inch"^^xsd:string .
+qu-unit:decare	core:name	"decare"^^xsd:string . 
 qu-unit:decare	core:description	"decare"^^xsd:string .
+qu-unit:squareCentimetre	core:name	"squareCentimetre"^^xsd:string . 
 qu-unit:squareCentimetre	core:description	"square centimetre"^^xsd:string .
+qu-unit:squareKilometre	core:name	"squareKilometre"^^xsd:string . 
 qu-unit:squareKilometre	core:description	"square kilometre"^^xsd:string .
+qu-unit:squareFoot	core:name	"squareFoot"^^xsd:string . 
 qu-unit:squareFoot	core:description	"square foot"^^xsd:string .
+qu-unit:squareDecametre	core:name	"squareDecametre"^^xsd:string . 
 qu-unit:squareDecametre	core:description	"square decametre"^^xsd:string .
+qu-unit:hectare	core:name	"hectare"^^xsd:string . 
 qu-unit:hectare	core:description	"hectare"^^xsd:string .
+qu-unit:squareMicrometre	core:name	"squareMicrometre"^^xsd:string . 
 qu-unit:squareMicrometre	core:description	"square micrometre"^^xsd:string .
+qu-unit:squareFootPerSecond	core:name	"squareFootPerSecond"^^xsd:string . 
 qu-unit:squareFootPerSecond	core:description	"square foot per second"^^xsd:string .
+qu-unit:centistokes	core:name	"centistokes"^^xsd:string . 
 qu-unit:centistokes	core:description	"centistokes"^^xsd:string .
+qu-unit:millimetreSquaredPerSecond	core:name	"millimetreSquaredPerSecond"^^xsd:string . 
 qu-unit:millimetreSquaredPerSecond	core:description	"millimetre squared per second"^^xsd:string .
+qu-unit:squareInchPerSecond	core:name	"squareInchPerSecond"^^xsd:string . 
 qu-unit:squareInchPerSecond	core:description	"square inch per second"^^xsd:string .
+qu-unit:squareMetrePerSecond	core:name	"squareMetrePerSecond"^^xsd:string . 
 qu-unit:squareMetrePerSecond	core:description	"square metre per second"^^xsd:string .
+qu-unit:stokes	core:name	"stokes"^^xsd:string . 
 qu-unit:stokes	core:description	"stokes"^^xsd:string .
+qu-unit:steradian	core:name	"steradian"^^xsd:string . 
 qu-unit:steradian	core:description	"steradian"^^xsd:string .
+qu-unit:millimetrePerKelvin	core:name	"millimetrePerKelvin"^^xsd:string . 
 qu-unit:millimetrePerKelvin	core:description	"millimetre per kelvin"^^xsd:string .
+qu-unit:centimetrePerKelvin	core:name	"centimetrePerKelvin"^^xsd:string . 
 qu-unit:centimetrePerKelvin	core:description	"centimetre per kelvin"^^xsd:string .
+qu-unit:micrometrePerKelvin	core:name	"micrometrePerKelvin"^^xsd:string . 
 qu-unit:micrometrePerKelvin	core:description	"micrometre per kelvin"^^xsd:string .
+qu-unit:yardPerDegreeFahrenheit	core:name	"yardPerDegreeFahrenheit"^^xsd:string . 
 qu-unit:yardPerDegreeFahrenheit	core:description	"yard per degree Fahrenheit"^^xsd:string .
+qu-unit:footPerDegreeFahrenheit	core:name	"footPerDegreeFahrenheit"^^xsd:string . 
 qu-unit:footPerDegreeFahrenheit	core:description	"foot per degree Fahrenheit"^^xsd:string .
+qu-unit:metrePerKelvin	core:name	"metrePerKelvin"^^xsd:string . 
 qu-unit:metrePerKelvin	core:description	"metre per kelvin"^^xsd:string .
+qu-unit:inchPerDegreeFahrenheit	core:name	"inchPerDegreeFahrenheit"^^xsd:string . 
 qu-unit:inchPerDegreeFahrenheit	core:description	"inch per degree Fahrenheit"^^xsd:string .
+qu-unit:kiloamperePerMetre	core:name	"kiloamperePerMetre"^^xsd:string . 
 qu-unit:kiloamperePerMetre	core:description	"kiloampere per metre"^^xsd:string .
+qu-unit:amperePerMetre	core:name	"amperePerMetre"^^xsd:string . 
 qu-unit:amperePerMetre	core:description	"ampere per metre"^^xsd:string .
+qu-unit:milliamperePerInch	core:name	"milliamperePerInch"^^xsd:string . 
 qu-unit:milliamperePerInch	core:description	"milliampere per inch"^^xsd:string .
+qu-unit:milliamperePerMillimetre	core:name	"milliamperePerMillimetre"^^xsd:string . 
 qu-unit:milliamperePerMillimetre	core:description	"milliampere per millimetre"^^xsd:string .
+qu-unit:amperePerCentimetre	core:name	"amperePerCentimetre"^^xsd:string . 
 qu-unit:amperePerCentimetre	core:description	"ampere per centimetre"^^xsd:string .
+qu-unit:amperePerMillimetre	core:name	"amperePerMillimetre"^^xsd:string . 
 qu-unit:amperePerMillimetre	core:description	"ampere per millimetre"^^xsd:string .
+qu-unit:kiloampereHourThousandAmpereHour	core:name	"kiloampereHourThousandAmpereHour"^^xsd:string . 
 qu-unit:kiloampereHourThousandAmpereHour	core:description	"kiloampere hour (thousand ampere hour)"^^xsd:string .
+qu-unit:ampereSecond	core:name	"ampereSecond"^^xsd:string . 
 qu-unit:ampereSecond	core:description	"ampere second"^^xsd:string .
+qu-unit:coulomb	core:name	"coulomb"^^xsd:string . 
 qu-unit:coulomb	core:description	"coulomb"^^xsd:string .
+qu-unit:microcoulomb	core:name	"microcoulomb"^^xsd:string . 
 qu-unit:microcoulomb	core:description	"microcoulomb"^^xsd:string .
+qu-unit:millicoulomb	core:name	"millicoulomb"^^xsd:string . 
 qu-unit:millicoulomb	core:description	"millicoulomb"^^xsd:string .
+qu-unit:ampereHour	core:name	"ampereHour"^^xsd:string . 
 qu-unit:ampereHour	core:description	"ampere hour"^^xsd:string .
+qu-unit:kilocoulomb	core:name	"kilocoulomb"^^xsd:string . 
 qu-unit:kilocoulomb	core:description	"kilocoulomb"^^xsd:string .
+qu-unit:megacoulomb	core:name	"megacoulomb"^^xsd:string . 
 qu-unit:megacoulomb	core:description	"megacoulomb"^^xsd:string .
+qu-unit:picocoulomb	core:name	"picocoulomb"^^xsd:string . 
 qu-unit:picocoulomb	core:description	"picocoulomb"^^xsd:string .
+qu-unit:nanocoulomb	core:name	"nanocoulomb"^^xsd:string . 
 qu-unit:nanocoulomb	core:description	"nanocoulomb"^^xsd:string .
+qu-unit:picohenry	core:name	"picohenry"^^xsd:string . 
 qu-unit:picohenry	core:description	"picohenry"^^xsd:string .
+qu-unit:henry	core:name	"henry"^^xsd:string . 
 qu-unit:henry	core:description	"henry"^^xsd:string .
+qu-unit:microhenry	core:name	"microhenry"^^xsd:string . 
 qu-unit:microhenry	core:description	"microhenry"^^xsd:string .
+qu-unit:nanohenry	core:name	"nanohenry"^^xsd:string . 
 qu-unit:nanohenry	core:description	"nanohenry"^^xsd:string .
+qu-unit:millihenry	core:name	"millihenry"^^xsd:string . 
 qu-unit:millihenry	core:description	"millihenry"^^xsd:string .
+qu-unit:squareMetrePerJoule	core:name	"squareMetrePerJoule"^^xsd:string . 
 qu-unit:squareMetrePerJoule	core:description	"square metre per joule"^^xsd:string .
+qu-unit:squareCentimetrePerErg	core:name	"squareCentimetrePerErg"^^xsd:string . 
 qu-unit:squareCentimetrePerErg	core:description	"square centimetre per erg"^^xsd:string .
+qu-unit:barnPerElectronvolt	core:name	"barnPerElectronvolt"^^xsd:string . 
 qu-unit:barnPerElectronvolt	core:description	"barn per electronvolt"^^xsd:string .
+qu-unit:footPerHour	core:name	"footPerHour"^^xsd:string . 
 qu-unit:footPerHour	core:description	"foot per hour"^^xsd:string .
+qu-unit:millilitrePerSquareCentimetreSecond	core:name	"millilitrePerSquareCentimetreSecond"^^xsd:string . 
 qu-unit:millilitrePerSquareCentimetreSecond	core:description	"millilitre per square centimetre second"^^xsd:string .
+qu-unit:millimetrePerYear	core:name	"millimetrePerYear"^^xsd:string . 
 qu-unit:millimetrePerYear	core:description	"millimetre per year"^^xsd:string .
+qu-unit:kilometrePerHour	core:name	"kilometrePerHour"^^xsd:string . 
 qu-unit:kilometrePerHour	core:description	"kilometre per hour"^^xsd:string .
+qu-unit:footPerMinute	core:name	"footPerMinute"^^xsd:string . 
 qu-unit:footPerMinute	core:description	"foot per minute"^^xsd:string .
+qu-unit:knot	core:name	"knot"^^xsd:string . 
 qu-unit:knot	core:description	"knot"^^xsd:string .
+qu-unit:centimetrePerSecond	core:name	"centimetrePerSecond"^^xsd:string . 
 qu-unit:centimetrePerSecond	core:description	"centimetre per second"^^xsd:string .
+qu-unit:centimetrePerHour	core:name	"centimetrePerHour"^^xsd:string . 
 qu-unit:centimetrePerHour	core:description	"centimetre per hour"^^xsd:string .
+qu-unit:metrePerMinute	core:name	"metrePerMinute"^^xsd:string . 
 qu-unit:metrePerMinute	core:description	"metre per minute"^^xsd:string .
+qu-unit:millimetrePerHour	core:name	"millimetrePerHour"^^xsd:string . 
 qu-unit:millimetrePerHour	core:description	"millimetre per hour"^^xsd:string .
+qu-unit:millimetrePerSecond	core:name	"millimetrePerSecond"^^xsd:string . 
 qu-unit:millimetrePerSecond	core:description	"millimetre per second"^^xsd:string .
+qu-unit:footPerSecond	core:name	"footPerSecond"^^xsd:string . 
 qu-unit:footPerSecond	core:description	"foot per second"^^xsd:string .
+qu-unit:inchPerSecond	core:name	"inchPerSecond"^^xsd:string . 
 qu-unit:inchPerSecond	core:description	"inch per second"^^xsd:string .
+qu-unit:metrePerSecond	core:name	"metrePerSecond"^^xsd:string . 
 qu-unit:metrePerSecond	core:description	"metre per second"^^xsd:string .
+qu-unit:milePerHour	core:name	"milePerHour"^^xsd:string . 
 qu-unit:milePerHour	core:description	"mile per hour"^^xsd:string .
+qu-unit:millimetrePerMinute	core:name	"millimetrePerMinute"^^xsd:string . 
 qu-unit:millimetrePerMinute	core:description	"millimetre per minute"^^xsd:string .
+qu-unit:reciprocalSecondPerCubicMetre	core:name	"reciprocalSecondPerCubicMetre"^^xsd:string . 
 qu-unit:reciprocalSecondPerCubicMetre	core:description	"reciprocal second per cubic metre"^^xsd:string .
+qu-unit:perSquareCentimetreHour	core:name	"perSquareCentimetreHour"^^xsd:string . 
 qu-unit:perSquareCentimetreHour	core:description	"number per square centimetre hour"^^xsd:string .
+qu-unit:perSquareMetreSecond	core:name	"perSquareMetreSecond"^^xsd:string . 
 qu-unit:perSquareMetreSecond	core:description	"number per square metre second"^^xsd:string .
+qu-unit:inchToTheFourthPower	core:name	"inchToTheFourthPower"^^xsd:string . 
 qu-unit:inchToTheFourthPower	core:description	"inch to the fourth power"^^xsd:string .
+qu-unit:millimetreToTheFourthPower	core:name	"millimetreToTheFourthPower"^^xsd:string . 
 qu-unit:millimetreToTheFourthPower	core:description	"millimetre to the fourth power"^^xsd:string .
+qu-unit:metreToTheFourthPower	core:name	"metreToTheFourthPower"^^xsd:string . 
 qu-unit:metreToTheFourthPower	core:description	"metre to the fourth power"^^xsd:string .
+qu-unit:squareMetrePerSteradian	core:name	"squareMetrePerSteradian"^^xsd:string . 
 qu-unit:squareMetrePerSteradian	core:description	"square metre per steradian"^^xsd:string .
+qu-unit:barnPerSteradian	core:name	"barnPerSteradian"^^xsd:string . 
 qu-unit:barnPerSteradian	core:description	"barn per steradian"^^xsd:string .
+qu-unit:picosecond	core:name	"picosecond"^^xsd:string . 
 qu-unit:picosecond	core:description	"picosecond"^^xsd:string .
+qu-unit:year	core:name	"year"^^xsd:string . 
 qu-unit:year	core:description	"year"^^xsd:string .
+qu-unit:commonYear	core:name	"commonYear"^^xsd:string . 
 qu-unit:commonYear	core:description	"common year"^^xsd:string .
+qu-unit:millisecond	core:name	"millisecond"^^xsd:string . 
 qu-unit:millisecond	core:description	"millisecond"^^xsd:string .
+qu-unit:millihenryPerOhm	core:name	"millihenryPerOhm"^^xsd:string . 
 qu-unit:millihenryPerOhm	core:description	"millihenry per ohm"^^xsd:string .
+qu-unit:nanosecond	core:name	"nanosecond"^^xsd:string . 
 qu-unit:nanosecond	core:description	"nanosecond"^^xsd:string .
+qu-unit:secondUnitOfTime	core:name	"secondUnitOfTime"^^xsd:string . 
 qu-unit:secondUnitOfTime	core:description	"second [unit of time]"^^xsd:string .
+qu-unit:siderealYear	core:name	"siderealYear"^^xsd:string . 
 qu-unit:siderealYear	core:description	"sidereal year"^^xsd:string .
+qu-unit:microsecond	core:name	"microsecond"^^xsd:string . 
 qu-unit:microsecond	core:description	"microsecond"^^xsd:string .
+qu-unit:microhenryPerOhm	core:name	"microhenryPerOhm"^^xsd:string . 
 qu-unit:microhenryPerOhm	core:description	"microhenry per ohm"^^xsd:string .
+qu-unit:hour	core:name	"hour"^^xsd:string . 
 qu-unit:hour	core:description	"hour"^^xsd:string .
+qu-unit:week	core:name	"week"^^xsd:string . 
 qu-unit:week	core:description	"week"^^xsd:string .
+qu-unit:month	core:name	"month"^^xsd:string . 
 qu-unit:month	core:description	"month"^^xsd:string .
+qu-unit:henryPerKiloohm	core:name	"henryPerKiloohm"^^xsd:string . 
 qu-unit:henryPerKiloohm	core:description	"henry per kiloohm"^^xsd:string .
+qu-unit:day	core:name	"day"^^xsd:string . 
 qu-unit:day	core:description	"day"^^xsd:string .
+qu-unit:microhenryPerKiloohm	core:name	"microhenryPerKiloohm"^^xsd:string . 
 qu-unit:microhenryPerKiloohm	core:description	"microhenry per kiloohm"^^xsd:string .
+qu-unit:tropicalYear	core:name	"tropicalYear"^^xsd:string . 
 qu-unit:tropicalYear	core:description	"tropical year"^^xsd:string .
+qu-unit:henryPerOhm	core:name	"henryPerOhm"^^xsd:string . 
 qu-unit:henryPerOhm	core:description	"henry per ohm"^^xsd:string .
+qu-unit:kilosecond	core:name	"kilosecond"^^xsd:string . 
 qu-unit:kilosecond	core:description	"kilosecond"^^xsd:string .
+qu-unit:millihenryPerKiloohm	core:name	"millihenryPerKiloohm"^^xsd:string . 
 qu-unit:millihenryPerKiloohm	core:description	"millihenry per kiloohm"^^xsd:string .
+qu-unit:minuteUnitOfTime	core:name	"minuteUnitOfTime"^^xsd:string . 
 qu-unit:minuteUnitOfTime	core:description	"minute [unit of time]"^^xsd:string .
+qu-unit:candela	core:name	"candela"^^xsd:string . 
 qu-unit:candela	core:description	"candela"^^xsd:string .
+qu-unit:amperePerSquareMetre	core:name	"amperePerSquareMetre"^^xsd:string . 
 qu-unit:amperePerSquareMetre	core:description	"ampere per square metre"^^xsd:string .
+qu-unit:amperePerSquareCentimetre	core:name	"amperePerSquareCentimetre"^^xsd:string . 
 qu-unit:amperePerSquareCentimetre	core:description	"ampere per square centimetre"^^xsd:string .
+qu-unit:megaamperePerSquareMetre	core:name	"megaamperePerSquareMetre"^^xsd:string . 
 qu-unit:megaamperePerSquareMetre	core:description	"megaampere per square metre"^^xsd:string .
+qu-unit:kiloamperePerSquareMetre	core:name	"kiloamperePerSquareMetre"^^xsd:string . 
 qu-unit:kiloamperePerSquareMetre	core:description	"kiloampere per square metre"^^xsd:string .
+qu-unit:amperePerSquareMillimetre	core:name	"amperePerSquareMillimetre"^^xsd:string . 
 qu-unit:amperePerSquareMillimetre	core:description	"ampere per square millimetre"^^xsd:string .
+qu-unit:kelvinPerWatt	core:name	"kelvinPerWatt"^^xsd:string . 
 qu-unit:kelvinPerWatt	core:description	"kelvin per watt"^^xsd:string .
+qu-unit:fathom	core:name	"fathom"^^xsd:string . 
 qu-unit:fathom	core:description	"fathom"^^xsd:string .
+qu-unit:decametre	core:name	"decametre"^^xsd:string . 
 qu-unit:decametre	core:description	"decametre"^^xsd:string .
+qu-unit:hectometre	core:name	"hectometre"^^xsd:string . 
 qu-unit:hectometre	core:description	"hectometre"^^xsd:string .
+qu-unit:kilometre	core:name	"kilometre"^^xsd:string . 
 qu-unit:kilometre	core:description	"kilometre"^^xsd:string .
+qu-unit:milliInch	core:name	"milliInch"^^xsd:string . 
 qu-unit:milliInch	core:description	"milli-inch"^^xsd:string .
+qu-unit:microInch	core:name	"microInch"^^xsd:string . 
 qu-unit:microInch	core:description	"micro-inch"^^xsd:string .
+qu-unit:angstrom	core:name	"angstrom"^^xsd:string . 
 qu-unit:angstrom	core:description	"angstrom"^^xsd:string .
+qu-unit:millimetre	core:name	"millimetre"^^xsd:string . 
 qu-unit:millimetre	core:description	"millimetre"^^xsd:string .
+qu-unit:frenchGauge	core:name	"frenchGauge"^^xsd:string . 
 qu-unit:frenchGauge	core:description	"French gauge"^^xsd:string .
+qu-unit:metre	core:name	"metre"^^xsd:string . 
 qu-unit:metre	core:description	"metre"^^xsd:string .
+qu-unit:picometre	core:name	"picometre"^^xsd:string . 
 qu-unit:picometre	core:description	"picometre"^^xsd:string .
+qu-unit:lightYear	core:name	"lightYear"^^xsd:string . 
 qu-unit:lightYear	core:description	"light year"^^xsd:string .
+qu-unit:micrometreMicron	core:name	"micrometreMicron"^^xsd:string . 
 qu-unit:micrometreMicron	core:description	"micrometre (micron)"^^xsd:string .
+qu-unit:decimetre	core:name	"decimetre"^^xsd:string . 
 qu-unit:decimetre	core:description	"decimetre"^^xsd:string .
+qu-unit:centimetre	core:name	"centimetre"^^xsd:string . 
 qu-unit:centimetre	core:description	"centimetre"^^xsd:string .
+qu-unit:gunterSChain	core:name	"gunterSChain"^^xsd:string . 
 qu-unit:gunterSChain	core:description	"Gunter's chain"^^xsd:string .
+qu-unit:nanometre	core:name	"nanometre"^^xsd:string . 
 qu-unit:nanometre	core:description	"nanometre"^^xsd:string .
+qu-unit:foot	core:name	"foot"^^xsd:string . 
 qu-unit:foot	core:description	"foot"^^xsd:string .
+qu-unit:femtometre	core:name	"femtometre"^^xsd:string . 
 qu-unit:femtometre	core:description	"femtometre"^^xsd:string .
+qu-unit:parsec	core:name	"parsec"^^xsd:string . 
 qu-unit:parsec	core:description	"parsec"^^xsd:string .
+qu-unit:rodUnitOfDistance	core:name	"rodUnitOfDistance"^^xsd:string . 
 qu-unit:rodUnitOfDistance	core:description	"rod [unit of distance]"^^xsd:string .
+qu-unit:yard	core:name	"yard"^^xsd:string . 
 qu-unit:yard	core:description	"yard"^^xsd:string .
+qu-unit:mileStatuteMile	core:name	"mileStatuteMile"^^xsd:string . 
 qu-unit:mileStatuteMile	core:description	"mile (statute mile)"^^xsd:string .
+qu-unit:nauticalMile	core:name	"nauticalMile"^^xsd:string . 
 qu-unit:nauticalMile	core:description	"nautical mile"^^xsd:string .
+qu-unit:inch	core:name	"inch"^^xsd:string . 
 qu-unit:inch	core:description	"inch"^^xsd:string .
+qu-unit:astronomicalUnit	core:name	"astronomicalUnit"^^xsd:string . 
 qu-unit:astronomicalUnit	core:description	"astronomical unit"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTablePerHourSquareFootDegreeRankine	core:name	"britishThermalUnitInternationalTablePerHourSquareFootDegreeRankine"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTablePerHourSquareFootDegreeRankine	core:description	"British thermal unit (international table) per hour square foot degree Rankine"^^xsd:string .
+qu-unit:internationalTableItCaloriePerSecondSquareCentimetreKelvin	core:name	"internationalTableItCaloriePerSecondSquareCentimetreKelvin"^^xsd:string . 
 qu-unit:internationalTableItCaloriePerSecondSquareCentimetreKelvin	core:description	"International Table (IT) calorie per second square centimetre kelvin"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTablePerSecondSquareFootDegreeRankine	core:name	"britishThermalUnitInternationalTablePerSecondSquareFootDegreeRankine"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTablePerSecondSquareFootDegreeRankine	core:description	"British thermal unit (international table) per second square foot degree Rankine"^^xsd:string .
+qu-unit:wattPerSquareMetreKelvin	core:name	"wattPerSquareMetreKelvin"^^xsd:string . 
 qu-unit:wattPerSquareMetreKelvin	core:description	"watt per square metre kelvin"^^xsd:string .
+qu-unit:calorieThermochemicalPerSecondSquareCentimetreKelvin	core:name	"calorieThermochemicalPerSecondSquareCentimetreKelvin"^^xsd:string . 
 qu-unit:calorieThermochemicalPerSecondSquareCentimetreKelvin	core:description	"calorie (thermochemical) per second square centimetre kelvin"^^xsd:string .
+qu-unit:molePerHour	core:name	"molePerHour"^^xsd:string . 
 qu-unit:molePerHour	core:description	"mole per hour"^^xsd:string .
+qu-unit:kilomolePerHour	core:name	"kilomolePerHour"^^xsd:string . 
 qu-unit:kilomolePerHour	core:description	"kilomole per hour"^^xsd:string .
+qu-unit:kilomolePerSecond	core:name	"kilomolePerSecond"^^xsd:string . 
 qu-unit:kilomolePerSecond	core:description	"kilomole per second"^^xsd:string .
+qu-unit:molePerMinute	core:name	"molePerMinute"^^xsd:string . 
 qu-unit:molePerMinute	core:description	"mole per minute"^^xsd:string .
+qu-unit:kilomolePerMinute	core:name	"kilomolePerMinute"^^xsd:string . 
 qu-unit:kilomolePerMinute	core:description	"kilomole per minute"^^xsd:string .
+qu-unit:katal	core:name	"katal"^^xsd:string . 
 qu-unit:katal	core:description	"katal"^^xsd:string .
+qu-unit:molePerSecond	core:name	"molePerSecond"^^xsd:string . 
 qu-unit:molePerSecond	core:description	"mole per second"^^xsd:string .
+qu-unit:kilojoulePerKelvin	core:name	"kilojoulePerKelvin"^^xsd:string . 
 qu-unit:kilojoulePerKelvin	core:description	"kilojoule per kelvin"^^xsd:string .
+qu-unit:joulePerKelvin	core:name	"joulePerKelvin"^^xsd:string . 
 qu-unit:joulePerKelvin	core:description	"joule per kelvin"^^xsd:string .
+qu-unit:kilogramPerSquareCentimetre	core:name	"kilogramPerSquareCentimetre"^^xsd:string . 
 qu-unit:kilogramPerSquareCentimetre	core:description	"kilogram per square centimetre"^^xsd:string .
+qu-unit:milligramPerSquareCentimetre	core:name	"milligramPerSquareCentimetre"^^xsd:string . 
 qu-unit:milligramPerSquareCentimetre	core:description	"milligram per square centimetre"^^xsd:string .
+qu-unit:ouncePerSquareYard	core:name	"ouncePerSquareYard"^^xsd:string . 
 qu-unit:ouncePerSquareYard	core:description	"ounce per square yard"^^xsd:string .
+qu-unit:milligramPerSquareMetre	core:name	"milligramPerSquareMetre"^^xsd:string . 
 qu-unit:milligramPerSquareMetre	core:description	"milligram per square metre"^^xsd:string .
+qu-unit:ouncePerSquareFoot	core:name	"ouncePerSquareFoot"^^xsd:string . 
 qu-unit:ouncePerSquareFoot	core:description	"ounce per square foot"^^xsd:string .
+qu-unit:poundPerSquareInchAbsolute	core:name	"poundPerSquareInchAbsolute"^^xsd:string . 
 qu-unit:poundPerSquareInchAbsolute	core:description	"pound per square inch absolute"^^xsd:string .
+qu-unit:gramPerSquareMetre	core:name	"gramPerSquareMetre"^^xsd:string . 
 qu-unit:gramPerSquareMetre	core:description	"gram per square metre"^^xsd:string .
+qu-unit:kilogramPerSquareMetre	core:name	"kilogramPerSquareMetre"^^xsd:string . 
 qu-unit:kilogramPerSquareMetre	core:description	"kilogram per square metre"^^xsd:string .
+qu-unit:poundPerSquareFoot	core:name	"poundPerSquareFoot"^^xsd:string . 
 qu-unit:poundPerSquareFoot	core:description	"pound per square foot"^^xsd:string .
+qu-unit:gramPerSquareCentimetre	core:name	"gramPerSquareCentimetre"^^xsd:string . 
 qu-unit:gramPerSquareCentimetre	core:description	"gram per square centimetre"^^xsd:string .
+qu-unit:microsiemensPerCentimetre	core:name	"microsiemensPerCentimetre"^^xsd:string . 
 qu-unit:microsiemensPerCentimetre	core:description	"microsiemens per centimetre"^^xsd:string .
+qu-unit:siemensPerCentimetre	core:name	"siemensPerCentimetre"^^xsd:string . 
 qu-unit:siemensPerCentimetre	core:description	"siemens per centimetre"^^xsd:string .
+qu-unit:microsiemensPerMetre	core:name	"microsiemensPerMetre"^^xsd:string . 
 qu-unit:microsiemensPerMetre	core:description	"microsiemens per metre"^^xsd:string .
+qu-unit:pikosiemensPerMetre	core:name	"pikosiemensPerMetre"^^xsd:string . 
 qu-unit:pikosiemensPerMetre	core:description	"pikosiemens per metre"^^xsd:string .
+qu-unit:millisiemensPerCentimetre	core:name	"millisiemensPerCentimetre"^^xsd:string . 
 qu-unit:millisiemensPerCentimetre	core:description	"millisiemens per centimetre"^^xsd:string .
+qu-unit:siemensPerMetre	core:name	"siemensPerMetre"^^xsd:string . 
 qu-unit:siemensPerMetre	core:description	"siemens per metre"^^xsd:string .
+qu-unit:megasiemensPerMetre	core:name	"megasiemensPerMetre"^^xsd:string . 
 qu-unit:megasiemensPerMetre	core:description	"megasiemens per metre"^^xsd:string .
+qu-unit:nanosiemensPerCentimetre	core:name	"nanosiemensPerCentimetre"^^xsd:string . 
 qu-unit:nanosiemensPerCentimetre	core:description	"nanosiemens per centimetre"^^xsd:string .
+qu-unit:nanosiemensPerMetre	core:name	"nanosiemensPerMetre"^^xsd:string . 
 qu-unit:nanosiemensPerMetre	core:description	"nanosiemens per metre"^^xsd:string .
+qu-unit:kilosiemensPerMetre	core:name	"kilosiemensPerMetre"^^xsd:string . 
 qu-unit:kilosiemensPerMetre	core:description	"kilosiemens per metre"^^xsd:string .
+qu-unit:var	core:name	"var"^^xsd:string . 
 qu-unit:var	core:description	"var"^^xsd:string .
+qu-unit:kilovoltAmpereReactive	core:name	"kilovoltAmpereReactive"^^xsd:string . 
 qu-unit:kilovoltAmpereReactive	core:description	"kilovolt ampere (reactive)"^^xsd:string .
+qu-unit:secondPerCubicMetre	core:name	"secondPerCubicMetre"^^xsd:string . 
 qu-unit:secondPerCubicMetre	core:description	"second per cubic metre"^^xsd:string .
+qu-unit:siemensSquareMetrePerMole	core:name	"siemensSquareMetrePerMole"^^xsd:string . 
 qu-unit:siemensSquareMetrePerMole	core:description	"siemens square metre per mole"^^xsd:string .
+qu-unit:wattPerMetre	core:name	"wattPerMetre"^^xsd:string . 
 qu-unit:wattPerMetre	core:description	"watt per metre"^^xsd:string .
+qu-unit:milliroentgenAequivalentMen	core:name	"milliroentgenAequivalentMen"^^xsd:string . 
 qu-unit:milliroentgenAequivalentMen	core:description	"milliroentgen aequivalent men"^^xsd:string .
+qu-unit:rem	core:name	"rem"^^xsd:string . 
 qu-unit:rem	core:description	"rem"^^xsd:string .
+qu-unit:sievert	core:name	"sievert"^^xsd:string . 
 qu-unit:sievert	core:description	"sievert"^^xsd:string .
+qu-unit:millisievert	core:name	"millisievert"^^xsd:string . 
 qu-unit:millisievert	core:description	"millisievert"^^xsd:string .
+qu-unit:footPerSecondSquared	core:name	"footPerSecondSquared"^^xsd:string . 
 qu-unit:footPerSecondSquared	core:description	"foot per second squared"^^xsd:string .
+qu-unit:inchPerSecondSquared	core:name	"inchPerSecondSquared"^^xsd:string . 
 qu-unit:inchPerSecondSquared	core:description	"inch per second squared"^^xsd:string .
+qu-unit:gal	core:name	"gal"^^xsd:string . 
 qu-unit:gal	core:description	"gal"^^xsd:string .
+qu-unit:metrePerSecondSquared	core:name	"metrePerSecondSquared"^^xsd:string . 
 qu-unit:metrePerSecondSquared	core:description	"metre per second squared"^^xsd:string .
+qu-unit:kilopascalSquareMetrePerGram	core:name	"kilopascalSquareMetrePerGram"^^xsd:string . 
 qu-unit:kilopascalSquareMetrePerGram	core:description	"kilopascal square metre per gram"^^xsd:string .
+qu-unit:standardAccelerationOfFreeFall	core:name	"standardAccelerationOfFreeFall"^^xsd:string . 
 qu-unit:standardAccelerationOfFreeFall	core:description	"standard acceleration of free fall"^^xsd:string .
+qu-unit:milligal	core:name	"milligal"^^xsd:string . 
 qu-unit:milligal	core:description	"milligal"^^xsd:string .
+qu-unit:radianPerSecondSquared	core:name	"radianPerSecondSquared"^^xsd:string . 
 qu-unit:radianPerSecondSquared	core:description	"radian per second squared"^^xsd:string .
+qu-unit:lumenPerWatt	core:name	"lumenPerWatt"^^xsd:string . 
 qu-unit:lumenPerWatt	core:description	"lumen per watt"^^xsd:string .
+qu-unit:millifarad	core:name	"millifarad"^^xsd:string . 
 qu-unit:millifarad	core:description	"millifarad"^^xsd:string .
+qu-unit:picofarad	core:name	"picofarad"^^xsd:string . 
 qu-unit:picofarad	core:description	"picofarad"^^xsd:string .
+qu-unit:farad	core:name	"farad"^^xsd:string . 
 qu-unit:farad	core:description	"farad"^^xsd:string .
+qu-unit:microfarad	core:name	"microfarad"^^xsd:string . 
 qu-unit:microfarad	core:description	"microfarad"^^xsd:string .
+qu-unit:nanofarad	core:name	"nanofarad"^^xsd:string . 
 qu-unit:nanofarad	core:description	"nanofarad"^^xsd:string .
+qu-unit:radianPerSecond	core:name	"radianPerSecond"^^xsd:string . 
 qu-unit:radianPerSecond	core:description	"radian per second"^^xsd:string .
+qu-unit:degreePerSecond	core:name	"degreePerSecond"^^xsd:string . 
 qu-unit:degreePerSecond	core:description	"degree per second"^^xsd:string .
+qu-unit:joulePerMetreToTheFourthPower	core:name	"joulePerMetreToTheFourthPower"^^xsd:string . 
 qu-unit:joulePerMetreToTheFourthPower	core:description	"joule per metre to the fourth power"^^xsd:string .
+qu-unit:newtonMetrePerSquareMetre	core:name	"newtonMetrePerSquareMetre"^^xsd:string . 
 qu-unit:newtonMetrePerSquareMetre	core:description	"newton metre per square metre"^^xsd:string .
+qu-unit:megahertzKilometre	core:name	"megahertzKilometre"^^xsd:string . 
 qu-unit:megahertzKilometre	core:description	"megahertz kilometre"^^xsd:string .
+qu-unit:kilohertzMetre	core:name	"kilohertzMetre"^^xsd:string . 
 qu-unit:kilohertzMetre	core:description	"kilohertz metre"^^xsd:string .
+qu-unit:gigahertzMetre	core:name	"gigahertzMetre"^^xsd:string . 
 qu-unit:gigahertzMetre	core:description	"gigahertz metre"^^xsd:string .
+qu-unit:hertzMetre	core:name	"hertzMetre"^^xsd:string . 
 qu-unit:hertzMetre	core:description	"hertz metre"^^xsd:string .
+qu-unit:megahertzMetre	core:name	"megahertzMetre"^^xsd:string . 
 qu-unit:megahertzMetre	core:description	"megahertz metre"^^xsd:string .
+qu-unit:squareMetrePerMole	core:name	"squareMetrePerMole"^^xsd:string . 
 qu-unit:squareMetrePerMole	core:description	"square metre per mole"^^xsd:string .
+qu-unit:coulombPerKilogramSecond	core:name	"coulombPerKilogramSecond"^^xsd:string . 
 qu-unit:coulombPerKilogramSecond	core:description	"coulomb per kilogram second"^^xsd:string .
+qu-unit:amperePerKilogram	core:name	"amperePerKilogram"^^xsd:string . 
 qu-unit:amperePerKilogram	core:description	"ampere per kilogram"^^xsd:string .
+qu-unit:roentgenPerSecond	core:name	"roentgenPerSecond"^^xsd:string . 
 qu-unit:roentgenPerSecond	core:description	"roentgen per second"^^xsd:string .
+qu-unit:gigacoulombPerCubicMetre	core:name	"gigacoulombPerCubicMetre"^^xsd:string . 
 qu-unit:gigacoulombPerCubicMetre	core:description	"gigacoulomb per cubic metre"^^xsd:string .
+qu-unit:coulombPerCubicMillimetre	core:name	"coulombPerCubicMillimetre"^^xsd:string . 
 qu-unit:coulombPerCubicMillimetre	core:description	"coulomb per cubic millimetre"^^xsd:string .
+qu-unit:coulombPerCubicMetre	core:name	"coulombPerCubicMetre"^^xsd:string . 
 qu-unit:coulombPerCubicMetre	core:description	"coulomb per cubic metre"^^xsd:string .
+qu-unit:kilocoulombPerCubicMetre	core:name	"kilocoulombPerCubicMetre"^^xsd:string . 
 qu-unit:kilocoulombPerCubicMetre	core:description	"kilocoulomb per cubic metre"^^xsd:string .
+qu-unit:megacoulombPerCubicMetre	core:name	"megacoulombPerCubicMetre"^^xsd:string . 
 qu-unit:megacoulombPerCubicMetre	core:description	"megacoulomb per cubic metre"^^xsd:string .
+qu-unit:coulombPerCubicCentimetre	core:name	"coulombPerCubicCentimetre"^^xsd:string . 
 qu-unit:coulombPerCubicCentimetre	core:description	"coulomb per cubic centimetre"^^xsd:string .
+qu-unit:millicoulombPerCubicMetre	core:name	"millicoulombPerCubicMetre"^^xsd:string . 
 qu-unit:millicoulombPerCubicMetre	core:description	"millicoulomb per cubic metre"^^xsd:string .
+qu-unit:microcoulombPerCubicMetre	core:name	"microcoulombPerCubicMetre"^^xsd:string . 
 qu-unit:microcoulombPerCubicMetre	core:description	"microcoulomb per cubic metre"^^xsd:string .
+qu-unit:kiloohm	core:name	"kiloohm"^^xsd:string . 
 qu-unit:kiloohm	core:description	"kiloohm"^^xsd:string .
+qu-unit:teraohm	core:name	"teraohm"^^xsd:string . 
 qu-unit:teraohm	core:description	"teraohm"^^xsd:string .
+qu-unit:ohm	core:name	"ohm"^^xsd:string . 
 qu-unit:ohm	core:description	"ohm"^^xsd:string .
+qu-unit:milliohm	core:name	"milliohm"^^xsd:string . 
 qu-unit:milliohm	core:description	"milliohm"^^xsd:string .
+qu-unit:microohm	core:name	"microohm"^^xsd:string . 
 qu-unit:microohm	core:description	"microohm"^^xsd:string .
+qu-unit:gigaohm	core:name	"gigaohm"^^xsd:string . 
 qu-unit:gigaohm	core:description	"gigaohm"^^xsd:string .
+qu-unit:megaohm	core:name	"megaohm"^^xsd:string . 
 qu-unit:megaohm	core:description	"megaohm"^^xsd:string .
+qu-unit:reciprocalHenry	core:name	"reciprocalHenry"^^xsd:string . 
 qu-unit:reciprocalHenry	core:description	"reciprocal henry"^^xsd:string .
+qu-unit:ampereSquareMetre	core:name	"ampereSquareMetre"^^xsd:string . 
 qu-unit:ampereSquareMetre	core:description	"ampere square metre"^^xsd:string .
+qu-unit:poundAvoirdupoisSquareFoot	core:name	"poundAvoirdupoisSquareFoot"^^xsd:string . 
 qu-unit:poundAvoirdupoisSquareFoot	core:description	"pound (avoirdupois) square foot"^^xsd:string .
+qu-unit:poundInchSquared	core:name	"poundInchSquared"^^xsd:string . 
 qu-unit:poundInchSquared	core:description	"pound inch squared"^^xsd:string .
+qu-unit:kilogramSquareMillimetre	core:name	"kilogramSquareMillimetre"^^xsd:string . 
 qu-unit:kilogramSquareMillimetre	core:description	"kilogram square millimetre"^^xsd:string .
+qu-unit:kilogramMetreSquared	core:name	"kilogramMetreSquared"^^xsd:string . 
 qu-unit:kilogramMetreSquared	core:description	"kilogram metre squared"^^xsd:string .
+qu-unit:kilogramSquareCentimetre	core:name	"kilogramSquareCentimetre"^^xsd:string . 
 qu-unit:kilogramSquareCentimetre	core:description	"kilogram square centimetre"^^xsd:string .
+qu-unit:kilogramMetrePerSecond	core:name	"kilogramMetrePerSecond"^^xsd:string . 
 qu-unit:kilogramMetrePerSecond	core:description	"kilogram metre per second"^^xsd:string .
+qu-unit:kilocalorieThermochemical	core:name	"kilocalorieThermochemical"^^xsd:string . 
 qu-unit:kilocalorieThermochemical	core:description	"kilocalorie (thermochemical)"^^xsd:string .
+qu-unit:millinewtonMetre	core:name	"millinewtonMetre"^^xsd:string . 
 qu-unit:millinewtonMetre	core:description	"millinewton metre"^^xsd:string .
+qu-unit:kilonewtonMetre	core:name	"kilonewtonMetre"^^xsd:string . 
 qu-unit:kilonewtonMetre	core:description	"kilonewton metre"^^xsd:string .
+qu-unit:kilocalorieInternationalTable	core:name	"kilocalorieInternationalTable"^^xsd:string . 
 qu-unit:kilocalorieInternationalTable	core:description	"kilocalorie (international table)"^^xsd:string .
+qu-unit:footPoundForce	core:name	"footPoundForce"^^xsd:string . 
 qu-unit:footPoundForce	core:description	"foot pound-force"^^xsd:string .
+qu-unit:kilocalorieMean	core:name	"kilocalorieMean"^^xsd:string . 
 qu-unit:kilocalorieMean	core:description	"kilocalorie (mean)"^^xsd:string .
+qu-unit:attojoule	core:name	"attojoule"^^xsd:string . 
 qu-unit:attojoule	core:description	"attojoule"^^xsd:string .
+qu-unit:calorieThermochemical	core:name	"calorieThermochemical"^^xsd:string . 
 qu-unit:calorieThermochemical	core:description	"calorie (thermochemical)"^^xsd:string .
+qu-unit:terawattHour	core:name	"terawattHour"^^xsd:string . 
 qu-unit:terawattHour	core:description	"terawatt hour"^^xsd:string .
+qu-unit:megawattHour1000KwH	core:name	"megawattHour1000KwH"^^xsd:string . 
 qu-unit:megawattHour1000KwH	core:description	"megawatt hour (1000 kW.h)"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTable	core:name	"britishThermalUnitInternationalTable"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTable	core:description	"British thermal unit (international table)"^^xsd:string .
+qu-unit:millijoule	core:name	"millijoule"^^xsd:string . 
 qu-unit:millijoule	core:description	"millijoule"^^xsd:string .
+qu-unit:joule	core:name	"joule"^^xsd:string . 
 qu-unit:joule	core:description	"joule"^^xsd:string .
+qu-unit:decinewtonMetre	core:name	"decinewtonMetre"^^xsd:string . 
 qu-unit:decinewtonMetre	core:description	"decinewton metre"^^xsd:string .
+qu-unit:newtonMetre	core:name	"newtonMetre"^^xsd:string . 
 qu-unit:newtonMetre	core:description	"newton metre"^^xsd:string .
+qu-unit:centinewtonMetre	core:name	"centinewtonMetre"^^xsd:string . 
 qu-unit:centinewtonMetre	core:description	"centinewton metre"^^xsd:string .
+qu-unit:petajoule	core:name	"petajoule"^^xsd:string . 
 qu-unit:petajoule	core:description	"petajoule"^^xsd:string .
+qu-unit:kilowattHour	core:name	"kilowattHour"^^xsd:string . 
 qu-unit:kilowattHour	core:description	"kilowatt hour"^^xsd:string .
+qu-unit:terajoule	core:name	"terajoule"^^xsd:string . 
 qu-unit:terajoule	core:description	"terajoule"^^xsd:string .
+qu-unit:wattSecond	core:name	"wattSecond"^^xsd:string . 
 qu-unit:wattSecond	core:description	"watt second"^^xsd:string .
+qu-unit:xo15degCCalorie	core:name	"xo15degCCalorie"^^xsd:string . 
 qu-unit:xo15degCCalorie	core:description	"15 °C calorie"^^xsd:string .
+qu-unit:electronvolt	core:name	"electronvolt"^^xsd:string . 
 qu-unit:electronvolt	core:description	"electronvolt"^^xsd:string .
+qu-unit:ounceAvoirdupoisForceInch	core:name	"ounceAvoirdupoisForceInch"^^xsd:string . 
 qu-unit:ounceAvoirdupoisForceInch	core:description	"ounce (avoirdupois)-force inch"^^xsd:string .
+qu-unit:kilogramForceMetre	core:name	"kilogramForceMetre"^^xsd:string . 
 qu-unit:kilogramForceMetre	core:description	"kilogram-force metre"^^xsd:string .
+qu-unit:gigajoule	core:name	"gigajoule"^^xsd:string . 
 qu-unit:gigajoule	core:description	"gigajoule"^^xsd:string .
+qu-unit:meganewtonMetre	core:name	"meganewtonMetre"^^xsd:string . 
 qu-unit:meganewtonMetre	core:description	"meganewton metre"^^xsd:string .
+qu-unit:kilojoule	core:name	"kilojoule"^^xsd:string . 
 qu-unit:kilojoule	core:description	"kilojoule"^^xsd:string .
+qu-unit:gigawattHour	core:name	"gigawattHour"^^xsd:string . 
 qu-unit:gigawattHour	core:description	"gigawatt hour"^^xsd:string .
+qu-unit:micronewtonMetre	core:name	"micronewtonMetre"^^xsd:string . 
 qu-unit:micronewtonMetre	core:description	"micronewton metre"^^xsd:string .
+qu-unit:megajoule	core:name	"megajoule"^^xsd:string . 
 qu-unit:megajoule	core:description	"megajoule"^^xsd:string .
+qu-unit:dyneCentimetre	core:name	"dyneCentimetre"^^xsd:string . 
 qu-unit:dyneCentimetre	core:description	"dyne centimetre"^^xsd:string .
+qu-unit:erg	core:name	"erg"^^xsd:string . 
 qu-unit:erg	core:description	"erg"^^xsd:string .
+qu-unit:wattHour	core:name	"wattHour"^^xsd:string . 
 qu-unit:wattHour	core:description	"watt hour"^^xsd:string .
+qu-unit:femtojoule	core:name	"femtojoule"^^xsd:string . 
 qu-unit:femtojoule	core:description	"femtojoule"^^xsd:string .
+qu-unit:exajoule	core:name	"exajoule"^^xsd:string . 
 qu-unit:exajoule	core:description	"exajoule"^^xsd:string .
+qu-unit:britishThermalUnitMean	core:name	"britishThermalUnitMean"^^xsd:string . 
 qu-unit:britishThermalUnitMean	core:description	"British thermal unit (mean)"^^xsd:string .
+qu-unit:internationalTableItCalorie	core:name	"internationalTableItCalorie"^^xsd:string . 
 qu-unit:internationalTableItCalorie	core:description	"International Table (IT) calorie"^^xsd:string .
+qu-unit:megaohmPerKilometre	core:name	"megaohmPerKilometre"^^xsd:string . 
 qu-unit:megaohmPerKilometre	core:description	"megaohm per kilometre"^^xsd:string .
+qu-unit:ohmPerMetre	core:name	"ohmPerMetre"^^xsd:string . 
 qu-unit:ohmPerMetre	core:description	"ohm per metre"^^xsd:string .
+qu-unit:gigaohmPerMetre	core:name	"gigaohmPerMetre"^^xsd:string . 
 qu-unit:gigaohmPerMetre	core:description	"gigaohm per metre"^^xsd:string .
+qu-unit:milliohmPerMetre	core:name	"milliohmPerMetre"^^xsd:string . 
 qu-unit:milliohmPerMetre	core:description	"milliohm per metre"^^xsd:string .
+qu-unit:ohmPerKilometre	core:name	"ohmPerKilometre"^^xsd:string . 
 qu-unit:ohmPerKilometre	core:description	"ohm per kilometre"^^xsd:string .
+qu-unit:ohmPerMile	core:name	"ohmPerMile"^^xsd:string . 
 qu-unit:ohmPerMile	core:description	"ohm per mile"^^xsd:string .
+qu-unit:megaohmPerMetre	core:name	"megaohmPerMetre"^^xsd:string . 
 qu-unit:megaohmPerMetre	core:description	"megaohm per metre"^^xsd:string .
+qu-unit:cubicFoot	core:name	"cubicFoot"^^xsd:string . 
 qu-unit:cubicFoot	core:description	"cubic foot"^^xsd:string .
+qu-unit:cubicMetre	core:name	"cubicMetre"^^xsd:string . 
 qu-unit:cubicMetre	core:description	"cubic metre"^^xsd:string .
+qu-unit:cubicDecametre	core:name	"cubicDecametre"^^xsd:string . 
 qu-unit:cubicDecametre	core:description	"cubic decametre"^^xsd:string .
+qu-unit:liquidQuartUs	core:name	"liquidQuartUs"^^xsd:string . 
 qu-unit:liquidQuartUs	core:description	"liquid quart (US)"^^xsd:string .
+qu-unit:cubicHectometre	core:name	"cubicHectometre"^^xsd:string . 
 qu-unit:cubicHectometre	core:description	"cubic hectometre"^^xsd:string .
+qu-unit:dryQuartUs	core:name	"dryQuartUs"^^xsd:string . 
 qu-unit:dryQuartUs	core:description	"dry quart (US)"^^xsd:string .
+qu-unit:barrelUkPetroleum	core:name	"barrelUkPetroleum"^^xsd:string . 
 qu-unit:barrelUkPetroleum	core:description	"barrel (UK petroleum)"^^xsd:string .
+qu-unit:cubicMillimetre	core:name	"cubicMillimetre"^^xsd:string . 
 qu-unit:cubicMillimetre	core:description	"cubic millimetre"^^xsd:string .
+qu-unit:cubicKilometre	core:name	"cubicKilometre"^^xsd:string . 
 qu-unit:cubicKilometre	core:description	"cubic kilometre"^^xsd:string .
+qu-unit:hectolitre	core:name	"hectolitre"^^xsd:string . 
 qu-unit:hectolitre	core:description	"hectolitre"^^xsd:string .
+qu-unit:decalitre	core:name	"decalitre"^^xsd:string . 
 qu-unit:decalitre	core:description	"decalitre"^^xsd:string .
+qu-unit:cubicInch	core:name	"cubicInch"^^xsd:string . 
 qu-unit:cubicInch	core:description	"cubic inch"^^xsd:string .
+qu-unit:millilitre	core:name	"millilitre"^^xsd:string . 
 qu-unit:millilitre	core:description	"millilitre"^^xsd:string .
+qu-unit:quartUsDry	core:name	"quartUsDry"^^xsd:string . 
 qu-unit:quartUsDry	core:description	"quart (US dry)"^^xsd:string .
+qu-unit:bushelUk	core:name	"bushelUk"^^xsd:string . 
 qu-unit:bushelUk	core:description	"bushel (UK)"^^xsd:string .
+qu-unit:gallonUs	core:name	"gallonUs"^^xsd:string . 
 qu-unit:gallonUs	core:description	"gallon (US)"^^xsd:string .
+qu-unit:fluidOunceUk	core:name	"fluidOunceUk"^^xsd:string . 
 qu-unit:fluidOunceUk	core:description	"fluid ounce (UK)"^^xsd:string .
+qu-unit:pintUsDry	core:name	"pintUsDry"^^xsd:string . 
 qu-unit:pintUsDry	core:description	"pint (US dry)"^^xsd:string .
+qu-unit:gallonUk	core:name	"gallonUk"^^xsd:string . 
 qu-unit:gallonUk	core:description	"gallon (UK)"^^xsd:string .
+qu-unit:cupUnitOfVolume	core:name	"cupUnitOfVolume"^^xsd:string . 
 qu-unit:cupUnitOfVolume	core:description	"cup [unit of volume]"^^xsd:string .
+qu-unit:barrelUs	core:name	"barrelUs"^^xsd:string . 
 qu-unit:barrelUs	core:description	"barrel (US)"^^xsd:string .
+qu-unit:tonUkShipping	core:name	"tonUkShipping"^^xsd:string . 
 qu-unit:tonUkShipping	core:description	"ton (UK shipping)"^^xsd:string .
+qu-unit:peck	core:name	"peck"^^xsd:string . 
 qu-unit:peck	core:description	"peck"^^xsd:string .
+qu-unit:cubicCentimetre	core:name	"cubicCentimetre"^^xsd:string . 
 qu-unit:cubicCentimetre	core:description	"cubic centimetre"^^xsd:string .
+qu-unit:pintUs	core:name	"pintUs"^^xsd:string . 
 qu-unit:pintUs	core:description	"pint (US)"^^xsd:string .
+qu-unit:quartUs	core:name	"quartUs"^^xsd:string . 
 qu-unit:quartUs	core:description	"quart (US)"^^xsd:string .
+qu-unit:liquidPintUs	core:name	"liquidPintUs"^^xsd:string . 
 qu-unit:liquidPintUs	core:description	"liquid pint (US)"^^xsd:string .
+qu-unit:stere	core:name	"stere"^^xsd:string . 
 qu-unit:stere	core:description	"stere"^^xsd:string .
+qu-unit:cubicDecimetre	core:name	"cubicDecimetre"^^xsd:string . 
 qu-unit:cubicDecimetre	core:description	"cubic decimetre"^^xsd:string .
+qu-unit:teaspoonUs	core:name	"teaspoonUs"^^xsd:string . 
 qu-unit:teaspoonUs	core:description	"teaspoon (US)"^^xsd:string .
+qu-unit:decilitre	core:name	"decilitre"^^xsd:string . 
 qu-unit:decilitre	core:description	"decilitre"^^xsd:string .
+qu-unit:megaLitre	core:name	"megaLitre"^^xsd:string . 
 qu-unit:megaLitre	core:description	"mega litre"^^xsd:string .
+qu-unit:tonUsShipping	core:name	"tonUsShipping"^^xsd:string . 
 qu-unit:tonUsShipping	core:description	"ton (US shipping)"^^xsd:string .
+qu-unit:dryGallonUs	core:name	"dryGallonUs"^^xsd:string . 
 qu-unit:dryGallonUs	core:description	"dry gallon (US)"^^xsd:string .
+qu-unit:peckUk	core:name	"peckUk"^^xsd:string . 
 qu-unit:peckUk	core:description	"peck (UK)"^^xsd:string .
+qu-unit:standardCubicFoot	core:name	"standardCubicFoot"^^xsd:string . 
 qu-unit:standardCubicFoot	core:description	"standard cubic foot"^^xsd:string .
+qu-unit:dryBarrelUs	core:name	"dryBarrelUs"^^xsd:string . 
 qu-unit:dryBarrelUs	core:description	"dry barrel (US)"^^xsd:string .
+qu-unit:litre	core:name	"litre"^^xsd:string . 
 qu-unit:litre	core:description	"litre"^^xsd:string .
+qu-unit:centilitre	core:name	"centilitre"^^xsd:string . 
 qu-unit:centilitre	core:description	"centilitre"^^xsd:string .
+qu-unit:bushelUs	core:name	"bushelUs"^^xsd:string . 
 qu-unit:bushelUs	core:description	"bushel (US)"^^xsd:string .
+qu-unit:fluidOunceUs	core:name	"fluidOunceUs"^^xsd:string . 
 qu-unit:fluidOunceUs	core:description	"fluid ounce (US)"^^xsd:string .
+qu-unit:microlitre	core:name	"microlitre"^^xsd:string . 
 qu-unit:microlitre	core:description	"microlitre"^^xsd:string .
+qu-unit:dryPintUs	core:name	"dryPintUs"^^xsd:string . 
 qu-unit:dryPintUs	core:description	"dry pint (US)"^^xsd:string .
+qu-unit:kilolitre	core:name	"kilolitre"^^xsd:string . 
 qu-unit:kilolitre	core:description	"kilolitre"^^xsd:string .
+qu-unit:cubicYard	core:name	"cubicYard"^^xsd:string . 
 qu-unit:cubicYard	core:description	"cubic yard"^^xsd:string .
+qu-unit:tablespoonUs	core:name	"tablespoonUs"^^xsd:string . 
 qu-unit:tablespoonUs	core:description	"tablespoon (US)"^^xsd:string .
+qu-unit:quartUk	core:name	"quartUk"^^xsd:string . 
 qu-unit:quartUk	core:description	"quart (UK)"^^xsd:string .
+qu-unit:pintUk	core:name	"pintUk"^^xsd:string . 
 qu-unit:pintUk	core:description	"pint (UK)"^^xsd:string .
+qu-unit:horsepowerBoiler	core:name	"horsepowerBoiler"^^xsd:string . 
 qu-unit:horsepowerBoiler	core:description	"horsepower (boiler)"^^xsd:string .
+qu-unit:kilocalorieThermochemicalPerMinute	core:name	"kilocalorieThermochemicalPerMinute"^^xsd:string . 
 qu-unit:kilocalorieThermochemicalPerMinute	core:description	"kilocalorie (thermochemical) per minute"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTablePerSecond	core:name	"britishThermalUnitInternationalTablePerSecond"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTablePerSecond	core:description	"British thermal unit (international table) per second"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTablePerMinute	core:name	"britishThermalUnitInternationalTablePerMinute"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTablePerMinute	core:description	"British thermal unit (international table) per minute"^^xsd:string .
+qu-unit:brakeHorsePower	core:name	"brakeHorsePower"^^xsd:string . 
 qu-unit:brakeHorsePower	core:description	"brake horse power"^^xsd:string .
+qu-unit:britishThermalUnitInternationalTablePerHour	core:name	"britishThermalUnitInternationalTablePerHour"^^xsd:string . 
 qu-unit:britishThermalUnitInternationalTablePerHour	core:description	"British thermal unit (international table) per hour"^^xsd:string .
+qu-unit:footPoundForcePerHour	core:name	"footPoundForcePerHour"^^xsd:string . 
 qu-unit:footPoundForcePerHour	core:description	"foot pound-force per hour"^^xsd:string .
+qu-unit:kilowatt	core:name	"kilowatt"^^xsd:string . 
 qu-unit:kilowatt	core:description	"kilowatt"^^xsd:string .
+qu-unit:britishThermalUnitThermochemicalPerHour	core:name	"britishThermalUnitThermochemicalPerHour"^^xsd:string . 
 qu-unit:britishThermalUnitThermochemicalPerHour	core:description	"British thermal unit (thermochemical) per hour"^^xsd:string .
+qu-unit:picowatt	core:name	"picowatt"^^xsd:string . 
 qu-unit:picowatt	core:description	"picowatt"^^xsd:string .
+qu-unit:kilocalorieThermochemicalPerSecond	core:name	"kilocalorieThermochemicalPerSecond"^^xsd:string . 
 qu-unit:kilocalorieThermochemicalPerSecond	core:description	"kilocalorie (thermochemical) per second"^^xsd:string .
+qu-unit:nanowatt	core:name	"nanowatt"^^xsd:string . 
 qu-unit:nanowatt	core:description	"nanowatt"^^xsd:string .
+qu-unit:footPoundForcePerSecond	core:name	"footPoundForcePerSecond"^^xsd:string . 
 qu-unit:footPoundForcePerSecond	core:description	"foot pound-force per second"^^xsd:string .
+qu-unit:milliwatt	core:name	"milliwatt"^^xsd:string . 
 qu-unit:milliwatt	core:description	"milliwatt"^^xsd:string .
+qu-unit:footPoundForcePerMinute	core:name	"footPoundForcePerMinute"^^xsd:string . 
 qu-unit:footPoundForcePerMinute	core:description	"foot pound-force per minute"^^xsd:string .
+qu-unit:calorieThermochemicalPerSecond	core:name	"calorieThermochemicalPerSecond"^^xsd:string . 
 qu-unit:calorieThermochemicalPerSecond	core:description	"calorie (thermochemical) per second"^^xsd:string .
+qu-unit:kilogramForceMetrePerSecond	core:name	"kilogramForceMetrePerSecond"^^xsd:string . 
 qu-unit:kilogramForceMetrePerSecond	core:description	"kilogram-force metre per second"^^xsd:string .
+qu-unit:megawatt	core:name	"megawatt"^^xsd:string . 
 qu-unit:megawatt	core:description	"megawatt"^^xsd:string .
+qu-unit:metricHorsePower	core:name	"metricHorsePower"^^xsd:string . 
 qu-unit:metricHorsePower	core:description	"metric horse power"^^xsd:string .
+qu-unit:gigawatt	core:name	"gigawatt"^^xsd:string . 
 qu-unit:gigawatt	core:description	"gigawatt"^^xsd:string .
+qu-unit:britishThermalUnitThermochemicalPerMinute	core:name	"britishThermalUnitThermochemicalPerMinute"^^xsd:string . 
 qu-unit:britishThermalUnitThermochemicalPerMinute	core:description	"British thermal unit (thermochemical) per minute"^^xsd:string .
+qu-unit:horsepowerElectric	core:name	"horsepowerElectric"^^xsd:string . 
 qu-unit:horsepowerElectric	core:description	"horsepower (electric)"^^xsd:string .
+qu-unit:microwatt	core:name	"microwatt"^^xsd:string . 
 qu-unit:microwatt	core:description	"microwatt"^^xsd:string .
+qu-unit:terawatt	core:name	"terawatt"^^xsd:string . 
 qu-unit:terawatt	core:description	"terawatt"^^xsd:string .
+qu-unit:calorieThermochemicalPerMinute	core:name	"calorieThermochemicalPerMinute"^^xsd:string . 
 qu-unit:calorieThermochemicalPerMinute	core:description	"calorie (thermochemical) per minute"^^xsd:string .
+qu-unit:ergPerSecond	core:name	"ergPerSecond"^^xsd:string . 
 qu-unit:ergPerSecond	core:description	"erg per second"^^xsd:string .
+qu-unit:watt	core:name	"watt"^^xsd:string . 
 qu-unit:watt	core:description	"watt"^^xsd:string .
+qu-unit:kilocalorieThermochemicalPerHour	core:name	"kilocalorieThermochemicalPerHour"^^xsd:string . 
 qu-unit:kilocalorieThermochemicalPerHour	core:description	"kilocalorie (thermochemical) per hour"^^xsd:string .
+qu-unit:chevalVapeur	core:name	"chevalVapeur"^^xsd:string . 
 qu-unit:chevalVapeur	core:description	"cheval vapeur"^^xsd:string .
+qu-unit:britishThermalUnitThermochemicalPerSecond	core:name	"britishThermalUnitThermochemicalPerSecond"^^xsd:string . 
 qu-unit:britishThermalUnitThermochemicalPerSecond	core:description	"British thermal unit (thermochemical) per second"^^xsd:string .
+qu-unit:one	core:name	"one"^^xsd:string . 
 qu-unit:one	core:description	"one"^^xsd:string .
+qu-unit:euclid	core:name	"euclid"^^xsd:string . 
 qu-unit:euclid	core:description	"Euclid"^^xsd:string .
+qu-unit:percent	core:name	"percent"^^xsd:string . 
 qu-unit:percent	core:description	"Per cent"^^xsd:string .
+qu-unit:secondPerCubicMetreRadian	core:name	"secondPerCubicMetreRadian"^^xsd:string . 
 qu-unit:secondPerCubicMetreRadian	core:description	"second per cubic metre radian"^^xsd:string .
+qu-unit:perSquareCentimetre	core:name	"perSquareCentimetre"^^xsd:string . 
 qu-unit:perSquareCentimetre	core:description	"per square centimetre"^^xsd:string .
+qu-unit:perSquareMetre	core:name	"perSquareMetre"^^xsd:string . 
 qu-unit:perSquareMetre	core:description	"number per square metre"^^xsd:string .
+qu-unit:millimolePerLitre	core:name	"millimolePerLitre"^^xsd:string . 
 qu-unit:millimolePerLitre	core:description	"millimole per litre"^^xsd:string .
+qu-unit:molePerLitre	core:name	"molePerLitre"^^xsd:string . 
 qu-unit:molePerLitre	core:description	"mole per litre"^^xsd:string .
+qu-unit:kilomolePerCubicMetre	core:name	"kilomolePerCubicMetre"^^xsd:string . 
 qu-unit:kilomolePerCubicMetre	core:description	"kilomole per cubic metre"^^xsd:string .
+qu-unit:molePerCubicMetre	core:name	"molePerCubicMetre"^^xsd:string . 
 qu-unit:molePerCubicMetre	core:description	"mole per cubic metre"^^xsd:string .
+qu-unit:molePerCubicDecimetre	core:name	"molePerCubicDecimetre"^^xsd:string . 
 qu-unit:molePerCubicDecimetre	core:description	"mole per cubic decimetre"^^xsd:string .
+qu-unit:neper	core:name	"neper"^^xsd:string . 
 qu-unit:neper	core:description	"neper"^^xsd:string .
+qu-unit:decibel	core:name	"decibel"^^xsd:string . 
 qu-unit:decibel	core:description	"decibel"^^xsd:string .
+qu-unit:tonForceUsShort	core:name	"tonForceUsShort"^^xsd:string . 
 qu-unit:tonForceUsShort	core:description	"ton-force (US short)"^^xsd:string .
+qu-unit:kilopond	core:name	"kilopond"^^xsd:string . 
 qu-unit:kilopond	core:description	"kilopond"^^xsd:string .
+qu-unit:kilogramForce	core:name	"kilogramForce"^^xsd:string . 
 qu-unit:kilogramForce	core:description	"kilogram-force"^^xsd:string .
+qu-unit:kilonewton	core:name	"kilonewton"^^xsd:string . 
 qu-unit:kilonewton	core:description	"kilonewton"^^xsd:string .
+qu-unit:millinewton	core:name	"millinewton"^^xsd:string . 
 qu-unit:millinewton	core:description	"millinewton"^^xsd:string .
+qu-unit:ounceAvoirdupoisForce	core:name	"ounceAvoirdupoisForce"^^xsd:string . 
 qu-unit:ounceAvoirdupoisForce	core:description	"ounce (avoirdupois)-force"^^xsd:string .
+qu-unit:micronewton	core:name	"micronewton"^^xsd:string . 
 qu-unit:micronewton	core:description	"micronewton"^^xsd:string .
+qu-unit:poundForce	core:name	"poundForce"^^xsd:string . 
 qu-unit:poundForce	core:description	"pound-force"^^xsd:string .
+qu-unit:meganewton	core:name	"meganewton"^^xsd:string . 
 qu-unit:meganewton	core:description	"meganewton"^^xsd:string .
+qu-unit:dyne	core:name	"dyne"^^xsd:string . 
 qu-unit:dyne	core:description	"dyne"^^xsd:string .
+qu-unit:newton	core:name	"newton"^^xsd:string . 
 qu-unit:newton	core:description	"newton"^^xsd:string .
+qu-unit:megaohmKilometre	core:name	"megaohmKilometre"^^xsd:string . 
 qu-unit:megaohmKilometre	core:description	"megaohm kilometre"^^xsd:string .
+qu-unit:ohmMetre	core:name	"ohmMetre"^^xsd:string . 
 qu-unit:ohmMetre	core:description	"ohm metre"^^xsd:string .
+qu-unit:microohmMetre	core:name	"microohmMetre"^^xsd:string . 
 qu-unit:microohmMetre	core:description	"microohm metre"^^xsd:string .
+qu-unit:ohmKilometre	core:name	"ohmKilometre"^^xsd:string . 
 qu-unit:ohmKilometre	core:description	"ohm kilometre"^^xsd:string .
+qu-unit:megaohmMetre	core:name	"megaohmMetre"^^xsd:string . 
 qu-unit:megaohmMetre	core:description	"megaohm metre"^^xsd:string .
+qu-unit:nanoohmMetre	core:name	"nanoohmMetre"^^xsd:string . 
 qu-unit:nanoohmMetre	core:description	"nanoohm metre"^^xsd:string .
+qu-unit:kiloohmMetre	core:name	"kiloohmMetre"^^xsd:string . 
 qu-unit:kiloohmMetre	core:description	"kiloohm metre"^^xsd:string .
+qu-unit:milliohmMetre	core:name	"milliohmMetre"^^xsd:string . 
 qu-unit:milliohmMetre	core:description	"milliohm metre"^^xsd:string .
+qu-unit:gigaohmMetre	core:name	"gigaohmMetre"^^xsd:string . 
 qu-unit:gigaohmMetre	core:description	"gigaohm metre"^^xsd:string .
+qu-unit:ohmCentimetre	core:name	"ohmCentimetre"^^xsd:string . 
 qu-unit:ohmCentimetre	core:description	"ohm centimetre"^^xsd:string .
+qu-unit:wattPerSteradian	core:name	"wattPerSteradian"^^xsd:string . 
 qu-unit:wattPerSteradian	core:description	"watt per steradian"^^xsd:string .
+qu-unit:microwattPerSquareMetre	core:name	"microwattPerSquareMetre"^^xsd:string . 
 qu-unit:microwattPerSquareMetre	core:description	"microwatt per square metre"^^xsd:string .
+qu-unit:wattPerSquareMetre	core:name	"wattPerSquareMetre"^^xsd:string . 
 qu-unit:wattPerSquareMetre	core:description	"watt per square metre"^^xsd:string .
+qu-unit:ergPerSquareCentimetreSecond	core:name	"ergPerSquareCentimetreSecond"^^xsd:string . 
 qu-unit:ergPerSquareCentimetreSecond	core:description	"erg per square centimetre second"^^xsd:string .
+qu-unit:picowattPerSquareMetre	core:name	"picowattPerSquareMetre"^^xsd:string . 
 qu-unit:picowattPerSquareMetre	core:description	"picowatt per square metre"^^xsd:string .
+qu-unit:ergPerSecondSquareCentimetre	core:name	"ergPerSecondSquareCentimetre"^^xsd:string . 
 qu-unit:ergPerSecondSquareCentimetre	core:description	"erg per second square centimetre"^^xsd:string .
+qu-unit:milliwattPerSquareMetre	core:name	"milliwattPerSquareMetre"^^xsd:string . 
 qu-unit:milliwattPerSquareMetre	core:description	"milliwatt per square metre"^^xsd:string .
+qu-unit:radianSquareMetrePerKilogram	core:name	"radianSquareMetrePerKilogram"^^xsd:string . 
 qu-unit:radianSquareMetrePerKilogram	core:description	"radian square metre per kilogram"^^xsd:string .
 
 #################################################################
