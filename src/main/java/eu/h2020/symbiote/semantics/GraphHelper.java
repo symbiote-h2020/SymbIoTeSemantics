@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package eu.h2020.symbiote.semantics;
 
 import java.io.IOException;
@@ -16,13 +11,24 @@ import org.apache.jena.query.ReadWrite;
 import org.apache.jena.rdf.model.Model;
 
 /**
+ * Helper class for RDF graph manipulation
  *
  * @author Michael Jacoby <michael.jacoby@iosb.fraunhofer.de>
  */
 public class GraphHelper {
+
     private static final Log log = LogFactory.getLog(GraphHelper.class);
-    
-     public static void insertGraph(Dataset dataset, String graphURI, String rdf, RDFFormat format) {
+
+    /**
+     * Insert triples serialized as String under given graph in dataset
+     *
+     * @param dataset dataset where <code>rdf</code> will be inserted
+     * @param graphURI URI of the graph under which <code>rdf</code> will be
+     * inserted
+     * @param rdf triples to insert
+     * @param format serialization format of <code>rdf</code>
+     */
+    public static void insertGraph(Dataset dataset, String graphURI, String rdf, RDFFormat format) {
         try {
             OntModel model = ModelHelper.readModel(rdf, format, false, false);
             if (ModelHelper.getOntologyDefinitions(model).size() == 1) {
@@ -34,6 +40,14 @@ public class GraphHelper {
         }
     }
 
+    /**
+     * Insert triples stored inside Model under given graph in dataset
+     *
+     * @param dataset dataset where <code>rdf</code> will be inserted
+     * @param graphURI URI of the graph under which <code>rdf</code> will be
+     * inserted
+     * @param model triples to insert
+     */
     public static void insertGraph(Dataset dataset, String graphURI, Model model) {
         dataset.begin(ReadWrite.WRITE);
         dataset.getNamedModel(graphURI).add(model);
@@ -41,14 +55,20 @@ public class GraphHelper {
         dataset.end();
     }
 
+    /**
+     * Remove graph from dataset
+     *
+     * @param dataset dataset containing graph
+     * @param graphURI URI of graph to remove
+     */
     public static void removeGraph(Dataset dataset, String graphURI) {
         dataset.begin(ReadWrite.WRITE);
         dataset.removeNamedModel(graphURI);
         dataset.commit();
         dataset.end();
     }
-    
+
     private GraphHelper() {
-        
+
     }
 }

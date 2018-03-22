@@ -29,6 +29,11 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Test class for ModelHelper
+ *
+ * @author Michael Jacoby <michael.jacoby@iosb.fraunhofer.de>
+ */
 public class ModelHelperTest {
 
     private static final String ONTOLOGY_NAMING_CONFIG = "localOntologiesMappingTest.ttl";
