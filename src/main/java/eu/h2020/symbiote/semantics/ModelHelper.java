@@ -281,11 +281,27 @@ public class ModelHelper {
     }
 
     /**
+     * @param sspId id of the smart space
+     * @return URI of a smart space used in symbIoTe
+     */
+    public static String getSspURI(String sspId) {
+        return INTERNAL.SSPS_GRAPH + "/" + sspId;
+    }
+
+    /**
      * @param resourceId id of the resource
      * @return URI of a resource used in symbIoTe
      */
     public static String getResourceURI(String resourceId) {
         return INTERNAL.RESOURCES_GRAPH + "/" + resourceId;
+    }
+
+    /**
+     * @param sdevId id of the smart device
+     * @return URI of a smart device used in symbIoTe
+     */
+    public static String getSdevURI(String sdevId) {
+        return INTERNAL.SDEVS_GRAPH + "/" + sdevId;
     }
 
     /**

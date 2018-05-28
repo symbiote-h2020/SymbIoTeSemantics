@@ -41,8 +41,11 @@ public class INTERNAL {
     public static final String CORE_GRAPH = CIM.getURI();
     public static final String MAPPING_GRAPH = NS + "/mappings";
     public static final String PLATFORMS_GRAPH = NS + "/platforms";
+    public static final String SSPS_GRAPH = NS + "/ssps";
     public static final String MODEL_GRAPH = NS + "/models";
     public static final String RESOURCES_GRAPH = NS + "/resources";
+    public static final String SDEVS_GRAPH = NS + "/sdevs";
+
     
     public static final ObjectProperty actsOn = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#actsOn" );
     public static final DatatypeProperty value = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#value" );    
