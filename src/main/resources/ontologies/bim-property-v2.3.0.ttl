@@ -13,15 +13,15 @@
                                             
                                             rdfs:label "symbIoTe Best Practice Information Model Properties"@en ;
                                             
-                                            owl:versionInfo "v2.2.0 2018/02/20 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.3.0 2018/07/23 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "Property part of the Best Practice Information Model of symbIoTe."@en ;
                                             
                                             owl:imports <http://purl.oclc.org/NET/ssnx/qu/qu-rec20> ,
-                                                        <http://www.symbiote-h2020.eu/ontology/bim/qu-align/2.2.0> ,
+                                                        <http://www.symbiote-h2020.eu/ontology/bim/qu-align/2.3.0> ,
 														<http://www.w3.org/2004/02/skos/core>;
                                             
-                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/property/2.2.0> .
+                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/property/2.3.0> .
 
 
 #################################################################

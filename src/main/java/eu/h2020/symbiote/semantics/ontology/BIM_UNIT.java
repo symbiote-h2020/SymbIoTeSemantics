@@ -20,9 +20,9 @@ public class BIM_UNIT {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v2.2.0 2018/03/13 12:00:00";
+    public static final String VERSION_INFO = "v2.3.0 2018/07/23 12:00:00";
     
-    public static String getVersionURI() { return getURI() + "/2.2.0"; }
+    public static String getVersionURI() { return getURI() + "/2.3.0"; }
     public static final OntClass SurfaceDensityRateUnit = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/bim/unit#SurfaceDensityRateUnit" );
     
     public static final Individual beatsPerMinute = M_MODEL.createIndividual( "http://www.symbiote-h2020.eu/ontology/bim/unit#beatsPerMinute", M_MODEL.createClass( "http://www.w3.org/2002/07/owl#NamedIndividual" ) );

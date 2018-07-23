@@ -20,9 +20,9 @@ public class BIM_PROPERTY {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v2.2.0 2018/02/20 12:00:00";
+    public static final String VERSION_INFO = "v2.3.0 2018/07/23 12:00:00";
     
-    public static String getVersionURI() { return getURI() + "/2.2.0"; }
+    public static String getVersionURI() { return getURI() + "/2.3.0"; }
     public static final OntClass Backscatter = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/bim/property#Backscatter" );
     
     public static final OntClass Precipitation = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/bim/property#Precipitation" );

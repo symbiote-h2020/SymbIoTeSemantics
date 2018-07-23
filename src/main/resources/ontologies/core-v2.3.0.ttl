@@ -7,26 +7,52 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 
-<http://www.symbiote-h2020.eu/ontology/core> rdf:type owl:Ontology ;
-                                             
-                                             rdfs:label "symbIoTe Core Information Model"@en ;
-                                             
-                                             owl:versionInfo "v 2.2.0 2018/02/20 12:00:00"^^xsd:string ;
-                                             
-                                             rdfs:comment "Core Information Model of the symbIoTe project."@en ;
-                                             
-                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/core/2.2.0> ;
-                                             
+<http://www.symbiote-h2020.eu/ontology/core> rdf:type owl:Ontology ;                                             
+                                             rdfs:label "symbIoTe Core Information Model"@en ;                                             
+                                             owl:versionInfo "v2.3.0 2018/07/23 12:00:00"^^xsd:string ;                                             
+                                             rdfs:comment "Core Information Model of the symbIoTe project."@en ;                                             
+                                             owl:versionIRI <http://www.symbiote-h2020.eu/ontology/core/2.3.0> ;
                                              owl:imports geo:,
-														 <http://www.w3.org/2006/time>.
+														 <http://www.w3.org/2006/time> ;
+											:hasExposureInfo [ a :ExposureInfo ;
+												:includeNamespace "http://www.symbiote-h2020.eu/ontology/core#" ;
+												:excludeClass :ExposureInfo ;
+												:processImportsRecursive "false"^^xsd:boolean
+											 ].
 
 
+#################################################################
+#
+#    Annotation Properties
+#
+#################################################################		
+												 
+:hasExposureInfo a owl:AnnotationProperty, owl:OntologyProperty ;
+     rdfs:label "hasExposureInfo" ;
+     rdfs:domain owl:Ontology ;
+     rdfs:range :ExposureInfo . 
+	 
+														 
 #################################################################
 #
 #    Object Properties
 #
 #################################################################
 
+###  http://www.symbiote-h2020.eu/ontology/core#includeClass
+
+:includeClass a owl:ObjectProperty ;
+     rdfs:label "includeClass" ;
+     rdfs:domain :ExposureInfo ;
+     rdfs:range owl:Class . 
+	 
+	 
+###  http://www.symbiote-h2020.eu/ontology/core#excludeClass	 
+
+:excludeClass a owl:ObjectProperty ;
+     rdfs:label "excludeClass" ;
+     rdfs:domain :ExposureInfo ;
+     rdfs:range owl:Class . 	
 
 ###  http://www.symbiote-h2020.eu/ontology/core#providesService
 
@@ -252,13 +278,6 @@
               rdfs:range time:TemporalEntity .
 
 
-
-
-
-
-
-
-
 ###  http://www.symbiote-h2020.eu/ontology/core#valueProperty
 
 :valueProperty rdf:type owl:ObjectProperty ;
@@ -282,6 +301,25 @@
 #
 #################################################################
 
+###  http://www.symbiote-h2020.eu/ontology/core#includeNamespace
+:includeNamespace a owl:DatatypeProperty ;
+     rdfs:label "includeNamespace" ;
+     rdfs:domain :ExposureInfo ;
+     rdfs:range xsd:string . 
+	 
+###  http://www.symbiote-h2020.eu/ontology/core#excludeNamespace	 
+	 
+:excludeNamespace a owl:DatatypeProperty ;
+     rdfs:label "excludeNamespace" ;
+     rdfs:domain :ExposureInfo ;
+     rdfs:range xsd:string . 	 
+
+###  http://www.symbiote-h2020.eu/ontology/core#processImportsRecursive
+	 
+:processImportsRecursive a owl:DatatypeProperty ;
+     rdfs:label "processImportsRecursive" ;
+     rdfs:domain :ExposureInfo ;
+     rdfs:range xsd:boolean .
 
 ###  http://www.symbiote-h2020.eu/ontology/core#id
 
@@ -395,6 +433,35 @@ geo:SpatialThing rdf:type owl:Class .
 #    Classes
 #
 #################################################################
+
+###  http://www.symbiote-h2020.eu/ontology/core#ExposureInfo
+
+:ExposureInfo rdf:type owl:Class ;          
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :includeNamespace ;
+                            owl:onDataRange xsd:string ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty :excludeNamespace ;
+                            owl:onDataRange xsd:string ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty :includeClass ;
+                            owl:onClass owl:Class ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty :excludeClass ;
+                            owl:onClass owl:Class ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger
+                          ] ,
+						  [ rdf:type owl:Restriction ;
+                            owl:onProperty :processImportsRecursive ;
+                            owl:onDataRange xsd:boolean ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                          ].
 
 
 ###  http://www.symbiote-h2020.eu/ontology/core#Actuator

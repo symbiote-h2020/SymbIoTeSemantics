@@ -10,13 +10,13 @@
                                             
                                             rdfs:label "symbIoTe Best Practice Information Model ParameterValues extension"@en ;
                                             
-                                            owl:versionInfo "v2.2.0 2018/02/20 12:00:00"^^xsd:string ;
+                                            owl:versionInfo "v2.3.0 2018/07/23 12:00:00"^^xsd:string ;
                                             
                                             rdfs:comment "symbIoTe Best Practice Information Model extension for accessing latest parameter values of Service/Capability."@en ;
                                             
-                                            owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.2.0> ;
+                                            owl:imports <http://www.symbiote-h2020.eu/ontology/core/2.3.0> ;
                                             
-                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/parametervalues/2.2.0> .
+                                            owl:versionIRI <http://www.symbiote-h2020.eu/ontology/bim/parametervalues/2.3.0> .
 
 
 

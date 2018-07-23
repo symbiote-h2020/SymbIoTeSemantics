@@ -20,9 +20,9 @@ public class CIM {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v 2.2.0 2018/02/20 12:00:00";
+    public static final String VERSION_INFO = "v2.3.0 2018/07/23 12:00:00";
     
-    public static String getVersionURI() { return getURI() + "/2.2.0"; }
+    public static String getVersionURI() { return getURI() + "/2.3.0"; }
     public static final ObjectProperty actsOn = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#actsOn" );
     
     public static final ObjectProperty affects = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#affects" );
@@ -30,6 +30,8 @@ public class CIM {
     public static final ObjectProperty basedOnClass = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#basedOnClass" );
     
     public static final ObjectProperty basedOnProperty = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#basedOnProperty" );
+    
+    public static final ObjectProperty excludeClass = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#excludeClass" );
     
     public static final ObjectProperty hasBaseDatatype = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#hasBaseDatatype" );
     
@@ -57,6 +59,8 @@ public class CIM {
     
     public static final ObjectProperty hasUnitOfMeasurement = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#hasUnitOfMeasurement" );
     
+    public static final ObjectProperty includeClass = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#includeClass" );
+    
     public static final ObjectProperty locatedAt = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#locatedAt" );
     
     public static final ObjectProperty madeFrom = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/core#madeFrom" );
@@ -77,7 +81,11 @@ public class CIM {
     
     public static final DatatypeProperty description = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#description" );
     
+    public static final DatatypeProperty excludeNamespace = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#excludeNamespace" );
+    
     public static final DatatypeProperty id = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#id" );
+    
+    public static final DatatypeProperty includeNamespace = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#includeNamespace" );
     
     public static final DatatypeProperty isArray = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#isArray" );
     
@@ -91,11 +99,15 @@ public class CIM {
     
     public static final DatatypeProperty pattern = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#pattern" );
     
+    public static final DatatypeProperty processImportsRecursive = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#processImportsRecursive" );
+    
     public static final DatatypeProperty step = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#step" );
     
     public static final DatatypeProperty symbol = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#symbol" );
     
     public static final DatatypeProperty value = M_MODEL.createDatatypeProperty( "http://www.symbiote-h2020.eu/ontology/core#value" );
+    
+    public static final AnnotationProperty hasExposureInfo = M_MODEL.createAnnotationProperty( "http://www.symbiote-h2020.eu/ontology/core#hasExposureInfo" );
     
     public static final OntClass Actuator = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/core#Actuator" );
     
@@ -114,6 +126,8 @@ public class CIM {
     public static final OntClass Effect = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/core#Effect" );
     
     public static final OntClass EnumRestriction = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/core#EnumRestriction" );
+    
+    public static final OntClass ExposureInfo = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/core#ExposureInfo" );
     
     public static final OntClass FeatureOfInterest = M_MODEL.createClass( "http://www.symbiote-h2020.eu/ontology/core#FeatureOfInterest" );
     

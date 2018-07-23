@@ -20,9 +20,9 @@ public class BIM_PARAMETER_VALUE {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v2.2.0 2018/02/20 12:00:00";
+    public static final String VERSION_INFO = "v2.3.0 2018/07/23 12:00:00";
     
-    public static String getVersionURI() { return getURI() + "/2.2.0"; }
+    public static String getVersionURI() { return getURI() + "/2.3.0"; }
     public static final ObjectProperty hasParameterLookupInfo = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/bim/parametervalues#hasParameterLookupInfo" );
     
     public static final ObjectProperty hasParameterValueLookupInfo = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/bim/parametervalues#hasParameterValueLookupInfo" );

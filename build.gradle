@@ -94,7 +94,7 @@ def default_config =
 def symbIoTe_declarations = '    public static String getVersionURI() { return getURI() + "/[version]"; }'
 
 def TAG_VERSION = "[version]";
-def VERSION = "2.2.0"
+def VERSION = "2.3.0"
 
 def ontology_config = 
 [ 
