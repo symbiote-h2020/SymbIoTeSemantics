@@ -16,6 +16,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.jena.ontology.OntDocumentManager;
@@ -467,33 +468,105 @@ public class ModelHelper {
         return writer.toString();
     }
 
-    private static QueryExecution createQuery(String queryString, Model model) {
+    /**
+     * Create SPARQL Query against Jena <code>model</code>
+     *
+     * @param model model to execute <code>query</code> against
+     * @param query SPARQL query to execute
+     * @return <code>QueryExecution</code> object
+     */
+    public static QueryExecution createQuery(String query, Model model) {
         return QueryExecutionFactory.create(
-                new ParameterizedSparqlString(queryString, PREFIXES).asQuery(),
+                new ParameterizedSparqlString(query, PREFIXES).asQuery(),
                 model);
     }
 
-    private static <T> List<T> executeSelectAsList(Model model, String query, Function<? super QuerySolution, ? extends T> mapFunction) {
+    /**
+     * Executes SPARQL SELECT query and converts result to generic
+     * <code>List<T></code>
+     *
+     * @param <T> return type for list
+     * @param model model to execute <code>query</code> against
+     * @param query SPARQL SELECT query
+     * @param mapFunction mapping function from <code>QuerySolution</code> to
+     * <code>T</code> for transformation of single result
+     * @return result of SPARQL SELECT query as list
+     */
+    public static <T> List<T> executeSelectAsList(Model model, String query, Function<? super QuerySolution, ? extends T> mapFunction) {
         try (QueryExecution qexec = createQuery(query, model)) {
             return StreamHelper.stream(qexec.execSelect())
                     .map(mapFunction)
                     .collect(Collectors.toList());
         }
     }
+    
+    /**
+     * Executes SPARQL SELECT query and converts result to generic
+     * <code>Stream<T></code>
+     *
+     * @param <T> return type for list
+     * @param model model to execute <code>query</code> against
+     * @param query SPARQL SELECT query
+     * @param mapFunction mapping function from <code>QuerySolution</code> to
+     * <code>T</code> for transformation of single result
+     * @return result of SPARQL SELECT query as <code>Stream<T></code>
+     */
+    public static <T> Stream<T> executeSelectAsStream(Model model, String query, Function<? super QuerySolution, ? extends T> mapFunction) {
+        try (QueryExecution qexec = createQuery(query, model)) {
+            return StreamHelper.stream(qexec.execSelect())
+                    .map(mapFunction);
+        }
+    }
 
-    private static Optional<Literal> executeSelectAsLiteral(Model model, String query) {
+    /**
+     * Executes SPARQL SELECT query and returns first result element as
+     * <code>Literal</code>
+     *
+     * @param model model to execute <code>query</code> against
+     * @param query SPARQL SELECT query
+     * @return first element of result as <code>Literal</code>
+     */
+    public static Optional<Literal> executeSelectAsLiteral(Model model, String query) {
         return executeSelectAsValue(model, query, x -> x.getLiteral(x.varNames().next()));
     }
 
-    private static Optional<RDFNode> executeSelectAsNode(Model model, String query) {
+    /**
+     * Executes SPARQL SELECT query and returns first result element as
+     * <code>RDFNode</code>
+     *
+     * @param model model to execute <code>query</code> against
+     * @param query SPARQL SELECT query
+     * @return first element of result as <code>RDFNode</code>
+     */
+    public static Optional<RDFNode> executeSelectAsNode(Model model, String query) {
         return executeSelectAsValue(model, query, x -> x.get(x.varNames().next()));
     }
 
-    private static Optional<Resource> executeSelectAsResource(Model model, String query) {
+    /**
+     * Executes SPARQL SELECT query and returns first result element as
+     * <code>Resource</code>
+     *
+     * @param model model to execute <code>query</code> against
+     * @param query SPARQL SELECT query
+     * @return first element of result as <code>Resource</code>
+     */
+    public static Optional<Resource> executeSelectAsResource(Model model, String query) {
         return executeSelectAsValue(model, query, x -> x.getResource(x.varNames().next()));
     }
 
-    private static <T> Optional<T> executeSelectAsValue(Model model, String query, Function<? super QuerySolution, ? extends T> mapFunction) {
+    /**
+     * Executes SPARQL SELECT query and returns first result element as
+     * <code>T</code>
+     *
+     * @param model model to execute <code>query</code> against
+     * @param query SPARQL SELECT query
+     * @param mapFunction function to map from <code>QuerySolution</code> to
+     * <code>T</code>
+     * @return first element of result as <code>T</code>
+     * @throws IllegalStateException when query returns more than a single
+     * result
+     */
+    public static <T> Optional<T> executeSelectAsValue(Model model, String query, Function<? super QuerySolution, ? extends T> mapFunction) {
         Optional<T> result = Optional.empty();
         List<T> temp = executeSelectAsList(model, query, mapFunction);
         if (temp != null && !temp.isEmpty()) {
