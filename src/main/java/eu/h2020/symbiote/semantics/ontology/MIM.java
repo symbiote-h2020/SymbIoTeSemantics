@@ -20,9 +20,9 @@ public class MIM {
     public static final Resource NAMESPACE = M_MODEL.createResource( NS );
     
     /** <p>The ontology's owl:versionInfo as a string</p> */
-    public static final String VERSION_INFO = "v2.3.0 2018/07/23 12:00:00";
+    public static final String VERSION_INFO = "v2.3.1 2018/08/09 12:00:00";
     
-    public static String getVersionURI() { return getURI() + "/2.3.0"; }
+    public static String getVersionURI() { return getURI() + "/2.3.1"; }
     public static final ObjectProperty definesAttribute = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#definesAttribute" );
     
     public static final ObjectProperty hasAttribute = M_MODEL.createObjectProperty( "http://www.symbiote-h2020.eu/ontology/meta#hasAttribute" );
