@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.jena.graph.Node;
 import org.apache.jena.ontology.OntDocumentManager;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
@@ -27,6 +28,7 @@ import org.apache.jena.query.ParameterizedSparqlString;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -123,7 +125,19 @@ public class ModelHelper {
      * <code>query</code>
      */
     public static List<Literal> executeSelectAsLiteralList(Model model, String query) {
-        return executeSelectAsList(model, query, x -> x.getLiteral(x.varNames().next()));
+        return resultSetAsList(executeSparql(model, query), x -> x.getLiteral(x.varNames().next()));
+    }
+
+    /**
+     * Maps a SPARQL ResultSet to a <code>List<Literal></code>
+     *
+     * @param resultSet reulst set to convert
+     * @return mapped result set
+     */
+    public static List<Literal> resultSetAsLiteralList(ResultSet resultSet) {
+        return StreamHelper.stream(resultSet)
+                .map(x -> x.getLiteral(x.varNames().next()))
+                .collect(Collectors.toList());
     }
 
     /**
@@ -135,7 +149,7 @@ public class ModelHelper {
      * value2, ...)"
      */
     public static List<String> executeSelectAsNamedResultsList(OntModel model, String query) {
-        return executeSelectAsNamedResultsList(model, query, "");
+        return resultSetAsNamedList(executeSparql(model, query), "");
     }
 
     /**
@@ -148,7 +162,19 @@ public class ModelHelper {
      * ?var1: value1, ?var2: value2, ...)"
      */
     public static List<String> executeSelectAsNamedResultsList(OntModel model, String query, String message) {
-        return executeSelectAsList(model, query, x
+        return resultSetAsNamedList(executeSparql(model, query), message);
+    }
+
+    /**
+     * Converts <code>ResultSet</code> as list of elements [name]: [value]
+     *
+     * @param resultSet ResultSet to convert
+     * @param message message to be added as prefix to each result
+     * @return list of results formatted as string like "<code>message</code>
+     * ?var1: value1, ?var2: value2, ...)"
+     */
+    public static List<String> resultSetAsNamedList(ResultSet resultSet, String message) {
+        return resultSetAsList(resultSet, x
                 -> message + StreamHelper.stream(x.varNames())
                         .map(y -> y + ": " + x.get(y))
                         .collect(Collectors.joining(",")));
@@ -163,7 +189,7 @@ public class ModelHelper {
      * <code>query</code>
      */
     public static List<RDFNode> executeSelectAsNodeList(OntModel model, String query) {
-        return executeSelectAsList(model, query, x -> x.get(x.varNames().next()));
+        return resultSetAsNodeList(executeSparql(model, query));
     }
 
     /**
@@ -175,7 +201,7 @@ public class ModelHelper {
      * variable in <code>query</code>
      */
     public static List<Resource> executeSelectAsResourceList(Model model, String query) {
-        return executeSelectAsList(model, query, x -> x.getResource(x.varNames().next()));
+        return resultSetAsResourceList(executeSparql(model, query));
     }
 
     /**
@@ -493,13 +519,35 @@ public class ModelHelper {
      * @return result of SPARQL SELECT query as list
      */
     public static <T> List<T> executeSelectAsList(Model model, String query, Function<? super QuerySolution, ? extends T> mapFunction) {
-        try (QueryExecution qexec = createQuery(query, model)) {
-            return StreamHelper.stream(qexec.execSelect())
-                    .map(mapFunction)
-                    .collect(Collectors.toList());
-        }
+        return resultSetAsList(executeSparql(model, query), mapFunction);
     }
-    
+
+    /**
+     * Executes SPARQL SELECT query
+     *
+     * @param model model to execute <code>query</code> against
+     * @param query SPARQL SELECT query
+     * @return result of SPARQL SELECT query
+     */
+    public static ResultSet executeSparql(Model model, String query) {
+        return createQuery(query, model).execSelect();
+    }
+
+    /**
+     * Maps a SPARQL ResultSet to a List<T>
+     *
+     * @param <T> type of the list
+     * @param resultSet reulst set to convert
+     * @param mapFunction mapping function from <code>QuerySolution</code> to
+     * <code>T</code> for transformation of single result
+     * @return mapped result set
+     */
+    public static <T> List<T> resultSetAsList(ResultSet resultSet, Function<? super QuerySolution, ? extends T> mapFunction) {
+        return StreamHelper.stream(resultSet)
+                .map(mapFunction)
+                .collect(Collectors.toList());
+    }
+
     /**
      * Executes SPARQL SELECT query and converts result to generic
      * <code>Stream<T></code>
@@ -512,10 +560,8 @@ public class ModelHelper {
      * @return result of SPARQL SELECT query as <code>Stream<T></code>
      */
     public static <T> Stream<T> executeSelectAsStream(Model model, String query, Function<? super QuerySolution, ? extends T> mapFunction) {
-        try (QueryExecution qexec = createQuery(query, model)) {
-            return StreamHelper.stream(qexec.execSelect())
-                    .map(mapFunction);
-        }
+        return StreamHelper.stream(executeSparql(model, query))
+                .map(mapFunction);
     }
 
     /**
@@ -527,7 +573,7 @@ public class ModelHelper {
      * @return first element of result as <code>Literal</code>
      */
     public static Optional<Literal> executeSelectAsLiteral(Model model, String query) {
-        return executeSelectAsValue(model, query, x -> x.getLiteral(x.varNames().next()));
+        return resultSetAsValue(executeSparql(model, query), x -> x.getLiteral(x.varNames().next()));
     }
 
     /**
@@ -539,7 +585,7 @@ public class ModelHelper {
      * @return first element of result as <code>RDFNode</code>
      */
     public static Optional<RDFNode> executeSelectAsNode(Model model, String query) {
-        return executeSelectAsValue(model, query, x -> x.get(x.varNames().next()));
+        return resultSetAsNode(executeSparql(model, query));
     }
 
     /**
@@ -551,7 +597,7 @@ public class ModelHelper {
      * @return first element of result as <code>Resource</code>
      */
     public static Optional<Resource> executeSelectAsResource(Model model, String query) {
-        return executeSelectAsValue(model, query, x -> x.getResource(x.varNames().next()));
+        return resultSetAsResource(executeSparql(model, query));
     }
 
     /**
@@ -567,8 +613,12 @@ public class ModelHelper {
      * result
      */
     public static <T> Optional<T> executeSelectAsValue(Model model, String query, Function<? super QuerySolution, ? extends T> mapFunction) {
+        return resultSetAsValue(executeSparql(model, query), mapFunction);
+    }
+
+    public static <T> Optional<T> resultSetAsValue(ResultSet resultSet, Function<? super QuerySolution, ? extends T> mapFunction) {
         Optional<T> result = Optional.empty();
-        List<T> temp = executeSelectAsList(model, query, mapFunction);
+        List<T> temp = resultSetAsList(resultSet, mapFunction);
         if (temp != null && !temp.isEmpty()) {
             result = Optional.ofNullable(temp.get(0));
             if (temp.size() > 1) {
@@ -576,6 +626,22 @@ public class ModelHelper {
             }
         }
         return result;
+    }
+
+    public static Optional<RDFNode> resultSetAsNode(ResultSet resultSet) {
+        return resultSetAsValue(resultSet, x -> x.get(x.varNames().next()));
+    }
+
+    public static List<RDFNode> resultSetAsNodeList(ResultSet resultSet) {
+        return resultSetAsList(resultSet, x -> x.get(x.varNames().next()));
+    }
+
+    public static Optional<Resource> resultSetAsResource(ResultSet resultSet) {
+        return resultSetAsValue(resultSet, x -> x.getResource(x.varNames().next()));
+    }
+
+    public static List<Resource> resultSetAsResourceList(ResultSet resultSet) {
+        return resultSetAsList(resultSet, x -> x.getResource(x.varNames().next()));
     }
 
     private static void loadPrefixes(Model config) {
