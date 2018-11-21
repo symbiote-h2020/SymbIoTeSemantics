@@ -51,7 +51,6 @@ dependencies {
     compile('org.apache.jena:jena-querybuilder:3.4.0')
     compile('org.apache.jena:jena-cmds:3.4.0')
     testCompile('junit:junit:4.+')
-    compile('com.github.symbiote-h2020:SymbIoTeLibraries:5.+') { changing=true }
 }
 
 // code quality below
