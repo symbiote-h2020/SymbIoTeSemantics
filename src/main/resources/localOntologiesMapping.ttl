@@ -26,13 +26,13 @@
 
 ### MIM ###
 [] a :OntologySpec ;
-    :altURL <ontologies/meta-v2.3.1.ttl> ;
+    :altURL <ontologies/meta-v2.3.2.ttl> ;
     :publicURI <http://www.symbiote-h2020.eu/ontology/meta> .
 
 # versionIRI	
 [] a :OntologySpec ;
-    :altURL <ontologies/meta-v2.3.1.ttl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/meta/2.3.1> .	
+    :altURL <ontologies/meta-v2.3.2.ttl> ;
+    :publicURI <http://www.symbiote-h2020.eu/ontology/meta/2.3.2> .	
 
 # prefix
 [] a :OntologySpec ;
@@ -164,7 +164,7 @@
 [] a :OntologySpec ;
     :prefix "align"^^xsd:string ;
     :altURL <ontologies/external/align.owl> ;
-    :publicURI <http://www.symbiote-h2020.eu/ontology/ontologies/external/align> .
+    :publicURI <http://www.symbiote-h2020.eu/ontology/external/align> .
 
 [] a :OntologySpec ;
     :altURL <ontologies/external/align.owl> ;
