@@ -1,5 +1,6 @@
 package eu.h2020.symbiote.semantics;
 
+import eu.h2020.symbiote.core.internal.RDFFormat;
 import eu.h2020.symbiote.semantics.ontology.BIM;
 import eu.h2020.symbiote.semantics.ontology.BIM_MOBILITY;
 import eu.h2020.symbiote.semantics.ontology.BIM_PARAMETER_VALUE;
@@ -116,17 +117,17 @@ public class ModelHelperTest {
         // load original config file as used in deployment
         ModelHelper.init();
         // check that all symbIoTe models are loadable from cache
-        ModelHelper.readModel(CIM.getURI());
-        ModelHelper.readModel(MIM.getURI());
-        ModelHelper.readModel(BIM.getURI());
-        ModelHelper.readModel(BIM_MOBILITY.getURI());
-        ModelHelper.readModel(BIM_PARAMETER_VALUE.getURI());
-        ModelHelper.readModel(BIM_PROPERTY.getURI());
-        ModelHelper.readModel(BIM_QU_ALIGN.getURI());
-        ModelHelper.readModel(BIM_RESIDENCE.getURI());
-        ModelHelper.readModel(BIM_STADIUM.getURI());
-        ModelHelper.readModel(BIM_UNIT.getURI());
-        ModelHelper.readModel(BIM_YACHTING.getURI());
+        ModelHelper.loadImports(ModelHelper.readModel(CIM.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(MIM.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(BIM.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(BIM_MOBILITY.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(BIM_PARAMETER_VALUE.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(BIM_PROPERTY.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(BIM_QU_ALIGN.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(BIM_RESIDENCE.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(BIM_STADIUM.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(BIM_UNIT.getURI()));
+        ModelHelper.loadImports(ModelHelper.readModel(BIM_YACHTING.getURI()));
         // also check loading by versionURI
         ModelHelper.readModel(CIM.getVersionURI());
         ModelHelper.readModel(MIM.getVersionURI());
