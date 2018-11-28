@@ -30,6 +30,14 @@ public class JsonLDHelper {
         }
     }
 
+    public static Set<String> findTypes(Class clazz) {
+        try {
+            return findTypes(new JsonLDObjectMapper().valueToTree(clazz.newInstance()));
+        } catch (InstantiationException | IllegalAccessException ex) {
+            throw new IllegalArgumentException("could not instantiate class", ex);
+        }
+    }
+
     public static Set<String> findTypes(JsonNode node) {
         Set<String> result = Sets.newHashSet();
         if (node == null) {
