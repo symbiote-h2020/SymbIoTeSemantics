@@ -1,5 +1,6 @@
 package eu.h2020.symbiote.jsonld;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -12,6 +13,8 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.Spliterator;
 import java.util.Spliterators;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.StreamSupport;
 import org.apache.jena.ext.com.google.common.collect.Sets;
 import org.apache.jena.rdf.model.Model;
@@ -32,8 +35,8 @@ public class JsonLDHelper {
 
     public static Set<String> findTypes(Class clazz) {
         try {
-            return findTypes(new JsonLDObjectMapper().valueToTree(clazz.newInstance()));
-        } catch (InstantiationException | IllegalAccessException ex) {
+            return findTypes(asJsonNode(new JsonLDObjectMapper().writeValueAsString(clazz.newInstance())));
+        } catch (InstantiationException | IllegalAccessException | JsonProcessingException ex) {
             throw new IllegalArgumentException("could not instantiate class", ex);
         }
     }
