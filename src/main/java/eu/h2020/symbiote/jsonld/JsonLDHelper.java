@@ -11,11 +11,6 @@ import static eu.h2020.symbiote.jsonld.JsonLdProperties.TYPE;
 import eu.h2020.symbiote.semantics.ModelHelper;
 import java.io.IOException;
 import java.util.Set;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.stream.StreamSupport;
 import org.apache.jena.ext.com.google.common.collect.Sets;
 import org.apache.jena.rdf.model.Model;
 
@@ -67,28 +62,21 @@ public class JsonLDHelper {
         return result;
     }
 
-    public static boolean isJsonLD(JsonNode node) {
-        if (node == null) {
+    public static boolean isJsonLD(String json) {
+        try {
+            jsonLDToRdf(json);
+            return true;
+        } catch (Exception ex) {
             return false;
         }
-        if (node.isValueNode()) {
-            return true;
+    }
+
+    public static boolean isJsonLD(JsonNode node) {
+        try {
+            return isJsonLD(new JsonLDObjectMapper().writeValueAsString(node));
+        } catch (JsonProcessingException ex) {
+            return false;
         }
-        if (node.isObject()) {
-            if (!node.hasNonNull(TYPE)) {
-                return false;
-            }
-            return StreamSupport.stream(
-                    Spliterators.spliteratorUnknownSize(node.fields(), Spliterator.ORDERED),
-                    false)
-                    .filter(x -> !x.getKey().equalsIgnoreCase(CONTEXT))
-                    .map(x -> x.getValue())
-                    .allMatch(x -> isJsonLD(x));
-        }
-        return StreamSupport.stream(
-                Spliterators.spliteratorUnknownSize(node.elements(), Spliterator.ORDERED),
-                false)
-                .allMatch(x -> isJsonLD(x));
     }
 
     public static Model jsonLDToRdf(String json) throws IOException {
